@@ -143,6 +143,10 @@ class BuiltSiteTests(unittest.TestCase):
         for q in faq["mainEntity"]:
             self.assertIn(q["name"].replace("'", "&rsquo;"), html)
 
+    def test_google_verification_meta_on_home_page(self):
+        token = common.SITE["googleSiteVerification"]
+        self.assertIn('<meta name="google-site-verification" content="{}">'.format(token), read_dist("index.html"))
+
     def test_only_one_faqpage_per_page(self):
         for rel in ("faq/index.html", "index.html", "brand/amazon/index.html"):
             self.assertLessEqual(graph_types(json_ld(read_dist(rel))).count("FAQPage"), 1, rel)

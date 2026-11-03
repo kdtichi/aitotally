@@ -51,6 +51,11 @@ def logo_html() -> str:
         esc(NAME), esc(SITE["logoText"]))
 
 
+def verification_meta() -> str:
+    token = SITE.get("googleSiteVerification")
+    return '<meta name="google-site-verification" content="{}">\n'.format(esc(token)) if token else ""
+
+
 def layout(*, title: str, description: str, path: str, body: str, json_ld: str = "",
            robots: str = "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
            og_image: str = "/og-image.png", og_type: str = "website", extra_head: str = "") -> str:
@@ -63,7 +68,7 @@ def layout(*, title: str, description: str, path: str, body: str, json_ld: str =
 <title>{title}</title>
 <meta name="description" content="{description}">
 <meta name="robots" content="{robots}">
-<link rel="canonical" href="{canonical}">
+{verification}<link rel="canonical" href="{canonical}">
 <link rel="alternate" hreflang="en-us" href="{canonical}">
 <link rel="alternate" hreflang="x-default" href="{canonical}">
 <meta property="og:type" content="{og_type}">
@@ -128,7 +133,7 @@ def layout(*, title: str, description: str, path: str, body: str, json_ld: str =
 </html>
 """.format(
         title=esc(title), description=esc(description), robots=robots, canonical=canonical,
-        og_type=og_type, name=esc(NAME), base=BASE_URL, og_image=og_image, fonts=FONTS_LOADER,
+        og_type=og_type, name=esc(NAME), base=BASE_URL, og_image=og_image, fonts=FONTS_LOADER, verification=verification_meta(),
         extra_head=extra_head, json_ld=json_ld, logo=logo_html(), nav=_links(NAV_ITEMS, path),
         footer_nav=_links(FOOTER_NAV), domain=esc(SITE["domain"]), legal=_links(LEGAL_LINKS), body=body,
     )
