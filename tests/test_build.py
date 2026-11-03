@@ -93,9 +93,96 @@ class BrandCopyTests(unittest.TestCase):
         b = common.brand_by_slug("instagram")
         self.assertIn("doesn&rsquo;t publish a customer service phone number", brand_page.quick_answer(b))
 
+    def test_possessive_for_names_ending_in_s(self):
+        self.assertEqual(brand_page.possessive("Delta Air Lines"), "Delta Air Lines&rsquo;")
+        self.assertEqual(brand_page.possessive("Uber"), "Uber&rsquo;s")
+
     def test_detailed_hours_render_in_company_time_zone(self):
         b = common.brand_by_slug("t-mobile")
         self.assertEqual(brand_page.hours_sentence(b), "Support runs 4:00 AM&ndash;9:00 PM Pacific time, every day.")
+
+
+class AnchorTests(unittest.TestCase):
+    def test_anchor_slug_ignores_entities_and_apostrophes(self):
+        import components
+        self.assertEqual(components.anchor_slug("What are Delta&rsquo;s hours?"), "what-are-deltas-hours")
+
+    def test_anchor_ids_are_unique(self):
+        import components
+        self.assertEqual(components.anchor_ids(["Refunds", "Refunds"], "issue"), ["issue-refunds", "issue-refunds-2"])
+
+    def test_qa_details_links_each_answer_to_itself(self):
+        import components
+        html = components.qa_details([("Q one", "A")], "faq")
+        self.assertIn('id="faq-q-one"', html)
+        self.assertIn('href="#faq-q-one"', html)
+
+
+class ResearchTests(unittest.TestCase):
+    def test_stats_add_up(self):
+        import research
+        s = research.stats()
+        self.assertEqual(s["with_phone"] + s["without"], s["total"])
+        self.assertEqual(sum(s["channels"].values()), s["without"])
+        self.assertEqual(sum(c["total"] for c in s["by_cat"]), s["total"])
+
+    def test_headline_matches_data(self):
+        import research
+        s = research.stats()
+        text = research.headline_answer(s)
+        self.assertIn("{} ({}%)".format(s["without"], s["pct_without"]), text)
+        for label in s["all_without"] + s["all_with"]:
+            self.assertIn(label, text)
+
+    def test_csv_has_one_row_per_company(self):
+        import csv as csv_mod
+        import io
+        import research
+        rows = list(csv_mod.DictReader(io.StringIO(research.csv_text())))
+        self.assertEqual(len(rows), len(common.BRANDS))
+        self.assertEqual(sum(r["publishes_phone_number"] == "no" for r in rows), research.stats()["without"])
+
+
+class IndexNowTests(unittest.TestCase):
+    def test_key_is_32_hex_chars(self):
+        import indexnow
+        self.assertRegex(indexnow.key(), r"^[0-9a-f]{32}$")
+
+    def test_changed_urls_only_new_or_updated(self):
+        import indexnow
+        live = {common.BASE_URL + "/a/": "2026-01-01", common.BASE_URL + "/b/": "2026-01-01"}
+        entries = [("/a/", "2026-01-01"), ("/b/", "2026-02-01"), ("/c/", "2026-01-01")]
+        self.assertEqual(indexnow.changed_urls(entries, live), [common.BASE_URL + "/b/", common.BASE_URL + "/c/"])
+
+    def test_changed_urls_submits_all_without_live_sitemap(self):
+        import indexnow
+        self.assertEqual(len(indexnow.changed_urls([("/a/", "x"), ("/b/", "y")], None)), 2)
+
+    def test_parse_sitemap_round_trips_build_output(self):
+        import indexnow
+        from machine import sitemap_xml
+        entries = [("/a/", "2026-01-01")]
+        self.assertEqual(indexnow.parse_sitemap(sitemap_xml(entries)), {common.BASE_URL + "/a/": "2026-01-01"})
+
+    def test_payload_points_to_hosted_key_file(self):
+        import indexnow
+        p = indexnow.payload([common.BASE_URL + "/"])
+        self.assertEqual(p["host"], common.SITE["domain"])
+        self.assertEqual(p["keyLocation"], "{}/{}.txt".format(common.BASE_URL, indexnow.key()))
+
+    def test_only_production_builds_ping(self):
+        import indexnow
+        self.assertTrue(indexnow.should_ping({"CONTEXT": "production"}))
+        self.assertFalse(indexnow.should_ping({"CONTEXT": "deploy-preview"}))
+        self.assertFalse(indexnow.should_ping({}))
+        self.assertFalse(indexnow.should_ping({"CONTEXT": "production", "INDEXNOW_DISABLE": "1"}))
+
+    def test_ping_changed_does_nothing_outside_production(self):
+        import indexnow
+        from unittest import mock
+        with mock.patch.object(indexnow, "submit") as submit:
+            indexnow.ping_changed([("/", "2026-01-01")], env={})
+        submit.assert_not_called()
 
 
 class CategorySummaryTests(unittest.TestCase):
@@ -146,6 +233,25 @@ class BuiltSiteTests(unittest.TestCase):
     def test_google_verification_meta_on_home_page(self):
         token = common.SITE["googleSiteVerification"]
         self.assertIn('<meta name="google-site-verification" content="{}">'.format(token), read_dist("index.html"))
+
+    def test_faq_schema_urls_point_at_on_page_anchors(self):
+        html = read_dist("brand/delta/index.html")
+        faq = next(n for n in json_ld(html)["@graph"] if n["@type"] == "FAQPage")
+        for q in faq["mainEntity"]:
+            anchor = q["url"].split("#", 1)[1]
+            self.assertIn('id="{}"'.format(anchor), html)
+
+    def test_research_page_dataset_and_csv(self):
+        html = read_dist("research/companies-without-phone-support/index.html")
+        ld = json_ld(html)
+        dataset = next(n for n in ld["@graph"] if n["@type"] == "Dataset")
+        self.assertTrue(dataset["distribution"][0]["contentUrl"].endswith("/research/customer-service-contacts.csv"))
+        self.assertTrue(os.path.exists(os.path.join(common.DIST, "research", "customer-service-contacts.csv")))
+        self.assertIn("/research/companies-without-phone-support/", read_dist("llms.txt"))
+
+    def test_indexnow_key_file_is_served(self):
+        import indexnow
+        self.assertEqual(read_dist(indexnow.key_file_name()), indexnow.key())
 
     def test_only_one_faqpage_per_page(self):
         for rel in ("faq/index.html", "index.html", "brand/amazon/index.html"):

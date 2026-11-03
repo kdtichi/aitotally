@@ -5,6 +5,7 @@ a key-facts table, and an FAQ — each backed by FAQPage/WebPage/Organization
 schema that states the same facts as the visible page."""
 from common import (BASE_URL, CATEGORIES, NAME, brands_in, esc, human_date, initial_mark,
                     official_root, schema_phone, tel_href)
+from components import qa_details
 from layout import layout
 from schema import breadcrumb_node, crumbs_html, faq_node, script, webpage_node
 
@@ -16,6 +17,11 @@ TZ_LABELS = {
 }
 CHANNEL_NOUN = {"chat": "official chat", "form": "official contact form", "none": "official help center"}
 CHANNEL_LABEL = {"chat": "Chat and help center", "form": "Contact form", "none": "Help center"}
+
+
+def possessive(name: str) -> str:
+    """'Delta Air Lines' -> 'Delta Air Lines’', 'Uber' -> 'Uber’s' (name already HTML-escaped)."""
+    return name + ("&rsquo;" if name.endswith("s") else "&rsquo;s")
 
 
 def channel_noun(b: dict) -> str:
@@ -62,6 +68,11 @@ def quick_answer(b: dict) -> str:
     return text.strip()
 
 
+# Fixed anchors for the five brand-page questions, in faq_items() order, so
+# every company page answers at the same links, e.g. /brand/delta/#phone-number.
+BRAND_FAQ_IDS = ["phone-number", "hours", "talk-to-a-person", "what-to-contact-about", "spot-a-fake-number"]
+
+
 def faq_items(b: dict) -> list:
     name = esc(b["name"])
     if b.get("phone"):
@@ -90,7 +101,7 @@ def faq_items(b: dict) -> list:
 
     return [
         ("What is the {} customer service number?".format(name), number_a),
-        ("What are {}&rsquo;s customer service hours?".format(name), hours_sentence(b)),
+        ("What are {} customer service hours?".format(possessive(name)), hours_sentence(b)),
         ("How do I talk to a real person at {}?".format(name), person_a),
         ("What can I contact {} about?".format(name), topics_a),
         ("How can I tell if a {} support number is fake?".format(name), fake_a),
@@ -111,6 +122,7 @@ def phone_field(b: dict) -> str:
   <label>Phone number {name} publishes</label>
   <p class="no-phone-verdict">There isn&rsquo;t one &mdash; {name} handles support through its {channel}.</p>
   <p class="stat-sub">{alt} If you&rsquo;ve seen a &ldquo;{name} support number&rdquo; somewhere else, treat it as unconfirmed &mdash; it could be a scam.</p>
+  <p class="stat-sub" style="margin-top:8px;"><a href="/research/companies-without-phone-support/">{name} is one of many big companies with no phone line &mdash; see the data &rarr;</a></p>
 </div>""".format(name=name, channel=channel_noun(b), alt=alt)
 
 
@@ -183,12 +195,12 @@ def scam_box(b: dict) -> str:
       <p>{note}</p>
       <ul>
         <li>Have your account email and any order, booking or policy number in front of you.</li>
-        <li>The links on this page go to {name}&rsquo;s own website &mdash; you can confirm that in your browser&rsquo;s address bar.</li>
-        <li>Seen a different number for {name} in an ad or search result? Assume it&rsquo;s unverified until you find it on {name}&rsquo;s own site.</li>
+        <li>The links on this page go to {poss} own website &mdash; you can confirm that in your browser&rsquo;s address bar.</li>
+        <li>Seen a different number for {name} in an ad or search result? Assume it&rsquo;s unverified until you find it on {poss} own site.</li>
         <li>{site} never asks for your personal or payment details.</li>
       </ul>
     </div>
-  </div>""".format(heading=heading, note=note, name=name, site=esc(NAME))
+  </div>""".format(heading=heading, note=note, name=name, poss=possessive(name), site=esc(NAME))
 
 
 def title_and_description(b: dict) -> tuple:
@@ -212,9 +224,8 @@ def render_brand(b: dict, copy_date: str) -> str:
     path = "/brand/{}/".format(b["slug"])
     name = esc(b["name"])
     faqs = faq_items(b)
-    issues = "".join('<details class="faq-item"><summary>{}</summary><p>{}</p></details>'.format(
-        esc(i["issue"]), esc(i["tip"])) for i in b["issues"])
-    faq_html = "".join('<details class="faq-item"><summary>{}</summary><p>{}</p></details>'.format(q, a) for q, a in faqs)
+    issues = qa_details([(esc(i["issue"]), esc(i["tip"])) for i in b["issues"]], "issue")
+    faq_html = qa_details(faqs, "faq", BRAND_FAQ_IDS)
     crumbs = [("Home", "/"), (cat["label"], "/category/{}/".format(cat["slug"])), (b["name"], path)]
     updated = max(b["verifiedDate"], copy_date)
     title, description = title_and_description(b)
@@ -241,7 +252,7 @@ def render_brand(b: dict, copy_date: str) -> str:
                   "contactPoint": [contact_point]},
         "mainEntity": {"@id": BASE_URL + path + "#faq"},
     })
-    json_ld = script([page, breadcrumb_node(path, crumbs), faq_node(path, faqs)])
+    json_ld = script([page, breadcrumb_node(path, crumbs), faq_node(path, faqs, "faq", BRAND_FAQ_IDS)])
 
     body = """
 <div class="container">{crumbs}</div>
@@ -274,7 +285,7 @@ def render_brand(b: dict, copy_date: str) -> str:
           <div class="stamp__check" aria-hidden="true">&#10003;</div>
           <div class="stamp__date">{verified}</div>
         </div></div>
-        <p class="stamp-caption">We checked these details on {name}&rsquo;s own website on {verified_h}. <a href="{source_url}" rel="nofollow noopener" target="_blank">See the source &rarr;</a></p>
+        <p class="stamp-caption">We checked these details on {poss} own website on {verified_h}. <a href="{source_url}" rel="nofollow noopener" target="_blank">See the source &rarr;</a></p>
       </div>
     </div>
   </div>
@@ -283,7 +294,7 @@ def render_brand(b: dict, copy_date: str) -> str:
 
   <div class="issues-section">
     <h2 class="label-heading">What people contact {name} about &mdash; and what to try first</h2>
-    <p class="stat-sub" style="margin-bottom:16px;">Practical tips that work for most companies. They aren&rsquo;t {name}&rsquo;s official policy, so check its help pages for the details.</p>
+    <p class="stat-sub" style="margin-bottom:16px;">Practical tips that work for most companies. They aren&rsquo;t {poss} official policy, so check its help pages for the details.</p>
     <div class="faq-list">{issues}</div>
   </div>
 
@@ -297,7 +308,7 @@ def render_brand(b: dict, copy_date: str) -> str:
   {related}
 </article>
 """.format(
-        crumbs=crumbs_html(crumbs), mark=initial_mark(b["name"]), name=name, cat_label=esc(cat["label"]),
+        crumbs=crumbs_html(crumbs), mark=initial_mark(b["name"]), name=name, poss=possessive(name), cat_label=esc(cat["label"]),
         verified=esc(b["verifiedDate"]), verified_h=human_date(b["verifiedDate"]), quick=quick_answer(b),
         phone_field=phone_field(b), channel_label=CHANNEL_LABEL[b.get("chatType") or "form"],
         chat_url=esc(b["chatUrl"]), chat_label=esc(b["chatLabel"]), hours_field=hours_field(b),

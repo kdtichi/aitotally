@@ -78,16 +78,21 @@ def breadcrumb_node(path: str, crumbs: list) -> dict:
     }
 
 
-def faq_node(path: str, items: list) -> dict:
-    """items: (question, answer) pairs; answers may contain HTML entities."""
+def faq_node(path: str, items: list, prefix: str = "faq", ids: list | None = None) -> dict:
+    """items: (question, answer) pairs; answers may contain HTML entities and tags.
+    Each Question's url is the on-page anchor rendered by components.qa_details."""
+    import re
+
     from common import unesc
+    from components import anchor_ids
+    ids = ids or anchor_ids([q for q, _ in items], prefix)
     return {
         "@type": "FAQPage",
         "@id": BASE_URL + path + "#faq",
         "mainEntity": [
-            {"@type": "Question", "name": unesc(q),
-             "acceptedAnswer": {"@type": "Answer", "text": unesc(a)}}
-            for q, a in items
+            {"@type": "Question", "name": unesc(q), "url": BASE_URL + path + "#" + i,
+             "acceptedAnswer": {"@type": "Answer", "text": unesc(re.sub(r"<[^>]+>", "", a))}}
+            for i, (q, a) in zip(ids, items)
         ],
     }
 

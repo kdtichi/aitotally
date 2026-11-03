@@ -16,7 +16,9 @@ from brand_page import render_brand  # noqa: E402
 from common import BRANDS, CATEGORIES, DIST, PUBLIC, SITE, brands_in, page_updated  # noqa: E402
 from legal import (render_accessibility, render_editorial_policy, render_privacy,  # noqa: E402
                    render_terms, render_trademark)
+from indexnow import key, key_file_name, ping_changed  # noqa: E402
 from machine import llms_full_txt, llms_txt, robots_txt, sitemap_xml  # noqa: E402
+from research import CSV_PATH, PATH as RESEARCH_PATH, csv_text, render_research  # noqa: E402
 from pages import (render_404, render_about, render_category, render_contact, render_faq,  # noqa: E402
                    render_home, render_how_it_works)
 
@@ -31,6 +33,7 @@ STATIC_PAGES = {
     "/trademark-notice/": render_trademark,
     "/editorial-policy/": render_editorial_policy,
     "/accessibility/": render_accessibility,
+    RESEARCH_PATH: render_research,
 }
 
 PUBLIC_FILES = ("favicon.svg", "logo.png", "og-image.png")
@@ -90,9 +93,12 @@ def build() -> int:
     write("robots.txt", robots_txt())
     write("llms.txt", llms_txt())
     write("llms-full.txt", llms_full_txt())
+    write(CSV_PATH, csv_text())
+    write(key_file_name(), key())
     return len(entries)
 
 
 if __name__ == "__main__":
     count = build()
     sys.stdout.write("Built {} pages into {}\n".format(count, DIST))
+    ping_changed(sitemap_entries())

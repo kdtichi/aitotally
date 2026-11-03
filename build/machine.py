@@ -3,6 +3,7 @@ robots.txt, sitemap.xml, llms.txt and llms-full.txt."""
 from xml.sax.saxutils import escape as xml_esc
 
 from brand_page import hours_sentence, line_label, quick_answer
+from components import anchor_ids
 from common import BASE_URL, BRANDS, CATEGORIES, NAME, SITE, brands_in, unesc
 
 # Named explicitly so the decision to be available to AI search and
@@ -59,6 +60,11 @@ def llms_txt() -> str:
         out += ["- [{} customer service]({}/brand/{}/): {}, verified {}.".format(
             b["name"], BASE_URL, b["slug"], _phone_bit(b), b["verifiedDate"]) for b in members]
         out.append("")
+    from research import CSV_PATH, PATH, TITLE, headline_answer, stats
+    out += ["## Research", "",
+            "- [{}]({}{}): {}".format(TITLE, BASE_URL, PATH, headline_answer(stats())),
+            "- [Dataset (CSV)]({}{}): every listing's phone, online channel, hours, source and verification date.".format(BASE_URL, CSV_PATH),
+            ""]
     out += ["## Optional", ""]
     for path, label in (("/how-it-works/", "How we verify listings"), ("/editorial-policy/", "Editorial policy"),
                         ("/faq/", "FAQ"), ("/about/", "About"), ("/contact/", "Contact")):
@@ -84,6 +90,7 @@ def llms_full_txt() -> str:
             "Last verified: {}".format(b["verifiedDate"]), "",
             "Quick answer: {}".format(_plain(quick_answer(b))), "",
         ]
-        out += ["- {}: {}".format(i["issue"], i["tip"]) for i in b["issues"]]
+        ids = anchor_ids([i["issue"] for i in b["issues"]], "issue")
+        out += ["- {} ({}/brand/{}/#{}): {}".format(i["issue"], BASE_URL, b["slug"], a, i["tip"]) for i, a in zip(b["issues"], ids)]
         out.append("")
     return "\n".join(out)

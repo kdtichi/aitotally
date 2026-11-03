@@ -3,6 +3,8 @@ import json
 
 from common import (BRANDS, CATEGORIES, NAME, SITE, brand_by_slug, brands_in, esc, initial_mark,
                     page_updated)
+from components import qa_details
+from research_stats import research_stats
 from icons import ABOUT_ICON, CATEGORY_ICONS, HOW_IT_WORKS_ICON
 from layout import layout
 from schema import (breadcrumb_node, crumbs_html, faq_node, item_list_node, script, webpage_node)
@@ -32,7 +34,7 @@ SITE_FAQ = [
 
 
 def _faq_details(items: list) -> str:
-    return "".join('<details class="faq-item"><summary>{}</summary><p>{}</p></details>'.format(q, a) for q, a in items)
+    return qa_details(items, "faq")
 
 
 def render_home() -> str:
@@ -83,6 +85,14 @@ def render_home() -> str:
   <div class="cat-nav-pills" style="margin-top:24px;">{pills}</div>
 </section>
 
+<section class="section container">
+  <a class="research-teaser" href="/research/companies-without-phone-support/">
+    <span class="research-teaser__num">{pct}%</span>
+    <span><span class="research-teaser__eyebrow">{name} research</span>
+    <span class="research-teaser__title">of the companies we track publish no customer service phone number. See which ones &rarr;</span></span>
+  </a>
+</section>
+
 <section class="section container" id="all-companies">
   <div class="section-head"><h2>Every company we cover</h2></div>
   <div class="all-brands">{groups}</div>
@@ -114,7 +124,7 @@ def render_home() -> str:
   </div>
 </section>
 """.format(search_icon=SEARCH_ICON, index_json=json.dumps(index).replace("</", "<\\/"), name=esc(NAME),
-           count=len(BRANDS), cards=cards, pills=pills, groups=groups, faq=_faq_details(home_faq))
+           count=len(BRANDS), pct=research_stats()["pct_without"], cards=cards, pills=pills, groups=groups, faq=_faq_details(home_faq))
 
     desc = SITE["description"]
     json_ld = script([

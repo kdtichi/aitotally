@@ -8,6 +8,7 @@ NAV_ITEMS = [("/category/{}/".format(s), c.get("navLabel", c["label"])) for s, c
 ]
 
 FOOTER_NAV = [("/", "Home")] + [("/category/{}/".format(s), c["label"]) for s, c in CATEGORIES.items()] + [
+    ("/research/companies-without-phone-support/", "Research: who has no phone line?"),
     ("/how-it-works/", "How It Works"),
     ("/faq/", "FAQ"),
     ("/about/", "About"),
@@ -129,6 +130,7 @@ def layout(*, title: str, description: str, path: str, body: str, json_ld: str =
 <script src="/js/hours.js" defer></script>
 <script src="/js/fonts-optout.js" defer></script>
 <script src="/js/nav-toggle.js" defer></script>
+<script src="/js/anchors.js" defer></script>
 </body>
 </html>
 """.format(

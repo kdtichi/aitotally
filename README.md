@@ -16,6 +16,9 @@ build/
   legal.py          Privacy, Terms, Trademark notice, Editorial policy, Accessibility
   schema.py         JSON-LD @graph builders
   machine.py        robots.txt, sitemap.xml, llms.txt, llms-full.txt
+  research.py       Original-data page + CSV dataset (figures computed from brands.json)
+  components.py     Linkable Q&A accordions (stable #anchors shared with FAQ schema)
+  indexnow.py       Pings IndexNow (Bing etc.) with changed URLs on production deploys
   icons.py          Line-art category/page icons
 data/
   site.json         Site settings, featured companies, category copy, page dates
@@ -97,3 +100,6 @@ Bright and modern: a cool neutral background, indigo accent, mint reserved for "
 - **SEO:** unique titles and descriptions, canonical `www` URLs, breadcrumbs, `sitemap.xml` with honest `lastmod`, fast static HTML, mobile-first layout, internal links by category.
 - **AEO (answer engines):** every company page opens with a self-contained *Quick answer*, followed by question-style FAQs and a key-facts table. `FAQPage` and `speakable` markup point assistants at the answer text.
 - **GEO (generative engines):** each page carries one connected JSON-LD `@graph` (Organization → WebSite → WebPage → the company's `ContactPoint`, with `citation`, `lastReviewed` and `reviewedBy`). `robots.txt` explicitly allows AI crawlers, and `llms.txt` / `llms-full.txt` give AI systems a clean, citable summary of every listing.
+- **Original data:** `/research/companies-without-phone-support/` publishes what the listings add up to (e.g. how many companies have no phone line, by category), with `Dataset` schema and a CSV download at `/research/customer-service-contacts.csv`. Every figure is computed from `data/brands.json` at build time, so it updates itself when listings change.
+- **Linkable answers:** every tip and FAQ answer has a stable anchor (`/brand/delta/#phone-number`, `#hours`, `#talk-to-a-person`, `#issue-baggage-issues` …) and the FAQ schema's `Question.url` points at it, so search engines and assistants can link to the exact answer. `public/js/anchors.js` opens the linked answer.
+- **IndexNow:** the key lives in `data/site.json` (`indexNowKey`) and is served at `/<key>.txt`. On Netlify production builds (`CONTEXT=production`), `build.py` compares the new sitemap with the live one and submits only new or changed URLs to `api.indexnow.org`; failures are logged and never break the build. Set `INDEXNOW_DISABLE=1` to switch it off, or run `python3 build/indexnow.py --all` to resubmit everything.
