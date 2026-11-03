@@ -1,0 +1,1868 @@
+{
+  "brands": [
+    {
+      "slug": "temu",
+      "name": "Temu",
+      "category": "retail",
+      "aliases": [
+        "temu customer service",
+        "temu support number",
+        "temu phone number",
+        "temu help"
+      ],
+      "phone": null,
+      "phoneAltNote": "Its official Contact Us page lists 24/7 chat as the main support channel for general (US) support.",
+      "chatUrl": "https://www.temu.com/support-center.html",
+      "chatLabel": "Temu Support Center & live chat",
+      "chatType": "chat",
+      "hours": {
+        "mode": "247"
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://www.temu.com/contact-us.html",
+      "sourceLabel": "Temu Contact Us page",
+      "issues": [
+        {
+          "issue": "Find my order or track a shipment",
+          "tip": "Open the order in your Temu account first — the tracking details sit right there. If nothing has moved for several days, reach out through the chat above with your order number to hand."
+        },
+        {
+          "issue": "Cancel an order",
+          "tip": "Move quickly. While an order hasn't shipped, a cancel button usually shows in your order history. Once that disappears, message support straight away and ask whether it can still be stopped."
+        },
+        {
+          "issue": "Return or refund status",
+          "tip": "Look at the order in your account to see whether a return has started and where the refund is up to. Refunds can take a few business days to show on your card after they're issued, so check the date before chasing."
+        },
+        {
+          "issue": "Managing my account",
+          "tip": "Email, password and saved addresses are normally editable in account settings. Use support for anything you can't change yourself, such as an account you can't sign in to."
+        },
+        {
+          "issue": "Payment and promo codes",
+          "tip": "Re-type the code carefully and check its expiry date and any minimum spend — those cover most failures. If a charge looks wrong, compare it against the order total in your account before contacting support."
+        }
+      ]
+    },
+    {
+      "slug": "amazon",
+      "name": "Amazon",
+      "category": "retail",
+      "aliases": [
+        "amazon customer service",
+        "amazon support number",
+        "amazon phone number"
+      ],
+      "phone": null,
+      "phoneAltNote": "Its official help page instead asks you to sign in and choose your issue, which connects you by phone, chat, or email as appropriate.",
+      "chatUrl": "https://www.amazon.com/gp/help/customer/display.html?nodeId=508510",
+      "chatLabel": "Amazon Customer Service",
+      "chatType": "chat",
+      "hours": {
+        "mode": "247"
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GSD587LKW72HKU2V",
+      "sourceLabel": "Amazon Support Options and Customer Service page",
+      "issues": [
+        {
+          "issue": "Where's my order / shipping and delivery",
+          "tip": "Your Orders page shows the latest tracking and the expected delivery date. If the date has passed, the order page usually gives you a problem-with-order option that leads to the right help."
+        },
+        {
+          "issue": "Returns, refunds, and product support",
+          "tip": "Start the return from Your Orders so it's tied to the right item, and keep the return label or drop-off code. Refund timing depends on how you paid, so give it a few days before following up."
+        },
+        {
+          "issue": "Managing your account",
+          "tip": "Most settings — name, email, phone, addresses — are in your account settings. If you can't sign in at all, use the account recovery link on the sign-in page rather than a number found elsewhere."
+        },
+        {
+          "issue": "Security and privacy",
+          "tip": "If you see orders you didn't place, change your password and turn on two-step verification first, then contact Amazon through the help page linked above. Be wary of texts or calls about \"suspicious purchases\" that you didn't start."
+        },
+        {
+          "issue": "Payment, pricing, and promotions",
+          "tip": "Check the payment method on the order and the terms of any promotion before contacting support. A screenshot of the price or offer you expected makes the conversation much quicker."
+        }
+      ]
+    },
+    {
+      "slug": "doordash",
+      "name": "DoorDash",
+      "category": "retail",
+      "aliases": [
+        "doordash customer service",
+        "doordash support number",
+        "doordash phone number"
+      ],
+      "phone": "855-431-0459",
+      "phoneNote": "Available 24/7, alongside chat in the DoorDash app and on the website.",
+      "chatUrl": "https://help.doordash.com/consumers",
+      "chatLabel": "DoorDash Help Center — Consumers",
+      "chatType": "chat",
+      "hours": {
+        "mode": "247"
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://help.doordash.com/consumers",
+      "sourceLabel": "DoorDash Help Center",
+      "issues": [
+        {
+          "issue": "Order never arrived",
+          "tip": "Check the order in the app first — it may show a delivery photo or a status update. If it truly never came, report it from that order so support can see the driver's route and timing."
+        },
+        {
+          "issue": "Missing or incorrect items",
+          "tip": "Report it from the order in the app as soon as you can, and pick the exact items that were missing or wrong. A quick photo of what you did receive helps."
+        },
+        {
+          "issue": "Cancel an order",
+          "tip": "Cancel from the order screen as early as possible — once the restaurant starts preparing food, your options get narrower. If the button isn't there, contact support right away."
+        },
+        {
+          "issue": "DashPass membership questions",
+          "tip": "Your account's DashPass section shows your plan, renewal date and billing. You can usually manage or cancel it there before needing to talk to anyone."
+        },
+        {
+          "issue": "Getting started / availability",
+          "tip": "Enter your exact address in the app to see which stores deliver to you — availability varies street by street. Support can help if the app won't accept your address."
+        }
+      ]
+    },
+    {
+      "slug": "facebook",
+      "name": "Facebook",
+      "category": "social",
+      "aliases": [
+        "facebook customer service",
+        "facebook support number",
+        "facebook help"
+      ],
+      "phone": null,
+      "phoneAltNote": "Meta's official Help Centre for Facebook offers only a search box and an AI support assistant.",
+      "chatUrl": "https://www.facebook.com/help/",
+      "chatLabel": "Facebook Help Centre",
+      "chatType": "chat",
+      "hours": {
+        "mode": "unspecified",
+        "text": "No support hours are published. The Help Centre and its AI support assistant are self-service and available anytime you visit."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://www.facebook.com/help/",
+      "sourceLabel": "Meta Help Centre for Facebook",
+      "issues": [
+        {
+          "issue": "Account settings",
+          "tip": "Most settings live in Accounts Center inside Facebook's settings menu, including name, contact info and linked accounts. Searching the Help Centre for the exact setting is usually faster than browsing."
+        },
+        {
+          "issue": "Login and password recovery",
+          "tip": "Use the \"Forgot password?\" link on the official Facebook login page and try from a phone or computer you've used before. Ignore anyone offering to recover your account for money — that's a scam."
+        },
+        {
+          "issue": "Privacy and security",
+          "tip": "Run Facebook's privacy and security checkups from settings, turn on two-factor authentication, and review where you're logged in. Remove any sessions you don't recognise."
+        },
+        {
+          "issue": "Marketplace",
+          "tip": "Keep all Marketplace conversations and payments inside Facebook, and don't move to another app or pay with gift cards. Report suspicious buyers or sellers from their listing or message thread."
+        },
+        {
+          "issue": "Groups and Pages",
+          "tip": "Admins manage most Group and Page issues from the admin tools on the Group or Page itself. For reports about a Group or Page, use the three-dot menu on it."
+        }
+      ]
+    },
+    {
+      "slug": "instagram",
+      "name": "Instagram",
+      "category": "social",
+      "aliases": [
+        "instagram customer service",
+        "instagram support number",
+        "instagram help"
+      ],
+      "phone": null,
+      "phoneAltNote": "Its official Help Center offers the same Meta AI support assistant used by Facebook.",
+      "chatUrl": "https://help.instagram.com/",
+      "chatLabel": "Instagram Help Center",
+      "chatType": "chat",
+      "hours": {
+        "mode": "unspecified",
+        "text": "No support hours are published. Help articles and the AI support assistant are self-service and available anytime you visit."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://help.instagram.com/",
+      "sourceLabel": "Instagram Help Center",
+      "issues": [
+        {
+          "issue": "Login, recovery, and security",
+          "tip": "Start from the official Instagram login screen and choose the help or forgot-password option. Instagram may ask you to confirm it's you, for example by email, text or a short selfie video. Never send your login code to anyone."
+        },
+        {
+          "issue": "Managing your account",
+          "tip": "Profile details, notifications and linked accounts are in settings, with many shared settings in Meta's Accounts Center. Search the Help Center for the exact setting if you can't find it."
+        },
+        {
+          "issue": "Staying safe",
+          "tip": "Turn on two-factor authentication, keep your email and phone number current, and be suspicious of messages saying your account will be deleted unless you click a link."
+        },
+        {
+          "issue": "Privacy and reporting",
+          "tip": "You can make your account private, limit who can message or tag you, and report posts, comments or accounts from the three-dot menu on each one."
+        },
+        {
+          "issue": "Report a fake or impersonating account",
+          "tip": "Report the account from its profile using the three-dot menu and choose the impersonation option. If you don't have an account, Instagram's Help Center has a form for reporting impersonation."
+        }
+      ]
+    },
+    {
+      "slug": "x",
+      "name": "X (Twitter)",
+      "category": "social",
+      "aliases": [
+        "x customer service",
+        "twitter support number",
+        "x help",
+        "twitter help"
+      ],
+      "phone": null,
+      "phoneAltNote": "X provides help articles and a topic-based Contact Us form rather than a phone line or live chat.",
+      "chatUrl": "https://help.x.com/en/forms",
+      "chatLabel": "X Help Center — Contact Us form",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "No support hours are published. X uses a topic-based contact form rather than live support."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://help.x.com/en/forms",
+      "sourceLabel": "X Help Center — Contact Us form",
+      "issues": [
+        {
+          "issue": "Locked or suspended account",
+          "tip": "Sign in and follow the on-screen steps first — many locks clear once you confirm your phone number or email. If you think a suspension is a mistake, submit an appeal through X's help forms."
+        },
+        {
+          "issue": "Problems with account access",
+          "tip": "Try the password reset on the official X login page, using the email or phone number tied to the account. If neither works, use the account access form linked from X's help center."
+        },
+        {
+          "issue": "Compromised account help",
+          "tip": "Reset your password straight away, revoke access for any connected apps you don't recognise, and review recent posts. If you can't get in, use X's form for hacked accounts."
+        },
+        {
+          "issue": "Report impersonation or authenticity issues",
+          "tip": "Report the account from its profile, or use X's impersonation report form if you're reporting on behalf of yourself or your organisation."
+        },
+        {
+          "issue": "Report abusive or harmful content",
+          "tip": "Report the post or account directly using the menu on the post. Blocking and muting take effect immediately while a report is reviewed."
+        }
+      ]
+    },
+    {
+      "slug": "gmail",
+      "name": "Gmail",
+      "category": "email",
+      "aliases": [
+        "gmail customer service",
+        "gmail support number",
+        "gmail help",
+        "google account help"
+      ],
+      "phone": null,
+      "phoneAltNote": "Free personal Gmail accounts don't have a live phone or chat channel — support is through self-service help articles and a peer-to-peer Help Community forum, not Google staff.",
+      "chatUrl": "https://support.google.com/mail/",
+      "chatLabel": "Google Mail Help Center",
+      "chatType": "none",
+      "hours": {
+        "mode": "unspecified",
+        "text": "No live support hours are published for personal Gmail accounts. Self-service help articles are available anytime."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://support.google.com/mail/",
+      "sourceLabel": "Google Mail Help Center",
+      "issues": [
+        {
+          "issue": "Gmail messages are missing",
+          "tip": "Check Spam, Trash, All Mail and the search bar first, then look at your filters and forwarding settings — a filter can quietly archive or delete mail. Google's help pages walk through each check."
+        },
+        {
+          "issue": "Unwanted or suspicious emails",
+          "tip": "Use Report spam or Report phishing from the message menu, and don't click links in emails asking you to \"verify\" your account. Google never asks for your password by email."
+        },
+        {
+          "issue": "Account access issues",
+          "tip": "Go to Google's official account recovery page and answer as much as you can, ideally from a device and place you normally use. There's no phone line for free accounts, so be wary of anyone claiming to be \"Gmail support\"."
+        },
+        {
+          "issue": "Sync and import problems",
+          "tip": "Check that IMAP or POP is enabled in Gmail's settings if you're using another mail app, and that the app is using the right server settings. Removing and re-adding the account often fixes sync."
+        },
+        {
+          "issue": "Rejected or bounced messages",
+          "tip": "Read the bounce message — it usually says why, such as a wrong address, a full mailbox or a blocked attachment. Double-check the address before trying again."
+        }
+      ]
+    },
+    {
+      "slug": "outlook",
+      "name": "Outlook",
+      "category": "email",
+      "aliases": [
+        "outlook customer service",
+        "outlook support number",
+        "outlook help",
+        "microsoft account help"
+      ],
+      "phone": null,
+      "phoneAltNote": "Its official Contact Us page instead asks you to sign in and choose a product first — self-service options appear, with live chat available if needed.",
+      "chatUrl": "https://support.microsoft.com/contactus",
+      "chatLabel": "Microsoft Support — Contact Us",
+      "chatType": "chat",
+      "hours": {
+        "mode": "unspecified",
+        "text": "No specific support hours are published on the official Contact Us page."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://support.microsoft.com/contactus",
+      "sourceLabel": "Microsoft Support — Contact Us",
+      "issues": [
+        {
+          "issue": "Get started / add an account",
+          "tip": "Add the account from Outlook's settings using your full email address and let Outlook detect the settings. Microsoft's support site has setup guides for each version of Outlook."
+        },
+        {
+          "issue": "Email issues",
+          "tip": "Check Junk, your rules and the Focused/Other inbox split before assuming mail is lost. If sending fails, check your storage and that you're still signed in."
+        },
+        {
+          "issue": "Calendar and To Do",
+          "tip": "Make sure you're signed in with the same Microsoft account on every device, since calendar and tasks sync to that account. Signing out and back in often clears a stuck sync."
+        },
+        {
+          "issue": "People and profiles",
+          "tip": "Contacts are managed in Outlook's People section. If contacts are missing, check that you're looking at the right account and contact folder."
+        },
+        {
+          "issue": "Share and delegate access",
+          "tip": "Share a calendar or mailbox from Outlook's settings and choose exactly what the other person can see or do. You can change or remove that access at any time from the same place."
+        }
+      ]
+    },
+    {
+      "slug": "yahoo-mail",
+      "name": "Yahoo Mail",
+      "category": "email",
+      "aliases": [
+        "yahoo mail customer service",
+        "yahoo support number",
+        "yahoo help"
+      ],
+      "phone": null,
+      "phoneAltNote": "Yahoo's official support article says help is available via email, chat, or help articles, and notes: “We don't have a contact option for every product or issue.”",
+      "chatUrl": "https://help.yahoo.com/kb/new-yahoo-mail",
+      "chatLabel": "Yahoo Mail Help",
+      "chatType": "chat",
+      "hours": {
+        "mode": "unspecified",
+        "text": "No support hours are published."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://help.yahoo.com/kb/SLN28796.html",
+      "sourceLabel": "Yahoo — Get help from Yahoo customer support",
+      "issues": [
+        {
+          "issue": "Reset or change password",
+          "tip": "Use the sign-in helper on Yahoo's official login page to reset your password with your recovery phone or email. Yahoo's own help article says it doesn't have a contact option for every issue, so self-service is often the quickest path."
+        },
+        {
+          "issue": "Fix sign-in problems",
+          "tip": "Clear your browser cache, try a different browser, and check that your recovery details are current. The Yahoo sign-in helper is the official route back in."
+        },
+        {
+          "issue": "Recover lost or deleted emails",
+          "tip": "Look in Trash, Spam and Archive, and check your filters. Yahoo's help pages explain the options for restoring recently deleted mail."
+        },
+        {
+          "issue": "Expected emails not received",
+          "tip": "Check Spam and your filters, and ask the sender to confirm the exact address they used. A full mailbox can also cause incoming mail to bounce."
+        },
+        {
+          "issue": "Recognize a hacked account",
+          "tip": "Signs include sent messages you didn't write, changed settings or unfamiliar forwarding rules. Change your password, review your recovery info and remove any forwarding you didn't set up."
+        }
+      ]
+    },
+    {
+      "slug": "walmart",
+      "name": "Walmart",
+      "category": "retail",
+      "aliases": [
+        "walmart customer service",
+        "walmart support number",
+        "walmart phone number"
+      ],
+      "phone": "1-800-925-6278",
+      "phoneNote": "ASL (American Sign Language) video support is also available.",
+      "chatUrl": "https://www.walmart.com/help",
+      "chatLabel": "Walmart Help Center",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "No specific support hours are published on Walmart's official contact pages."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://corporate.walmart.com/about/contact",
+      "sourceLabel": "Walmart Corporate — Contact Us",
+      "issues": [
+        {
+          "issue": "Track your order",
+          "tip": "Your Walmart account's Purchase history shows tracking for each order. If it says delivered but you can't find it, check around your door and with neighbours, then contact Walmart."
+        },
+        {
+          "issue": "Edit or cancel an order",
+          "tip": "Open the order in Purchase history — if it hasn't been processed yet, you may be able to change or cancel it there. Act quickly, because the window can be short."
+        },
+        {
+          "issue": "Returns and refunds",
+          "tip": "Start the return from Purchase history to see your options, such as returning in store or by mail. Keep the receipt or order number either way."
+        },
+        {
+          "issue": "Account and payment issues",
+          "tip": "Update cards and addresses in your account settings. If you see a charge you don't recognise, compare it with your order history before contacting Walmart or your bank."
+        },
+        {
+          "issue": "Pickup and delivery problems",
+          "tip": "The app shows the status of pickup and delivery orders and lets you check in when you arrive for pickup. Report missing or wrong items from the order itself."
+        }
+      ]
+    },
+    {
+      "slug": "ebay",
+      "name": "eBay",
+      "category": "retail",
+      "aliases": [
+        "ebay customer service",
+        "ebay support number",
+        "ebay phone number"
+      ],
+      "phone": null,
+      "phoneAltNote": "eBay routes support through an automated assistant and a sign-in-based Contact Us flow rather than a static phone number.",
+      "chatUrl": "https://www.ebay.com/help/home",
+      "chatLabel": "eBay Help & Contact",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "No support hours are published — eBay's help center uses an automated assistant rather than live hours."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://www.ebay.com/help/home",
+      "sourceLabel": "eBay Help Center",
+      "issues": [
+        {
+          "issue": "Buying and order issues",
+          "tip": "Message the seller first from the order details — many problems get fixed fastest that way. If that doesn't solve it, you can open a request with eBay from the same order."
+        },
+        {
+          "issue": "Selling questions",
+          "tip": "eBay's seller help pages cover listings, fees and payouts in detail. For a problem with a specific sale, start from that order in your Seller Hub."
+        },
+        {
+          "issue": "Account access",
+          "tip": "Use the password reset link on eBay's sign-in page. If you think someone else has been in your account, change your password and check your recent activity."
+        },
+        {
+          "issue": "Returns and refunds",
+          "tip": "Request a return from your purchase history so the conversation and tracking are on record. Keep proof of postage when you send the item back."
+        },
+        {
+          "issue": "Shipping and tracking",
+          "tip": "Tracking is on the order details page. If the item is late, message the seller before opening a request — they can often check with the carrier."
+        }
+      ]
+    },
+    {
+      "slug": "target",
+      "name": "Target",
+      "category": "retail",
+      "aliases": [
+        "target customer service",
+        "target support number",
+        "target phone number"
+      ],
+      "phone": "1-800-440-0680",
+      "phoneNote": "For Target.com order issues specifically, Target also lists 1-800-591-3869, plus live chat.",
+      "chatUrl": "https://www.target.com/help/contact-us/target-com-order-experience",
+      "chatLabel": "Target Help — Contact Us",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "No specific support hours are published on Target's official contact pages."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://corporate.target.com/about/contact-help",
+      "sourceLabel": "Target Corporate — Contact & Help",
+      "issues": [
+        {
+          "issue": "Track or manage a Target.com order",
+          "tip": "Sign in and open the order to see tracking, delivery updates and any change options. Target lists a separate number for Target.com orders, shown above."
+        },
+        {
+          "issue": "Returns and cancellations",
+          "tip": "Find the order in your account to start a return or check whether it can still be cancelled. For in-store purchases, bring the receipt or the card you paid with."
+        },
+        {
+          "issue": "Target Circle and Target Circle Card",
+          "tip": "Rewards and offers are in the Target Circle section of your account or app. For questions about the Target Circle Card itself, such as payments or balance, use the card's own support channels."
+        },
+        {
+          "issue": "Target GiftCard",
+          "tip": "Check the balance on Target's website or in the app. Never pay anyone with gift cards because they asked you to over the phone — no real company or agency asks for that."
+        },
+        {
+          "issue": "Report a security or fraud concern",
+          "tip": "If you get a suspicious call, text or email claiming to be from Target, don't respond with personal information. Report it through Target's official contact page."
+        }
+      ]
+    },
+    {
+      "slug": "best-buy",
+      "name": "Best Buy",
+      "category": "retail",
+      "aliases": [
+        "best buy customer service",
+        "best buy support number",
+        "best buy phone number"
+      ],
+      "phone": null,
+      "phoneAltNote": "Best Buy's official contact pages route you through topic buttons (Orders & Purchases, My Account, and so on) rather than displaying one general phone number as page text.",
+      "chatUrl": "https://www.bestbuy.com/contact-us",
+      "chatLabel": "Best Buy Contact Us",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "No specific support hours are published on Best Buy's official contact pages."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://www.bestbuy.com/contact-us",
+      "sourceLabel": "Best Buy Contact Us",
+      "issues": [
+        {
+          "issue": "Orders and purchases",
+          "tip": "Your Best Buy account's order history has tracking and status for each purchase. Best Buy's contact page sends you to the right team by topic."
+        },
+        {
+          "issue": "Returns and exchanges",
+          "tip": "Look up the purchase in your account to see whether it's still within the return window. Bring the receipt or order number if you're returning in store."
+        },
+        {
+          "issue": "Price Match Guarantee",
+          "tip": "Have the competitor's listing ready — a link or screenshot showing the price — and check Best Buy's price match terms before asking."
+        },
+        {
+          "issue": "Product repair and support",
+          "tip": "Have the model number and purchase date ready, plus any protection plan details. Best Buy's support pages can help you set up a repair."
+        },
+        {
+          "issue": "Shipping, delivery, and store pickup",
+          "tip": "Check the order status in your account before heading to the store, and bring a photo ID and your order confirmation to pick up."
+        }
+      ]
+    },
+    {
+      "slug": "shein",
+      "name": "Shein",
+      "category": "retail",
+      "aliases": [
+        "shein customer service",
+        "shein support number",
+        "shein phone number"
+      ],
+      "phone": "1-833-853-8668",
+      "phoneNote": "Phone support: Monday–Friday, 9 a.m.–6 p.m. Pacific time. Live chat runs longer hours — see below.",
+      "chatUrl": "https://us.shein.com/contact-us.html",
+      "chatLabel": "Shein Contact Us",
+      "chatType": "chat",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Live chat: 4:00 AM–8:00 PM Pacific time, every day. Phone: Monday–Friday, 9 a.m.–6 p.m. Pacific time."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://us.shein.com/contact-us.html",
+      "sourceLabel": "Shein Contact Us page",
+      "issues": [
+        {
+          "issue": "Tracking and delivery",
+          "tip": "Open the order in your SHEIN account to see the latest tracking. International parcels can sit at one stage for a while, so give it a few days before contacting support."
+        },
+        {
+          "issue": "Return and refund status",
+          "tip": "Your order page shows where a return is up to. Keep the proof of postage until the refund arrives."
+        },
+        {
+          "issue": "Order processing",
+          "tip": "If an order seems stuck in processing, check the order page for updates first, then contact SHEIN by chat with the order number."
+        },
+        {
+          "issue": "Payment issues",
+          "tip": "Confirm the payment method and that your card allows online or international purchases. If you were charged but the order didn't go through, contact support with the transaction details."
+        },
+        {
+          "issue": "Account issues",
+          "tip": "Account details can be updated in settings. If you can't sign in, use the password reset on SHEIN's login page."
+        }
+      ]
+    },
+    {
+      "slug": "tiktok",
+      "name": "TikTok",
+      "category": "social",
+      "aliases": [
+        "tiktok customer service",
+        "tiktok support number",
+        "tiktok help"
+      ],
+      "phone": null,
+      "phoneAltNote": "TikTok support is handled through in-app reporting and the Help Center rather than a phone line.",
+      "chatUrl": "https://support.tiktok.com/en",
+      "chatLabel": "TikTok Help Center",
+      "chatType": "none",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Not applicable — support is self-service and in-app."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://support.tiktok.com/en",
+      "sourceLabel": "TikTok Help Center",
+      "issues": [
+        {
+          "issue": "Account and privacy settings",
+          "tip": "Settings and privacy, inside your TikTok profile menu, controls who can see your videos, comment or message you. TikTok's Help Center explains each option."
+        },
+        {
+          "issue": "Log in and troubleshooting",
+          "tip": "Update the app, then try signing in with the method you used to create the account. Most app glitches go away after a restart or reinstall."
+        },
+        {
+          "issue": "Safety and Community Guidelines",
+          "tip": "TikTok's Community Guidelines explain what's allowed. If your content was removed and you think it was a mistake, you can usually appeal from the notification in the app."
+        },
+        {
+          "issue": "Account recovery",
+          "tip": "Use the login help options in the app and the email or phone number linked to your account. Ignore anyone offering to recover your account for a fee."
+        },
+        {
+          "issue": "Report inappropriate content",
+          "tip": "Press and hold the video, or use the share arrow, and choose Report. You can report accounts, comments and messages the same way."
+        }
+      ]
+    },
+    {
+      "slug": "linkedin",
+      "name": "LinkedIn",
+      "category": "social",
+      "aliases": [
+        "linkedin customer service",
+        "linkedin support number",
+        "linkedin help"
+      ],
+      "phone": null,
+      "phoneAltNote": "LinkedIn support is handled through a web-based Contact Us form.",
+      "chatUrl": "https://www.linkedin.com/help/linkedin/ask",
+      "chatLabel": "LinkedIn Help — Contact Us",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Not applicable — support is form-based, not live."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://www.linkedin.com/help/linkedin",
+      "sourceLabel": "LinkedIn Help Center",
+      "issues": [
+        {
+          "issue": "Account basics",
+          "tip": "Most account settings, including email, password and sign-in options, are under Settings & Privacy. LinkedIn's Help Center is searchable by topic."
+        },
+        {
+          "issue": "Data and privacy",
+          "tip": "You can control profile visibility, download a copy of your data, and manage how your data is used from the Data privacy section of settings."
+        },
+        {
+          "issue": "Subscription billing",
+          "tip": "Check your Premium subscription and billing history in settings. You can cancel there before the next renewal date."
+        },
+        {
+          "issue": "Your profile",
+          "tip": "Edit your profile from the pencil icons on each section. If something won't save, try another browser or the app."
+        },
+        {
+          "issue": "Job search and applications",
+          "tip": "Your saved jobs and applications are in the Jobs tab. Be cautious with job offers that ask for money or personal financial details up front."
+        }
+      ]
+    },
+    {
+      "slug": "snapchat",
+      "name": "Snapchat",
+      "category": "social",
+      "aliases": [
+        "snapchat customer service",
+        "snapchat support number",
+        "snapchat help"
+      ],
+      "phone": null,
+      "phoneAltNote": "Snapchat support is handled through a Contact Us ticket form.",
+      "chatUrl": "https://help.snapchat.com/hc/en-us/requests/new",
+      "chatLabel": "Snapchat Support — Contact Us",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Not applicable — support is ticket-based."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://help.snapchat.com",
+      "sourceLabel": "Snapchat Help Center",
+      "issues": [
+        {
+          "issue": "Compromised account recovery",
+          "tip": "Try resetting your password from the Snapchat login screen first. If that doesn't work, Snapchat's support site has a form for reporting a hacked account."
+        },
+        {
+          "issue": "Managing your account",
+          "tip": "Username, display name, email and phone are in Settings inside the app. Some changes, such as usernames, may be limited."
+        },
+        {
+          "issue": "Safety and security",
+          "tip": "Turn on two-factor authentication in settings, and only accept friend requests from people you know. You can report and block accounts from their profile."
+        },
+        {
+          "issue": "Privacy",
+          "tip": "Settings let you choose who can contact you, view your Story, and see your location. Ghost Mode hides your location on the Snap Map."
+        },
+        {
+          "issue": "Deactivate or delete your account",
+          "tip": "Use the official accounts portal linked from Snapchat's support site. Snapchat explains how deactivation and deletion work there before anything is permanent."
+        }
+      ]
+    },
+    {
+      "slug": "pinterest",
+      "name": "Pinterest",
+      "category": "social",
+      "aliases": [
+        "pinterest customer service",
+        "pinterest support number",
+        "pinterest help"
+      ],
+      "phone": null,
+      "phoneAltNote": "Pinterest support is handled through a guided, topic-based Contact form.",
+      "chatUrl": "https://help.pinterest.com/en/contact",
+      "chatLabel": "Pinterest Help — Contact Us",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Not applicable — support is form-based."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://help.pinterest.com",
+      "sourceLabel": "Pinterest Help Center",
+      "issues": [
+        {
+          "issue": "Account access and password reset",
+          "tip": "Use the password reset on Pinterest's login page. If the email on your account is no longer yours, Pinterest's contact form has an option for that."
+        },
+        {
+          "issue": "Reactivate or close an account",
+          "tip": "Deactivating, closing and reactivating are handled in your account settings. Signing back in usually reactivates a deactivated account."
+        },
+        {
+          "issue": "Profile and settings",
+          "tip": "Edit your profile, name and settings from your profile page. Search Pinterest's Help Center if a setting has moved."
+        },
+        {
+          "issue": "Report a policy violation",
+          "tip": "Use the report option on the Pin, board or profile. Pinterest's contact form covers anything you can't report directly."
+        },
+        {
+          "issue": "Report inappropriate pins or content",
+          "tip": "Tap the three dots on a Pin and choose Report. Hiding Pins also helps tune what you see."
+        }
+      ]
+    },
+    {
+      "slug": "reddit",
+      "name": "Reddit",
+      "category": "social",
+      "aliases": [
+        "reddit customer service",
+        "reddit support number",
+        "reddit help"
+      ],
+      "phone": null,
+      "phoneAltNote": "Reddit support is handled through a ticket-based request form.",
+      "chatUrl": "https://support.reddithelp.com",
+      "chatLabel": "Reddit Help Center",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Not applicable — support is ticket-based."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://support.reddithelp.com/hc/en-us/p/redditor_help_center",
+      "sourceLabel": "Reddit Help Center",
+      "issues": [
+        {
+          "issue": "Account status",
+          "tip": "If your account was suspended or restricted, check the message Reddit sent you for the reason and the appeal option."
+        },
+        {
+          "issue": "Getting started",
+          "tip": "Reddit's Help Center explains karma, communities and posting rules. Each community also has its own rules in its sidebar or About tab."
+        },
+        {
+          "issue": "Features and experiences",
+          "tip": "Many settings, including notifications, feed and chat, are in user settings. Search the Help Center for the specific feature."
+        },
+        {
+          "issue": "Rules and reporting",
+          "tip": "Report posts or comments using the report button. For issues inside a specific community, you can also message that community's moderators."
+        },
+        {
+          "issue": "Privacy and security",
+          "tip": "Turn on two-factor authentication and review your privacy settings. Never share your password or login codes with anyone claiming to be from Reddit."
+        }
+      ]
+    },
+    {
+      "slug": "icloud-mail",
+      "name": "iCloud Mail",
+      "category": "email",
+      "aliases": [
+        "icloud mail customer service",
+        "icloud support number",
+        "apple id help",
+        "apple account help"
+      ],
+      "phone": "1-800-692-7753",
+      "phoneNote": "This is Apple's general support line (1-800-MY-APPLE) — Apple routes iCloud and Apple Account issues through a personalized flow rather than a dedicated iCloud number.",
+      "chatUrl": "https://support.apple.com/en-us/icloud",
+      "chatLabel": "Apple Support — iCloud",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Not stated specifically for iCloud support."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://www.apple.com/contact/",
+      "sourceLabel": "Apple — Contact Apple",
+      "issues": [
+        {
+          "issue": "Reset your Apple Account password",
+          "tip": "Use Apple's official account recovery from a trusted device or iforgot.apple.com. Account recovery can take some time on purpose, as a security measure."
+        },
+        {
+          "issue": "Manage iCloud+ storage",
+          "tip": "See what's using your storage in iCloud settings on your device. You can delete old backups or large files, or change your plan there."
+        },
+        {
+          "issue": "Back up or restore a device",
+          "tip": "Check that iCloud Backup is on and that your last backup completed. Restoring happens during device setup, so have your Apple Account details ready."
+        },
+        {
+          "issue": "iCloud Drive and Photos sync",
+          "tip": "Make sure you're signed in to the same Apple Account on each device, that sync is turned on, and that you have enough storage. Syncing large libraries can take a while over Wi-Fi."
+        },
+        {
+          "issue": "iCloud Keychain",
+          "tip": "Turn on iCloud Keychain in your device settings on each device you want to sync. Apple's support pages explain how to view and manage saved passwords."
+        }
+      ]
+    },
+    {
+      "slug": "aol-mail",
+      "name": "AOL Mail",
+      "category": "email",
+      "aliases": [
+        "aol mail customer service",
+        "aol support number",
+        "aol help"
+      ],
+      "phone": "1-800-358-4860",
+      "chatUrl": "https://help.aol.com/",
+      "chatLabel": "AOL Help Center",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "No specific support hours are published on AOL's official help page."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://help.aol.com/",
+      "sourceLabel": "AOL Help Center",
+      "issues": [
+        {
+          "issue": "Reset or change password",
+          "tip": "Use the sign-in helper on AOL's official login page and your recovery phone or email. Keeping recovery details current makes this much easier."
+        },
+        {
+          "issue": "AOL Mail account setup",
+          "tip": "AOL's help pages list the settings to use if you're adding AOL Mail to another email app."
+        },
+        {
+          "issue": "POP/IMAP sync issues",
+          "tip": "Check the server settings in your mail app against AOL's published settings, and that your app supports secure sign-in. Removing and re-adding the account often helps."
+        },
+        {
+          "issue": "Sign-in troubleshooting",
+          "tip": "Try a different browser, clear your cache, and check that your caps lock is off. The official sign-in helper walks through the rest."
+        },
+        {
+          "issue": "Spam and privacy management",
+          "tip": "Mark unwanted mail as spam and block senders from the message menu. Be cautious with emails asking you to confirm account details."
+        }
+      ]
+    },
+    {
+      "slug": "proton-mail",
+      "name": "Proton Mail",
+      "category": "email",
+      "aliases": [
+        "proton mail customer service",
+        "protonmail support",
+        "proton mail help"
+      ],
+      "phone": null,
+      "phoneAltNote": "Proton doesn't offer phone support by design — support is via ticket for paid users and self-service articles for everyone.",
+      "chatUrl": "https://proton.me/support/mail",
+      "chatLabel": "Proton Mail Support",
+      "chatType": "none",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Not applicable — no phone or live chat support is offered."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://proton.me/support/mail",
+      "sourceLabel": "Proton Mail Support",
+      "issues": [
+        {
+          "issue": "Getting started",
+          "tip": "Proton's support site has setup guides for web, mobile and desktop. Keeping your recovery email or phone set up is important for an encrypted account."
+        },
+        {
+          "issue": "Using Proton Mail",
+          "tip": "The Proton Mail support site covers folders, labels, filters and encrypted messaging. Paid users can also raise a support ticket."
+        },
+        {
+          "issue": "Contacts",
+          "tip": "Contacts can be imported, exported and edited in Proton Mail's Contacts section. Proton's guides explain how verified contacts work."
+        },
+        {
+          "issue": "Custom email domain",
+          "tip": "Adding a custom domain needs DNS changes at your domain provider. Proton's guides list the exact records to add."
+        },
+        {
+          "issue": "Addresses and identities",
+          "tip": "Additional addresses and aliases are managed in settings, depending on your plan. Proton's support site explains what each plan includes."
+        }
+      ]
+    },
+    {
+      "slug": "netflix",
+      "name": "Netflix",
+      "category": "streaming",
+      "aliases": [
+        "netflix customer service",
+        "netflix support number",
+        "netflix phone number",
+        "netflix help"
+      ],
+      "phone": null,
+      "phoneAltNote": "Netflix's Contact Us flow asks you to describe your issue first, then may offer a callback or chat tied to your account — no general number is printed on the page.",
+      "chatUrl": "https://help.netflix.com/en/contactus",
+      "chatLabel": "Netflix Help — Contact Us",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Not stated — availability depends on the issue you select."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://help.netflix.com/en/contactus",
+      "sourceLabel": "Netflix Help Center — Contact Us",
+      "issues": [
+        {
+          "issue": "Streaming and playback issues",
+          "tip": "Restart the app and the device, check your internet speed, and see whether the problem happens on another device. Netflix's help center has fixes for specific error codes."
+        },
+        {
+          "issue": "Reset your password",
+          "tip": "Use the \"Forgot password?\" option on Netflix's sign-in page. If you think someone else is using your account, change your password and sign out of all devices."
+        },
+        {
+          "issue": "Update email or account details",
+          "tip": "Your account page lets you update email, phone and plan. If you can't sign in to make changes, start from Netflix's Contact Us flow."
+        },
+        {
+          "issue": "Update payment method",
+          "tip": "Change your payment method from the account page. A failed payment can pause your service, so update it before the next billing date."
+        },
+        {
+          "issue": "Netflix Games support",
+          "tip": "Make sure the game and the Netflix app are up to date and that you're signed in to the same account. Netflix's help center covers specific games."
+        }
+      ]
+    },
+    {
+      "slug": "spotify",
+      "name": "Spotify",
+      "category": "streaming",
+      "aliases": [
+        "spotify customer service",
+        "spotify support number",
+        "spotify help"
+      ],
+      "phone": null,
+      "phoneAltNote": "Spotify support is chat and ticket-based through an in-account assistant, plus a large Community forum.",
+      "chatUrl": "https://support.spotify.com/us/",
+      "chatLabel": "Spotify Support",
+      "chatType": "chat",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Not stated."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://support.spotify.com/us/",
+      "sourceLabel": "Spotify Support",
+      "issues": [
+        {
+          "issue": "Payments and billing",
+          "tip": "Your account page shows your plan, payment method and receipts. If you were charged unexpectedly, check whether another account is signed in with your card."
+        },
+        {
+          "issue": "Manage your account",
+          "tip": "Profile, email and password are managed on your account page. If you can't sign in, use Spotify's password reset or login help."
+        },
+        {
+          "issue": "Premium plans",
+          "tip": "Compare plans and switch from your account page. Family and Duo plans have their own rules about who can join."
+        },
+        {
+          "issue": "Troubleshoot playback",
+          "tip": "Update the app, restart your device, and check your connection. Clearing the app's cache or reinstalling fixes many playback problems."
+        },
+        {
+          "issue": "Cancel or change your subscription",
+          "tip": "Cancel or change your plan from your account page — not the app store, unless you subscribed through the app store. You'll keep Premium until the end of the billing period."
+        }
+      ]
+    },
+    {
+      "slug": "hulu",
+      "name": "Hulu",
+      "category": "streaming",
+      "aliases": [
+        "hulu customer service",
+        "hulu support number",
+        "hulu help"
+      ],
+      "phone": null,
+      "phoneAltNote": "Hulu explicitly states its support is chat-based, not phone.",
+      "chatUrl": "https://help.hulu.com/s/",
+      "chatLabel": "Hulu Help — Get in Touch",
+      "chatType": "chat",
+      "hours": {
+        "mode": "247"
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://help.hulu.com/s/",
+      "sourceLabel": "Hulu Help Center",
+      "issues": [
+        {
+          "issue": "Getting started",
+          "tip": "Hulu's help center explains supported devices and setup. Sign in with the same account on each device."
+        },
+        {
+          "issue": "Account and billing",
+          "tip": "Your account page shows your plan, add-ons and billing date. If you subscribed through another company, such as a phone carrier or app store, billing is managed there."
+        },
+        {
+          "issue": "Plans and add-ons",
+          "tip": "Change plans and add-ons from your account page. Changes may take effect at your next billing date."
+        },
+        {
+          "issue": "Fix a playback problem",
+          "tip": "Restart the app and device, update the app, and check your internet speed. Hulu's help center lists fixes for specific error codes."
+        },
+        {
+          "issue": "Using Hulu",
+          "tip": "Profiles, My Stuff and parental controls are in the app and on your account page. The help center has guides for each."
+        }
+      ]
+    },
+    {
+      "slug": "verizon",
+      "name": "Verizon",
+      "category": "telecom",
+      "aliases": [
+        "verizon customer service",
+        "verizon support number",
+        "verizon phone number"
+      ],
+      "phone": "800-922-0204",
+      "phoneNote": "For Fios account, billing, or technical support, Verizon lists a separate line: 800-837-4966.",
+      "chatUrl": "https://www.verizon.com/support/contact-us/",
+      "chatLabel": "Verizon Support — Contact Us",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Verizon lists different hours for mobile billing, mobile technical support, sales, and Fios on its official contact page — check the source link for the exact hours for your issue."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://www.verizon.com/support/contact-us/",
+      "sourceLabel": "Verizon Support — Contact Us",
+      "issues": [
+        {
+          "issue": "Connection or network issues",
+          "tip": "Check Verizon's outage information in the My Verizon app first, then restart your device. If the problem continues, the support line can run a network check."
+        },
+        {
+          "issue": "Billing questions",
+          "tip": "My Verizon shows your bill broken down by line and charge. Comparing it with your last bill often explains a change."
+        },
+        {
+          "issue": "Device or SIM/eSIM issues",
+          "tip": "Restart the device and make sure the software is up to date. Verizon's support pages walk through SIM and eSIM activation and transfers."
+        },
+        {
+          "issue": "Plan changes",
+          "tip": "You can compare and change plans in My Verizon. Check whether a change takes effect now or from the next billing cycle."
+        },
+        {
+          "issue": "Account access",
+          "tip": "Reset your My Verizon password online. Set an account PIN, and never share it with anyone who calls you unexpectedly."
+        }
+      ]
+    },
+    {
+      "slug": "att",
+      "name": "AT&T",
+      "category": "telecom",
+      "aliases": [
+        "at&t customer service",
+        "att support number",
+        "at&t phone number"
+      ],
+      "phone": "800-331-0500",
+      "phoneNote": "New service: 888-333-6651 (same hours). Traveling abroad: +1-314-925-6925, available 24/7.",
+      "chatUrl": "https://www.att.com/support/contact-us/wireless",
+      "chatLabel": "AT&T Support — Contact Us",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Bill & account and New service lines: Monday–Friday 8am–8pm, Saturday–Sunday 9am–7pm, Central time."
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://www.att.com/support/contact-us/wireless",
+      "sourceLabel": "AT&T Support — Contact Us (Wireless)",
+      "issues": [
+        {
+          "issue": "Connection issues",
+          "tip": "Check AT&T's outage tools and restart your device or gateway. If you still have no service, use the contact options on AT&T's site to run a troubleshooter or reach support."
+        },
+        {
+          "issue": "Voicemail",
+          "tip": "Set up and reset voicemail from your phone or your AT&T account. AT&T's support pages explain voicemail PIN resets."
+        },
+        {
+          "issue": "SIM or eSIM issues",
+          "tip": "Restart the phone and check for software updates. AT&T's support site has step-by-step guides for SIM and eSIM activation."
+        },
+        {
+          "issue": "Unlock a device",
+          "tip": "AT&T has an official online device unlock request. Check the eligibility rules before you apply."
+        },
+        {
+          "issue": "Orders and upgrades",
+          "tip": "Track an order or check upgrade eligibility in your AT&T account. Have your order number ready if you need to call."
+        }
+      ]
+    },
+    {
+      "slug": "t-mobile",
+      "name": "T-Mobile",
+      "category": "telecom",
+      "aliases": [
+        "t-mobile customer service",
+        "tmobile support number",
+        "t-mobile phone number"
+      ],
+      "phone": "1-800-937-8997",
+      "phoneNote": "Daily, 4am–9pm Pacific time. From a T-Mobile phone, you can also just dial 611.",
+      "chatUrl": "https://www.t-mobile.com/contact-us",
+      "chatLabel": "T-Mobile Contact Us",
+      "chatType": "chat",
+      "hours": {
+        "mode": "detailed",
+        "tz": "America/Los_Angeles",
+        "start": "04:00",
+        "end": "21:00",
+        "days": "daily"
+      },
+      "verifiedDate": "2026-09-08",
+      "sourceUrl": "https://www.t-mobile.com/contact-us",
+      "sourceLabel": "T-Mobile Contact Us",
+      "issues": [
+        {
+          "issue": "Billing questions",
+          "tip": "The T-Mobile app or website shows your bill line by line. From a T-Mobile phone, you can also dial 611 to reach support."
+        },
+        {
+          "issue": "Device and SIM/eSIM issues",
+          "tip": "Restart the phone and check for updates. T-Mobile's support pages cover SIM and eSIM activation and transfers."
+        },
+        {
+          "issue": "Plan changes",
+          "tip": "Compare and change plans in your T-Mobile account. Check whether the change applies now or at your next bill."
+        },
+        {
+          "issue": "Account access",
+          "tip": "Reset your T-Mobile ID password online. Set up account security like a PIN, and never share it with unexpected callers."
+        },
+        {
+          "issue": "International service",
+          "tip": "Check what your plan includes for travel before you leave, and turn on roaming in your phone settings when you arrive."
+        }
+      ]
+    },
+    {
+      "slug": "ups",
+      "name": "UPS",
+      "category": "shipping",
+      "aliases": [
+        "ups customer service",
+        "ups support number",
+        "ups phone number",
+        "ups tracking help"
+      ],
+      "phone": "1-877-289-6418",
+      "phoneNote": "For general customer service, UPS lists 1-800-742-5877.",
+      "phoneLineLabel": "technical support line (website and account issues)",
+      "chatUrl": "https://www.ups.com/us/en/support.page",
+      "chatLabel": "UPS Support — Contact Us",
+      "chatType": "chat",
+      "hours": {
+        "mode": "unspecified",
+        "text": "These hours are for UPS's general customer service line, 1-800-742-5877: Monday–Friday 7am–11pm, Saturday 8am–8pm, Eastern time. Other department lines have their own hours — see the source page."
+      },
+      "verifiedDate": "2026-10-01",
+      "sourceUrl": "https://www.ups.com/us/en/support.page",
+      "sourceLabel": "UPS Support page",
+      "issues": [
+        {
+          "issue": "Tracking a package",
+          "tip": "Enter the tracking number on the official UPS website or app. If tracking hasn't updated in several days, contact the shipper first, then UPS."
+        },
+        {
+          "issue": "Missing or delayed delivery",
+          "tip": "Check the tracking details, look around your property, and ask neighbours. If you bought the item online, the seller can usually open an investigation with UPS for you."
+        },
+        {
+          "issue": "Filing a claim",
+          "tip": "Usually the shipper files the claim, so if you received the package, contact the seller first. Keep the box, packing and photos of any damage."
+        },
+        {
+          "issue": "Shipping and label creation",
+          "tip": "Create labels on the UPS website or at a UPS location. Double-check the address and package size before paying."
+        },
+        {
+          "issue": "Billing and invoices",
+          "tip": "Business account billing is managed online through UPS's billing center. Have your account and invoice numbers ready."
+        },
+        {
+          "issue": "International shipping support",
+          "tip": "Check what paperwork your shipment needs and whether customs duties apply. UPS's website has tools and guides for international shipping."
+        }
+      ]
+    },
+    {
+      "slug": "fedex",
+      "name": "FedEx",
+      "category": "shipping",
+      "aliases": [
+        "fedex customer service",
+        "fedex support number",
+        "fedex phone number",
+        "fedex tracking help"
+      ],
+      "phone": "1-800-463-3339",
+      "phoneNote": "Described as available anytime on FedEx's official page, though no explicit hours are stated. Billing inquiries: 1-800-622-1147.",
+      "chatUrl": "https://www.fedex.com/en-us/customer-support.html",
+      "chatLabel": "FedEx Customer Support",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "FedEx's official page describes the main line as available anytime, but does not state explicit hours. Department lines (billing, freight) have their own numbers — see the source page."
+      },
+      "verifiedDate": "2026-10-01",
+      "sourceUrl": "https://www.fedex.com/en-us/customer-support/call-us.html",
+      "sourceLabel": "FedEx Call Us page",
+      "issues": [
+        {
+          "issue": "Tracking and delivery status",
+          "tip": "Use the tracking number on FedEx's official site or app. You can sign up for delivery alerts from the same page."
+        },
+        {
+          "issue": "Shipping and label creation",
+          "tip": "Create labels online or at a FedEx location. Measure and weigh the package accurately to avoid surprise charges."
+        },
+        {
+          "issue": "Scheduling a pickup",
+          "tip": "Book a pickup on FedEx's website and have the package and label ready before the driver arrives."
+        },
+        {
+          "issue": "Returns management",
+          "tip": "If you're returning an item to a seller, use the label or QR code they gave you. The seller decides how the return works."
+        },
+        {
+          "issue": "Billing and invoice questions",
+          "tip": "FedEx lists a separate billing line, shown above. Have your account and invoice numbers ready."
+        },
+        {
+          "issue": "Claims for damage or loss",
+          "tip": "Keep all packaging and take photos of any damage. The shipper is usually the one who files the claim, so contact the seller first if you were the recipient."
+        }
+      ]
+    },
+    {
+      "slug": "usps",
+      "name": "USPS",
+      "category": "shipping",
+      "aliases": [
+        "usps customer service",
+        "usps support number",
+        "usps phone number",
+        "usps tracking help"
+      ],
+      "phone": "1-800-275-8777",
+      "phoneNote": "Monday–Friday 8am–8:30pm, Saturday 8am–6pm, Eastern time. Tracking-specific line: 1-800-222-1811 (same hours).",
+      "chatUrl": "https://www.usps.com/help/contact-us.htm",
+      "chatLabel": "USPS Contact Us",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Monday–Friday 8am–8:30pm, Saturday 8am–6pm, Eastern time. Closed Sundays and postal holidays."
+      },
+      "verifiedDate": "2026-10-01",
+      "sourceUrl": "https://www.usps.com/help/contact-us.htm",
+      "sourceLabel": "USPS Contact Us page",
+      "issues": [
+        {
+          "issue": "Missing, late, or damaged mail",
+          "tip": "Check tracking first. USPS offers an online missing mail search for packages that haven't arrived."
+        },
+        {
+          "issue": "Filing a claim",
+          "tip": "Insured and Priority Mail packages can be claimed online. Keep your receipt, the packaging and photos of any damage."
+        },
+        {
+          "issue": "Change of address and mail forwarding",
+          "tip": "Use the official USPS change-of-address page and only pay the small identity verification fee there. Look-alike sites charge much more for the same thing."
+        },
+        {
+          "issue": "Package tracking",
+          "tip": "Enter the tracking number on the USPS website, or sign up for text and email updates. USPS lists a dedicated tracking line, shown above."
+        },
+        {
+          "issue": "PO Box services",
+          "tip": "Rent, renew or manage a PO Box online or at your local post office. Bring two forms of ID when you pick up your keys."
+        },
+        {
+          "issue": "Click-N-Ship account issues",
+          "tip": "Sign in to your USPS.com account to reprint labels or check refunds for unused labels. Reset your password from the USPS sign-in page if needed."
+        }
+      ]
+    },
+    {
+      "slug": "delta",
+      "name": "Delta Air Lines",
+      "category": "airlines",
+      "aliases": [
+        "delta customer service",
+        "delta airlines support number",
+        "delta phone number"
+      ],
+      "phone": "800-221-1212",
+      "phoneNote": "Available 24/7. SkyMiles members: 800-323-2323. Baggage: 800-325-8224 (6am–midnight ET, daily). Refund status (weekdays only): 800-847-0578.",
+      "chatUrl": "https://www.delta.com/us/en/need-help/overview",
+      "chatLabel": "Delta Need Help — Message Us",
+      "chatType": "chat",
+      "hours": {
+        "mode": "247"
+      },
+      "verifiedDate": "2026-10-01",
+      "sourceUrl": "https://www.delta.com/us/en/need-help/overview",
+      "sourceLabel": "Delta Need Help page",
+      "issues": [
+        {
+          "issue": "Flight changes or cancellations",
+          "tip": "Check the Fly Delta app first — it often offers rebooking options without waiting on the phone. If your flight is cancelled, look at the app and the main line at the same time."
+        },
+        {
+          "issue": "Seats and upgrades",
+          "tip": "Seat choices and upgrade options are shown on your trip in the app or on delta.com. Upgrade lists are visible in the app close to departure."
+        },
+        {
+          "issue": "Baggage issues",
+          "tip": "Report a delayed or damaged bag at the airport before you leave if you can, and keep your bag tag receipt. Delta lists a separate baggage line, shown above."
+        },
+        {
+          "issue": "Refund requests and status",
+          "tip": "Submit and track refund requests on delta.com. Delta lists a dedicated refund line for weekdays, shown above."
+        },
+        {
+          "issue": "SkyMiles program questions",
+          "tip": "Your SkyMiles account shows miles, activity and status. Delta lists a separate SkyMiles line, shown above."
+        },
+        {
+          "issue": "Accessible travel services",
+          "tip": "Add accessibility needs to your booking as early as you can, and tell the agent at check-in. Delta's accessible travel pages explain what's available."
+        }
+      ]
+    },
+    {
+      "slug": "american-airlines",
+      "name": "American Airlines",
+      "category": "airlines",
+      "aliases": [
+        "american airlines customer service",
+        "american airlines support number",
+        "aa phone number"
+      ],
+      "phone": "800-433-7300",
+      "phoneNote": "Available 24 hours. Spanish-language line: 800-633-3711 (also 24 hours).",
+      "chatUrl": "https://www.aa.com/web/i18n/customer-service/contact-american/american-customer-service.html",
+      "chatLabel": "American Airlines Customer Service",
+      "chatType": "chat",
+      "hours": {
+        "mode": "247"
+      },
+      "verifiedDate": "2026-10-01",
+      "sourceUrl": "https://www.aa.com/web/i18n/customer-service/contact-american/american-customer-service.html",
+      "sourceLabel": "American Airlines Customer Service page",
+      "issues": [
+        {
+          "issue": "Reservations and ticket changes",
+          "tip": "Manage your trip in the American Airlines app or on aa.com, where many changes can be made without calling."
+        },
+        {
+          "issue": "AAdvantage account services",
+          "tip": "Your AAdvantage account shows miles, status and activity. Missing miles can usually be requested online."
+        },
+        {
+          "issue": "Baggage issues",
+          "tip": "Report a delayed or damaged bag at the airport before leaving if possible, and keep your bag tag receipt. You can track a delayed bag online."
+        },
+        {
+          "issue": "Disability assistance",
+          "tip": "Add assistance requests to your booking in advance and confirm at check-in. American's website lists the services available."
+        },
+        {
+          "issue": "Group and meeting travel",
+          "tip": "Groups have their own booking process. Start from American's group travel page."
+        },
+        {
+          "issue": "Onboard incident reports",
+          "tip": "Report anything that happened on board as soon as you can, with your confirmation code and flight number. Write down names and times while they're fresh."
+        }
+      ]
+    },
+    {
+      "slug": "united-airlines",
+      "name": "United Airlines",
+      "category": "airlines",
+      "aliases": [
+        "united airlines customer service",
+        "united airlines support number",
+        "united phone number"
+      ],
+      "phone": "1-800-864-8331",
+      "phoneNote": "Specific hours are not published for this line on United's official site. Flight status: 1-877-624-3653. Baggage: 1-800-335-2247.",
+      "chatUrl": "https://www.united.com/en/us/fly/contact.html",
+      "chatLabel": "United Airlines Contact Us",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Specific support hours are not published on United's official contact page for the main reservations line."
+      },
+      "verifiedDate": "2026-10-01",
+      "sourceUrl": "https://www.united.com/en/us/fly/contact.html",
+      "sourceLabel": "United Airlines Contact Us page",
+      "issues": [
+        {
+          "issue": "Travel reservation help",
+          "tip": "Most changes can be made in the United app or on united.com. Have your confirmation number ready if you call."
+        },
+        {
+          "issue": "Baggage policies and issues",
+          "tip": "Check United's baggage rules before you fly. For a delayed or damaged bag, report it at the airport and keep your bag tag receipt. United lists a baggage line, shown above."
+        },
+        {
+          "issue": "Schedule changes",
+          "tip": "If United changes your schedule, the app or website usually shows your options. Check them before accepting a new itinerary."
+        },
+        {
+          "issue": "MileagePlus program",
+          "tip": "Your MileagePlus account shows miles and status. Missing miles can usually be requested online."
+        },
+        {
+          "issue": "Unaccompanied minor travel",
+          "tip": "Book unaccompanied minor service in advance and check United's age rules and fees. Have the adults' contact details ready for both airports."
+        },
+        {
+          "issue": "Website technical help",
+          "tip": "Try a different browser or the United app, and clear your cache. If you were charged but have no confirmation, contact United before booking again."
+        }
+      ]
+    },
+    {
+      "slug": "southwest",
+      "name": "Southwest Airlines",
+      "category": "airlines",
+      "aliases": [
+        "southwest airlines customer service",
+        "southwest support number",
+        "southwest phone number"
+      ],
+      "phone": "1-800-435-9792",
+      "phoneNote": "Specific hours are not published on Southwest's official site for this line. Rapid Rewards program: 1-800-445-5764.",
+      "chatUrl": "https://support.southwest.com/helpcenter/s/",
+      "chatLabel": "Southwest Help Center",
+      "chatType": "chat",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Specific support hours are not published on Southwest's official help center for this line."
+      },
+      "verifiedDate": "2026-10-01",
+      "sourceUrl": "https://support.southwest.com/helpcenter/contact-us",
+      "sourceLabel": "Southwest Help Center — Contact Us",
+      "issues": [
+        {
+          "issue": "Booking and planning a trip",
+          "tip": "Book and manage trips on the Southwest app or website. Fare types differ in what you can change, so check yours before booking."
+        },
+        {
+          "issue": "Check-in and flight changes",
+          "tip": "Check in on the app or website within the check-in window. Many changes can be made online, depending on your fare."
+        },
+        {
+          "issue": "Delays and cancellations",
+          "tip": "Check your flight status in the app and look for rebooking options there before calling."
+        },
+        {
+          "issue": "Baggage issues",
+          "tip": "Report a delayed or damaged bag at the airport before leaving if you can, and keep your bag tag receipt."
+        },
+        {
+          "issue": "Travel funds and refunds",
+          "tip": "Your Southwest account shows any travel funds and when they expire. Refund eligibility depends on your fare type."
+        },
+        {
+          "issue": "Rapid Rewards account",
+          "tip": "Points and activity are in your Rapid Rewards account. Southwest lists a separate Rapid Rewards line, shown above."
+        }
+      ]
+    },
+    {
+      "slug": "uber",
+      "name": "Uber",
+      "category": "rideshare",
+      "aliases": [
+        "uber customer service",
+        "uber support number",
+        "uber phone number"
+      ],
+      "phone": null,
+      "phoneAltNote": "Uber's own help center states it directly: “While we don’t offer a customer service number for Uber riders, you can log in to your account to get personalized support.”",
+      "chatUrl": "https://help.uber.com/riders",
+      "chatLabel": "Uber Help — Riders",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "No public phone or chat hours are published — support is account-login-gated and personalized once you sign in."
+      },
+      "verifiedDate": "2026-10-01",
+      "sourceUrl": "https://help.uber.com/riders",
+      "sourceLabel": "Uber Help Center — Riders",
+      "scamWarningNote": "Uber does not publish a general customer service phone number for riders. A “Critical Safety Response Line” number circulates on third-party sites but could not be confirmed on an Uber-owned page — treat it as unverified.",
+      "issues": [
+        {
+          "issue": "Trip issues",
+          "tip": "Open the trip in your Uber app's activity and choose the issue you had. Starting from the trip lets support see the route and charges."
+        },
+        {
+          "issue": "Lost item during a trip",
+          "tip": "Use the lost item option on that trip in the app to contact your driver. Do this soon after the trip."
+        },
+        {
+          "issue": "Payment issue or fare review",
+          "tip": "Select the trip and choose the fare or payment issue that fits. Explain what you expected to pay and why."
+        },
+        {
+          "issue": "Cash payment issues",
+          "tip": "Where cash is accepted, report problems from the trip in the app as soon as possible, including the amount you paid."
+        },
+        {
+          "issue": "Reporting an issue with the app",
+          "tip": "Update the app and restart your phone first. Report persistent problems through Help in the app."
+        },
+        {
+          "issue": "Disputing an unpaid prior trip",
+          "tip": "Check the trip and payment details in the app, then follow the help option for unpaid balances. Have proof of payment if you have it."
+        }
+      ]
+    },
+    {
+      "slug": "lyft",
+      "name": "Lyft",
+      "category": "rideshare",
+      "aliases": [
+        "lyft customer service",
+        "lyft support number",
+        "lyft phone number"
+      ],
+      "phone": null,
+      "phoneAltNote": "Lyft's safety page states its safety team is available by phone or chat 24/7, but that number is surfaced only inside the app during an active trip — it is not published as a general public support line.",
+      "chatUrl": "https://help.lyft.com/hc/en-us",
+      "chatLabel": "Lyft Help Center",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "No general public phone or chat hours are published. In-app safety support is available 24/7 during an active trip."
+      },
+      "verifiedDate": "2026-10-01",
+      "sourceUrl": "https://help.lyft.com/hc/en-us",
+      "sourceLabel": "Lyft Help Center",
+      "issues": [
+        {
+          "issue": "Profile and account issues",
+          "tip": "Update your profile, phone number and payment details in the Lyft app. Use the app's help section for anything you can't change yourself."
+        },
+        {
+          "issue": "Using the app",
+          "tip": "Update the app, check location permissions, and restart your phone if something isn't working. Lyft's help center covers specific features."
+        },
+        {
+          "issue": "Trip and fare questions",
+          "tip": "Open the ride in your history to see the receipt and report a problem. Starting from the ride gives support the details."
+        },
+        {
+          "issue": "Safety concerns",
+          "tip": "In an emergency, call 911. Lyft's app includes safety features you can use during a ride, and you can report concerns after a ride from your history."
+        },
+        {
+          "issue": "Accessibility",
+          "tip": "Lyft's help center explains accessibility options and where they're available. Mention any needs when you request a ride if the app gives you the option."
+        },
+        {
+          "issue": "Lost item during a ride",
+          "tip": "Use the lost item option on that ride in the app to contact the driver. Do it as soon as you notice."
+        }
+      ]
+    },
+    {
+      "slug": "instacart",
+      "name": "Instacart",
+      "category": "rideshare",
+      "aliases": [
+        "instacart customer service",
+        "instacart support number",
+        "instacart phone number"
+      ],
+      "phone": "1-888-246-7822",
+      "phoneNote": "General line hours are not published. Senior and specialized support (age 60+): 1-844-981-3433, daily 8am–11pm Eastern time.",
+      "chatUrl": "https://www.instacart.com/help",
+      "chatLabel": "Instacart Help Center",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "General support hours are not published. The senior/specialized support line is staffed daily, 8am–11pm Eastern time."
+      },
+      "verifiedDate": "2026-10-01",
+      "sourceUrl": "https://www.instacart.com/help/section/809794019/1992925010",
+      "sourceLabel": "Instacart Help Center — Get Help",
+      "issues": [
+        {
+          "issue": "Order tracking and shopper communication",
+          "tip": "The app shows the order status and lets you chat with your shopper while they shop. Keep your phone handy for replacement questions."
+        },
+        {
+          "issue": "Delivery issue reporting",
+          "tip": "Report missing, damaged or wrong items from the order in the app soon after delivery. Photos help."
+        },
+        {
+          "issue": "Payments, charges, and promos",
+          "tip": "Your receipt in the app explains the final total, including any changes for weighted items or replacements. Check a promo's terms before contacting support."
+        },
+        {
+          "issue": "Instacart+ membership management",
+          "tip": "Manage or cancel your membership in account settings. Check your renewal date there too."
+        },
+        {
+          "issue": "Account settings and login",
+          "tip": "Update your email, phone and addresses in account settings. Use the app's password reset if you can't sign in."
+        },
+        {
+          "issue": "Pricing and fees",
+          "tip": "Instacart's help center explains its fees, and your order receipt shows what you paid. Prices can differ from in-store prices."
+        }
+      ]
+    },
+    {
+      "slug": "geico",
+      "name": "GEICO",
+      "category": "insurance",
+      "aliases": [
+        "geico customer service",
+        "geico support number",
+        "geico phone number",
+        "geico claims number"
+      ],
+      "phone": "(800) 207-7847",
+      "phoneNote": "For filing or checking a claim specifically, GEICO lists a dedicated 24/7 claims line: (800) 841-3000.",
+      "chatUrl": "https://www.geico.com/contact-us/",
+      "chatLabel": "GEICO Contact Us",
+      "chatType": "chat",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Specific hours are not published for the general Sales & Service line. The claims line, (800) 841-3000, is explicitly stated as available 24/7."
+      },
+      "verifiedDate": "2026-10-01",
+      "sourceUrl": "https://www.geico.com/contact-us/phone/",
+      "sourceLabel": "GEICO Contact Us — Phone",
+      "issues": [
+        {
+          "issue": "Filing or checking a claim",
+          "tip": "Make sure everyone is safe and call 911 if needed. Then file or check a claim in the GEICO app or by calling the claims line shown above, with photos and the other driver's details."
+        },
+        {
+          "issue": "Getting a quote",
+          "tip": "Have your vehicle details and driving history ready. You can get a quote online or by phone."
+        },
+        {
+          "issue": "Policy management",
+          "tip": "Many policy changes, such as adding a car or driver, can be made in the GEICO app or online account."
+        },
+        {
+          "issue": "Payment assistance",
+          "tip": "Check your balance and due date in your account. If you're going to miss a payment, contact GEICO before the due date."
+        },
+        {
+          "issue": "ID card retrieval",
+          "tip": "Your digital ID card is in the GEICO app and online account. You can download or print it from there."
+        },
+        {
+          "issue": "Emergency roadside service",
+          "tip": "If you have roadside coverage, request help through the GEICO app or the phone line. Move somewhere safe first."
+        }
+      ]
+    },
+    {
+      "slug": "state-farm",
+      "name": "State Farm",
+      "category": "insurance",
+      "aliases": [
+        "state farm customer service",
+        "state farm support number",
+        "state farm claims number"
+      ],
+      "phone": "800-782-8332",
+      "phoneNote": "For filing a claim specifically, State Farm lists a dedicated line: 800-732-5246 (800-SF-CLAIM). 24/7 payment line: 800-440-0998.",
+      "chatUrl": "https://www.statefarm.com/contact-us",
+      "chatLabel": "State Farm Contact Us",
+      "chatType": "form",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Specific hours are not published for the general comments/claims lines. The payment line and emergency road service are both explicitly stated as available 24/7."
+      },
+      "verifiedDate": "2026-10-01",
+      "sourceUrl": "https://www.statefarm.com/contact-us",
+      "sourceLabel": "State Farm Contact Us page",
+      "issues": [
+        {
+          "issue": "Filing or checking a claim",
+          "tip": "Make sure everyone is safe first. Then file a claim online, in the app, or on State Farm's dedicated claims line shown above."
+        },
+        {
+          "issue": "Billing and payments",
+          "tip": "Pay or check your bill online or in the app. State Farm lists a 24/7 payment line, shown above."
+        },
+        {
+          "issue": "Auto insurance questions",
+          "tip": "Your agent or the State Farm app can answer most policy questions. Have your policy number ready."
+        },
+        {
+          "issue": "Home and property insurance questions",
+          "tip": "Review your policy documents online, and contact your agent with specific coverage questions."
+        },
+        {
+          "issue": "Life insurance questions",
+          "tip": "Your agent is usually the best first contact for life insurance. Have the policy number and the policyholder's details ready."
+        },
+        {
+          "issue": "Emergency road service",
+          "tip": "If you have road service coverage, request help through the app or phone. Get to a safe place first."
+        }
+      ]
+    },
+    {
+      "slug": "allstate",
+      "name": "Allstate",
+      "category": "insurance",
+      "aliases": [
+        "allstate customer service",
+        "allstate support number",
+        "allstate claims number"
+      ],
+      "phone": "1 (800) 726-6033",
+      "phoneNote": "Available 24/7 — handles quotes, coverage questions, policy management, billing, and filing or tracking a claim.",
+      "chatUrl": "https://www.allstate.com/help-support/contact",
+      "chatLabel": "Allstate Help & Support — Contact Us",
+      "chatType": "chat",
+      "hours": {
+        "mode": "247"
+      },
+      "verifiedDate": "2026-10-01",
+      "sourceUrl": "https://www.allstate.com/help-support/contact",
+      "sourceLabel": "Allstate Help & Support — Contact Us",
+      "scamWarningNote": "A separate claims-only number and a roadside-assistance number circulate on third-party sites, but neither could be confirmed on an Allstate-owned page — treat them as unverified until confirmed.",
+      "issues": [
+        {
+          "issue": "Filing or tracking a claim",
+          "tip": "Make sure everyone is safe and call 911 if needed. Then start or track a claim in the Allstate app or through the main line shown above."
+        },
+        {
+          "issue": "Billing and payments",
+          "tip": "Check your balance and pay in the Allstate app or online. Contact Allstate before the due date if you can't make a payment."
+        },
+        {
+          "issue": "Policy information and insurance cards",
+          "tip": "Your policy documents and ID cards are in the app and your online account."
+        },
+        {
+          "issue": "Account settings and login issues",
+          "tip": "Reset your password from Allstate's login page. Keep your email and phone details current."
+        },
+        {
+          "issue": "Mobile app assistance",
+          "tip": "Update the app and restart your phone. Signing out and back in fixes many app issues."
+        },
+        {
+          "issue": "Drivewise and Milewise programs",
+          "tip": "The Allstate app explains how each program tracks your driving. Check the program's terms for how it can affect your premium."
+        }
+      ]
+    }
+  ]
+}

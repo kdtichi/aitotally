@@ -1,0 +1,86 @@
+{
+  "site": {
+    "name": "AI Totally",
+    "logoText": "aitotally",
+    "domain": "www.aitotally.com",
+    "tagline": "The real way to reach customer service.",
+    "description": "AI Totally is an independent customer service finder. Look up a company and get the phone number, chat link and support hours it actually publishes, each checked against its own website.",
+    "contactEmail": "help@aitotally.com",
+    "address": {
+      "streetAddress": "P-139, Batla House, Okhla",
+      "addressLocality": "New Delhi",
+      "postalCode": "110025",
+      "addressCountry": "IN",
+      "countryName": "India"
+    },
+    "launchDate": "2026-11-03",
+    "featuredBrands": [
+      "amazon", "walmart", "doordash", "instagram", "facebook", "tiktok",
+      "gmail", "outlook", "netflix", "t-mobile", "delta", "ups"
+    ]
+  },
+  "pagesUpdated": {
+    "/": "2026-11-03",
+    "/about/": "2026-11-03",
+    "/contact/": "2026-11-03",
+    "/how-it-works/": "2026-11-03",
+    "/faq/": "2026-11-03",
+    "/privacy/": "2026-11-03",
+    "/terms/": "2026-11-03",
+    "/trademark-notice/": "2026-11-03",
+    "/editorial-policy/": "2026-11-03",
+    "/accessibility/": "2026-11-03"
+  },
+  "categories": {
+    "retail": {
+      "label": "Shopping",
+      "description": "Online stores and marketplaces — who to contact when an order is late, wrong, or needs to go back.",
+      "intro": "Almost every shopping problem is one of four things: an order that hasn't shown up, an order that showed up wrong, a return you want to start, or a charge you don't recognise. The good news is that most of these can be sorted from your order history before you ever talk to anyone — that's where cancel, return and tracking buttons live, and they move faster than an agent can. When you do need a person, the order number is the single most useful thing to have in front of you. Big retailers increasingly hide their phone line behind a sign-in so they can see your order before they connect you; that's normal, not a sign something is off. What is a red flag is any \"support\" number that only appears in an ad or a random website, so stick to the channel listed for each store below."
+    },
+    "social": {
+      "label": "Social Media",
+      "navLabel": "Social",
+      "description": "Social networks don't really do phone support — here's the actual way in for each one.",
+      "intro": "If you're looking for a phone number for a social network, the honest answer is usually that there isn't one. Platforms like Facebook, Instagram, TikTok and X run support through help centers, in-app reporting tools and web forms, because they serve billions of free accounts. That gap is exactly what scammers exploit: fake \"Instagram support\" numbers and \"account recovery\" services are some of the most common traps out there. No real platform will ask you for your password or a login code over the phone. If you're locked out, start with the official recovery flow — it's built to check your identity using things only the real owner should have, like your email, phone number or a selfie video. Each listing below links to that company's own help page, so you can skip the guesswork."
+    },
+    "email": {
+      "label": "Email Providers",
+      "navLabel": "Email",
+      "description": "Gmail, Outlook, Yahoo and others — getting back into an account, and fixing mail that won't send or arrive.",
+      "intro": "With free email accounts you generally won't find a phone line to call. Gmail, Outlook.com and Yahoo Mail lean on self-service recovery and help articles, while paid plans sometimes add chat or tickets. The most common reason people go looking for email support is a lockout, and the fastest fix is nearly always the provider's own account recovery page, used from a device and location you've signed in from before. Keep your recovery phone number and backup email up to date — it's the difference between a two-minute fix and a week of back-and-forth. Be careful with anyone who offers to \"recover\" your email for a fee or asks you to read out a verification code: that's how accounts get stolen, not saved."
+    },
+    "streaming": {
+      "label": "Streaming",
+      "description": "Video and music subscriptions — billing, playback trouble, and how to change or cancel a plan.",
+      "intro": "Streaming support mostly comes down to two things: money and playback. On the money side — a failed payment, a price change, a plan you want to cancel — your account page usually has the answer, and cancelling there takes effect without needing to talk to anyone. On the playback side, the old advice still works best: sign out and back in, restart the app and the device, and check whether the problem happens on a second device too. If it only happens on one, the device is the likely culprit; if it happens everywhere, it's worth contacting the service. Several streaming companies have moved to chat-only or callback support that starts from inside your account, so the listings below point you straight to that entry point."
+    },
+    "telecom": {
+      "label": "Phone & Internet",
+      "navLabel": "Phone",
+      "description": "Mobile and home internet providers — bills, outages, SIM and eSIM trouble, and plan changes.",
+      "intro": "Carriers are one of the few places where you can still reliably reach a person by phone, but they route calls by topic, so knowing what you need before you dial saves a lot of time. Billing and plan questions go to one team, technical problems such as no signal or a dead connection go to another, and device or SIM issues sometimes go to a third. Before you call about an outage, check the provider's outage map or app — if it's a known problem in your area, an agent can't fix it faster. Have your account PIN or security passcode ready, because carriers will ask for it. And never give that PIN to someone who calls you claiming to be from your carrier: SIM-swap fraud often starts exactly that way."
+    },
+    "shipping": {
+      "label": "Shipping Carriers",
+      "navLabel": "Shipping",
+      "description": "UPS, FedEx and USPS — tracking, late or missing parcels, and filing a claim.",
+      "intro": "Here is something that trips a lot of people up: if you bought something online, the carrier usually isn't the one who can refund you. For a missing or damaged purchase, the seller is normally your first stop, because they're the carrier's actual customer and can open a claim or send a replacement. Contact the carrier directly when you're the one who shipped the package, when you need to change a delivery, or when tracking has stalled for several days. Have the full tracking number handy for any call or chat. Fake delivery texts — \"your package is held, pay a small fee\" — are extremely common, so only follow tracking links you get from the seller or that you type into the carrier's real website yourself."
+    },
+    "airlines": {
+      "label": "Airlines",
+      "description": "US airlines — rebooking, delays and cancellations, bags, refunds and loyalty accounts.",
+      "intro": "Airline support feels very different depending on the day. On a calm day, most questions — seats, bags, miles — can be handled in the app in a few minutes. On a bad weather day, phone queues can stretch for hours, and the quickest route is usually the airline's app or website, which often offer rebooking options without an agent. If your flight is cancelled, check the app before joining the queue, and if you're at the airport, it can help to try the app, the phone line and the service desk at the same time. Airlines also run separate lines for baggage, refunds and loyalty programs, and calling the right one saves real time — the listings below include those extra numbers wherever the airline publishes them."
+    },
+    "rideshare": {
+      "label": "Rides & Delivery",
+      "navLabel": "Rides",
+      "description": "Uber, Lyft, Instacart and others — trip problems, lost items, fare questions and safety.",
+      "intro": "Ride-hailing and delivery apps handle almost all of their support inside the app, tied to a specific trip or order. That's actually a good thing for you: starting from the trip itself means the support team can already see the route, the driver and the charge, so you don't have to explain everything from scratch. For a lost item, the app usually lets you contact the driver directly for a short window after the trip. Phone numbers for these companies are rare and often limited to safety emergencies during an active trip, which makes them a favourite target for fake support lines online. If something feels like an emergency, call 911 first and report to the app afterwards."
+    },
+    "insurance": {
+      "label": "Insurance",
+      "description": "Car and home insurers — claims, bills, policy changes and roadside help.",
+      "intro": "Insurance calls tend to fall into two buckets: routine admin (a payment, an ID card, a change to your policy) and something that just went wrong (an accident, a break-in, a burst pipe). For routine admin, the insurer's app or website is usually quickest. For a new claim, most insurers run a dedicated claims line, often around the clock — use that rather than the general number, and have your policy number, the date and place of the incident, and any photos ready. If anyone is hurt or in danger, call 911 first. Be wary of calls or texts that \"follow up\" on a claim and ask for payment details; if in doubt, hang up and call back on the number from your insurer's website or your policy documents."
+    }
+  }
+}
