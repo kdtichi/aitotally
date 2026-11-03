@@ -3,11 +3,10 @@
   command = "python3 build/build.py"
   publish = "dist"
 
-[[redirects]]
-  from = "https://aitotally.com/*"
-  to = "https://www.aitotally.com/:splat"
-  status = 301
-  force = true
+# Domain redirects (apex <-> www, http -> https) are handled by Netlify:
+# it 301s every domain alias to the primary domain set in
+# Domain management. Keep www.aitotally.com as the primary domain, because
+# canonical URLs, the sitemap and structured data all use www.
 
 [[headers]]
   for = "/*"

@@ -38,7 +38,7 @@ python3 -m http.server 4174 --directory dist
 
 1. In Netlify, choose **Add new site → Import an existing project → GitHub** and pick `kdtichi/aitotally`.
 2. Leave the base directory empty; `netlify.toml` sets the build command (`python3 build/build.py`) and publish directory (`dist`).
-3. Under **Domain management**, add `www.aitotally.com` as the primary domain and `aitotally.com` as an alias, then point DNS at Netlify. The apex redirects to `www`.
+3. Under **Domain management**, add `www.aitotally.com` and `aitotally.com`, then use **Options → Set as primary domain** on `www.aitotally.com`. Netlify redirects the bare domain and plain HTTP to it automatically. Do not add an apex→www rule to `netlify.toml`: if the primary domain is ever the bare domain, the two redirects loop.
 
 Every push to `main` redeploys automatically.
 
