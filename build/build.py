@@ -12,6 +12,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
+from assets import JS  # noqa: E402
 from brand_page import render_brand  # noqa: E402
 from common import BRANDS, CATEGORIES, DIST, PUBLIC, SITE, brands_in, page_updated  # noqa: E402
 from legal import (render_accessibility, render_editorial_policy, render_privacy,  # noqa: E402
@@ -37,7 +38,7 @@ STATIC_PAGES = {
 }
 
 PUBLIC_FILES = ("favicon.svg", "logo.png", "og-image.png")
-PUBLIC_DIRS = ("css", "js", "og")
+PUBLIC_DIRS = ("og",)
 
 
 def write(rel_path: str, content: str) -> None:
@@ -52,6 +53,9 @@ def page_file(path: str) -> str:
 
 
 def copy_public() -> None:
+    os.makedirs(os.path.join(DIST, "js"), exist_ok=True)
+    for src_name, out_name in JS.items():
+        shutil.copy(os.path.join(PUBLIC, "js", src_name), os.path.join(DIST, "js", out_name))
     for d in PUBLIC_DIRS:
         src = os.path.join(PUBLIC, d)
         if os.path.isdir(src):

@@ -18,12 +18,13 @@ build/
   machine.py        robots.txt, sitemap.xml, llms.txt, llms-full.txt
   research.py       Original-data page + CSV dataset (figures computed from brands.json)
   components.py     Linkable Q&A accordions (stable #anchors shared with FAQ schema)
+  assets.py         Inlines minified CSS; fingerprints JS filenames for long caching
   indexnow.py       Pings IndexNow (Bing etc.) with changed URLs on production deploys
   icons.py          Line-art category/page icons
 data/
   site.json         Site settings, featured companies, category copy, page dates
   brands.json       One record per company (contact facts + issue tips)
-public/             CSS, JS, favicon, logo, share images — copied into dist/
+public/             CSS (inlined into every page), JS (fingerprinted, cached 1 year), favicon, logo, share images
 scripts/make-images.js   Regenerates logo + share images (run by hand)
 tests/test_build.py      Unit + build tests
 netlify.toml        Netlify build, redirects and security headers

@@ -1,5 +1,6 @@
 """The page shell used by every AI Totally page: header, independence ribbon,
 footer, metadata and the Google Fonts loader."""
+from assets import CSS_INLINE, js_src
 from common import BASE_URL, CATEGORIES, NAME, SITE, esc
 
 # Header shows categories only; How It Works, About and the rest live in the footer.
@@ -46,8 +47,9 @@ def _links(items: list, current: str = "") -> str:
 
 
 def logo_html() -> str:
-    return '<a class="logo" href="/" aria-label="{} home">{}<span>.</span></a>'.format(
-        esc(NAME), esc(SITE["logoText"]))
+    # Visible text is the accessible name (WCAG "label in name"); " home" is for screen readers.
+    return '<a class="logo" href="/">{}<span>.</span><span class="visually-hidden"> home</span></a>'.format(
+        esc(SITE["logoText"]))
 
 
 def verification_meta() -> str:
@@ -89,7 +91,7 @@ def layout(*, title: str, description: str, path: str, body: str, json_ld: str =
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/logo.png">
 {fonts}
-<link rel="stylesheet" href="/css/main.css">
+<style>{css}</style>
 {extra_head}{json_ld}
 </head>
 <body>
@@ -124,16 +126,18 @@ def layout(*, title: str, description: str, path: str, body: str, json_ld: str =
     </div>
   </div>
 </footer>
-<script src="/js/search.js" defer></script>
-<script src="/js/hours.js" defer></script>
-<script src="/js/fonts-optout.js" defer></script>
-<script src="/js/nav-toggle.js" defer></script>
-<script src="/js/anchors.js" defer></script>
+<script src="{js_search}" defer></script>
+<script src="{js_hours}" defer></script>
+<script src="{js_fonts_optout}" defer></script>
+<script src="{js_nav_toggle}" defer></script>
+<script src="{js_anchors}" defer></script>
 </body>
 </html>
 """.format(
         title=esc(title), description=esc(description), robots=robots, canonical=canonical,
         og_type=og_type, name=esc(NAME), base=BASE_URL, og_image=og_image, fonts=FONTS_LOADER, verification=verification_meta(),
-        extra_head=extra_head, json_ld=json_ld, logo=logo_html(), nav=_links(NAV_ITEMS, path),
+        extra_head=extra_head, json_ld=json_ld, css=CSS_INLINE,
+        js_search=js_src("search.js"), js_hours=js_src("hours.js"), js_fonts_optout=js_src("fonts-optout.js"),
+        js_nav_toggle=js_src("nav-toggle.js"), js_anchors=js_src("anchors.js"), logo=logo_html(), nav=_links(NAV_ITEMS, path),
         footer_nav=_links(FOOTER_NAV), domain=esc(SITE["domain"]), legal=_links(LEGAL_LINKS), body=body,
     )

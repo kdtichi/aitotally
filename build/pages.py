@@ -63,7 +63,7 @@ def render_home() -> str:
   <h1>Skip the hold-music hunt.</h1>
   <form class="search-form" id="search-form" role="search" autocomplete="off">
     <label for="search-input" class="visually-hidden">Find a company</label>
-    <input class="search-input" id="search-input" type="text" placeholder="Which company? Try &ldquo;Delta&rdquo;"
+    <input class="search-input" id="search-input" type="text" role="combobox" placeholder="Which company? Try &ldquo;Delta&rdquo;"
       aria-autocomplete="list" aria-controls="search-results" aria-expanded="false">
     <button class="search-submit" type="submit" aria-label="Search">{search_icon}</button>
     <div class="search-results" id="search-results" role="listbox" hidden></div>
