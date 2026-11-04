@@ -81,6 +81,7 @@ Field notes:
   - `{"mode": "247"}` for 24/7 support.
   - `{"mode": "unspecified", "text": "..."}` when hours aren't published or are complicated.
   - `{"mode": "detailed", "tz": "America/Los_Angeles", "start": "04:00", "end": "21:00", "days": "daily"}` for one clean daily window. The page converts it to the visitor's time and shows "Open now" or "Closed now".
+- `supportVia` (optional, no-phone companies only): who actually handles support when it isn't the company, e.g. `"your bank or credit union"` for Zelle. It changes the quick answer and the "no phone number" verdict.
 - `scamWarningNote` (optional): a company-specific warning, e.g. about a number that circulates but can't be confirmed.
 - `issues`: 5–7 entries. Use issue names from the company's own help center. Each `tip` is general, true-for-anyone advice; never a specific policy you haven't verified.
 

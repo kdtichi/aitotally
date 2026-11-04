@@ -170,7 +170,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 }
 .nav-toggle:hover { border-color: var(--accent); color: var(--accent); }
 
-@media (max-width: 860px) {
+@media (max-width: 1180px) {
   .site-header__bar { position: relative; }
   .nav-toggle { display: inline-block; }
   .site-nav {

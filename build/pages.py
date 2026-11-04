@@ -144,8 +144,10 @@ def category_summary(with_phone: int, total: int, label: str) -> str:
     if with_phone == 0:
         return "None of the {} companies {} publishes a customer service phone number &mdash; support runs through chat, forms or help centers.".format(total, where)
     verb = "publishes" if with_phone == 1 else "publish"
-    return "{} of the {} companies {} {} a customer service phone number; the other {} rely on chat, forms or help centers.".format(
-        with_phone, total, where, verb, total - with_phone)
+    rest = total - with_phone
+    tail = "the other one relies" if rest == 1 else "the other {} rely".format(rest)
+    return "{} of the {} companies {} {} a customer service phone number; {} on chat, forms or help centers.".format(
+        with_phone, total, where, verb, tail)
 
 
 def render_category(cat_slug: str) -> str:

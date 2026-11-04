@@ -62,7 +62,10 @@ def quick_answer(b: dict) -> str:
         text += "For help online, go to {chat} on {domain}.".format(chat=esc(b["chatLabel"]), domain=domain)
     else:
         text = "{name} doesn&rsquo;t publish a customer service phone number. ".format(name=name)
-        text += "The official way to get help is {chat} on {domain}. ".format(chat=esc(b["chatLabel"]), domain=domain)
+        if b.get("supportVia"):
+            text += "Support for {name} is handled by {via}. ".format(name=name, via=esc(b["supportVia"]))
+        else:
+            text += "For help, {name} points you to {chat} on {domain}. ".format(name=name, chat=esc(b["chatLabel"]), domain=domain)
         if b.get("phoneAltNote"):
             text += esc(b["phoneAltNote"])
     return text.strip()
@@ -108,6 +111,13 @@ def faq_items(b: dict) -> list:
     ]
 
 
+def no_phone_verdict(b: dict) -> str:
+    name = esc(b["name"])
+    if b.get("supportVia"):
+        return "There isn&rsquo;t one &mdash; support for {} runs through {}.".format(name, esc(b["supportVia"]))
+    return "There isn&rsquo;t one &mdash; {} handles support through its {}.".format(name, channel_noun(b))
+
+
 def phone_field(b: dict) -> str:
     name = esc(b["name"])
     if b.get("phone"):
@@ -120,10 +130,10 @@ def phone_field(b: dict) -> str:
     alt = esc(b["phoneAltNote"]) if b.get("phoneAltNote") else ""
     return """<div class="contact-field">
   <label>Phone number {name} publishes</label>
-  <p class="no-phone-verdict">There isn&rsquo;t one &mdash; {name} handles support through its {channel}.</p>
+  <p class="no-phone-verdict">{verdict}</p>
   <p class="stat-sub">{alt} If you&rsquo;ve seen a &ldquo;{name} support number&rdquo; somewhere else, treat it as unconfirmed &mdash; it could be a scam.</p>
   <p class="stat-sub" style="margin-top:8px;"><a href="/research/companies-without-phone-support/">{name} is one of many big companies with no phone line &mdash; see the data &rarr;</a></p>
-</div>""".format(name=name, channel=channel_noun(b), alt=alt)
+</div>""".format(name=name, alt=alt, verdict=no_phone_verdict(b))
 
 
 def hours_field(b: dict) -> str:

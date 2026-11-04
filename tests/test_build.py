@@ -93,6 +93,15 @@ class BrandCopyTests(unittest.TestCase):
         b = common.brand_by_slug("instagram")
         self.assertIn("doesn&rsquo;t publish a customer service phone number", brand_page.quick_answer(b))
 
+    def test_support_via_bank_is_stated_for_zelle(self):
+        b = common.brand_by_slug("zelle")
+        self.assertIn("handled by your bank or credit union", brand_page.quick_answer(b))
+        self.assertIn("runs through your bank or credit union", brand_page.no_phone_verdict(b))
+
+    def test_no_phone_quick_answer_reads_naturally(self):
+        b = common.brand_by_slug("instagram")
+        self.assertIn("For help, Instagram points you to", brand_page.quick_answer(b))
+
     def test_possessive_for_names_ending_in_s(self):
         self.assertEqual(brand_page.possessive("Delta Air Lines"), "Delta Air Lines&rsquo;")
         self.assertEqual(brand_page.possessive("Uber"), "Uber&rsquo;s")
@@ -194,6 +203,10 @@ class CategorySummaryTests(unittest.TestCase):
     def test_none_with_phone(self):
         import pages
         self.assertTrue(pages.category_summary(0, 3, "Streaming").startswith("None of the 3 companies"))
+
+    def test_one_without_phone_is_singular(self):
+        import pages
+        self.assertIn("the other one relies on", pages.category_summary(6, 7, "Payments"))
 
     def test_mixed(self):
         import pages

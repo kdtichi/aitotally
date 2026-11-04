@@ -1863,6 +1863,365 @@
           "tip": "The Allstate app explains how each program tracks your driving. Check the program's terms for how it can affect your premium."
         }
       ]
+    },
+    {
+      "slug": "onepay",
+      "name": "OnePay",
+      "category": "payments",
+      "aliases": [
+        "onepay customer service",
+        "one pay customer service",
+        "onepay phone number",
+        "onepay support",
+        "one pay app help",
+        "onepay cash"
+      ],
+      "phone": "(855) 830-6200",
+      "phoneNote": "Available 24 hours a day, 7 days a week. You can also chat 24/7 by choosing Help from your Profile page in the OnePay app.",
+      "chatUrl": "https://www.onepay.com/help-center",
+      "chatLabel": "OnePay Help Center & 24/7 chat",
+      "chatType": "chat",
+      "hours": {
+        "mode": "247"
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://www.onepay.com/help-center/articles/contacting-onepay-customer-service",
+      "sourceLabel": "OnePay Help Center: Contacting OnePay Customer Service",
+      "issues": [
+        {
+          "issue": "Getting Started",
+          "tip": "Download the OnePay app and follow the sign-up steps; the Help Center's Getting Started section walks through opening and setting up an account. Have your ID handy, since financial apps usually need to confirm who you are."
+        },
+        {
+          "issue": "Receiving and Sending Money",
+          "tip": "Check the transaction in your activity first to see its status. Before sending, double-check the recipient's details — payments sent to the wrong person can be hard to get back."
+        },
+        {
+          "issue": "Spending and Saving Money",
+          "tip": "Your card and account activity in the app usually explain a declined purchase or a pending charge. If something still looks wrong, chat with support with the date and amount in front of you."
+        },
+        {
+          "issue": "Borrowing Money",
+          "tip": "Review your loan or Credit Builder details in the app, including payment dates and amounts. If you think you'll miss a payment, contact OnePay before the due date rather than after."
+        },
+        {
+          "issue": "Credit Card",
+          "tip": "Card balances, statements and payments are managed in the app. For a lost card or a charge you don't recognise, contact support straight away — the phone line is open 24/7."
+        },
+        {
+          "issue": "Privacy",
+          "tip": "The Help Center's Privacy section explains how your data is handled and what choices you have. Never share your password or one-time codes with anyone who contacts you."
+        }
+      ]
+    },
+    {
+      "slug": "venmo",
+      "name": "Venmo",
+      "category": "payments",
+      "aliases": [
+        "venmo customer service",
+        "venmo phone number",
+        "venmo support",
+        "venmo help",
+        "contact venmo"
+      ],
+      "phone": "(855) 812-4430",
+      "phoneNote": "General support line, every day 8 AM–8 PM Central time. For a Venmo debit or credit card, call the number on the back of your card. In-app messaging runs 8 AM–7:45 PM CT (Get Help, then Chat With Us), and the Venmo virtual assistant answers 24/7.",
+      "chatUrl": "https://help.venmo.com/cs/contact-us",
+      "chatLabel": "Venmo Help Center: Contact Us",
+      "chatType": "chat",
+      "hours": {
+        "mode": "detailed",
+        "tz": "America/Chicago",
+        "start": "08:00",
+        "end": "20:00",
+        "days": "daily"
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://help.venmo.com/cs/contact-us",
+      "sourceLabel": "Venmo Help Center: Contact Us page",
+      "issues": [
+        {
+          "issue": "Accounts, Profiles & Settings",
+          "tip": "Most profile, privacy and notification settings are under Settings in the app. If you can't sign in, use the official login help rather than anyone offering to \"unlock\" your account."
+        },
+        {
+          "issue": "Payments & Transfers",
+          "tip": "Open the payment in your transaction history to check its status. Payments to the wrong person often can't be undone, so contact support quickly and keep the details to hand."
+        },
+        {
+          "issue": "Disputes",
+          "tip": "Venmo's Help Center explains how to open a dispute for an unauthorised charge or a purchase problem. Gather dates, amounts and any receipts before you start."
+        },
+        {
+          "issue": "Security & Privacy",
+          "tip": "Turn on extra security in settings and review who can see your transactions. Venmo's own Help Center has a guide to common scams — worth reading before paying someone you don't know."
+        },
+        {
+          "issue": "Buying & Selling with Venmo",
+          "tip": "When buying from someone you don't know, check whether the payment is marked as a purchase so the right protections apply. Venmo's Help Center explains how buying and selling works."
+        },
+        {
+          "issue": "Tax Center",
+          "tip": "Tax forms and FAQs are in Venmo's Tax Center. For questions about your own tax situation, a tax professional is the right person to ask."
+        }
+      ]
+    },
+    {
+      "slug": "cash-app",
+      "name": "Cash App",
+      "category": "payments",
+      "aliases": [
+        "cash app customer service",
+        "cash app phone number",
+        "cash app support",
+        "cash app help",
+        "contact cash app",
+        "cashapp"
+      ],
+      "phone": "(800) 969-1940",
+      "phoneNote": "Daily, 8 AM–9:30 PM Eastern time. Chat in the Cash App is available 24/7: tap your profile icon, then Support, then Start a Chat.",
+      "chatUrl": "https://cash.app/help",
+      "chatLabel": "Cash App Support & in-app chat",
+      "chatType": "chat",
+      "hours": {
+        "mode": "detailed",
+        "tz": "America/New_York",
+        "start": "08:00",
+        "end": "21:30",
+        "days": "daily"
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://cash.app/help/contact",
+      "sourceLabel": "Cash App: How to contact Cash Support",
+      "scamWarningNote": "Cash App says (800) 969-1940 is the only phone number customers can call for Cash App Support. Any other \"Cash App number\" — in search results, ads or social posts — is not Cash App. Real support won't ask for your PIN, sign-in code or a \"test\" payment.",
+      "issues": [
+        {
+          "issue": "Sending a Payment",
+          "tip": "Check the $Cashtag, phone number or email carefully before you send — payments to the wrong person can be hard to reverse. Your activity feed shows whether a payment completed."
+        },
+        {
+          "issue": "Receiving a Payment",
+          "tip": "Look in your activity feed for the payment and its status. If someone says they sent money but you don't see it, ask them to check that it completed on their side."
+        },
+        {
+          "issue": "Cash App Card",
+          "tip": "You can lock your card from the app straight away if it's lost or stolen, then contact support. Card settings and transactions are on the Card tab."
+        },
+        {
+          "issue": "Direct Deposit",
+          "tip": "Check that your employer has your correct account and routing numbers from the app, and allow for your employer's own processing time before contacting support."
+        },
+        {
+          "issue": "Account Settings",
+          "tip": "Personal details, security settings and linked accounts are in your profile. If you can't access an old account, Cash App's Help Center explains the recovery steps."
+        },
+        {
+          "issue": "Keeping Your Cash App Secure",
+          "tip": "Turn on the Security Lock, never share your sign-in code, and ignore anyone asking you to send a \"test\" payment. Report suspicious messages through the app."
+        }
+      ]
+    },
+    {
+      "slug": "zelle",
+      "name": "Zelle",
+      "category": "payments",
+      "aliases": [
+        "zelle customer service",
+        "zelle phone number",
+        "zelle support",
+        "zelle help",
+        "contact zelle"
+      ],
+      "phone": null,
+      "phoneAltNote": "Zelle's own support page says that when you use Zelle in your bank or credit union's app, your bank handles enrollment and payment issues — call the number on the back of your debit card.",
+      "chatUrl": "https://www.zelle.com/support/contact-support",
+      "chatLabel": "Zelle Support: Help Through Your Bank",
+      "chatType": "none",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Not applicable — support for Zelle in your banking app comes from your bank or credit union, on its own hours."
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://www.zelle.com/contact-us",
+      "sourceLabel": "Zelle Support and Contact Information page",
+      "scamWarningNote": "Because Zelle support runs through your bank, anyone who calls or texts claiming to be \"Zelle support\" and asks you to send money — even to \"yourself\" or to \"reverse\" a payment — is very likely a scammer. Hang up and call the number on the back of your debit card.",
+      "issues": [
+        {
+          "issue": "Enrolling with Zelle",
+          "tip": "Enrollment usually happens inside your bank or credit union's app. If it isn't working, your bank's support team is the place to ask."
+        },
+        {
+          "issue": "Using Zelle",
+          "tip": "Zelle payments to enrolled users typically arrive within minutes and are hard to cancel, so confirm the recipient before sending. Only send money to people you know and trust."
+        },
+        {
+          "issue": "Your Zelle Profile",
+          "tip": "Your Zelle profile is tied to your email address or U.S. mobile number through your bank. To change it, start in your bank's app."
+        },
+        {
+          "issue": "Understanding Fraud & Scams",
+          "tip": "Zelle's site has guidance on spotting and reporting fraud. If you've been scammed, contact your bank immediately and report it there."
+        },
+        {
+          "issue": "Using Zelle with a Small Business Account",
+          "tip": "Check whether your bank offers Zelle for small business accounts and what limits apply — your bank sets those details."
+        }
+      ],
+      "supportVia": "your bank or credit union"
+    },
+    {
+      "slug": "chime",
+      "name": "Chime",
+      "category": "payments",
+      "aliases": [
+        "chime customer service",
+        "chime phone number",
+        "chime support",
+        "chime member services",
+        "chime bank help",
+        "contact chime"
+      ],
+      "phone": "(844) 244-6363",
+      "phoneNote": "Chime says its Member Services team is available 24/7, and that the easiest way to reach it is chat in the Chime app.",
+      "chatUrl": "https://help.chime.com/",
+      "chatLabel": "Chime Help Center & in-app chat",
+      "chatType": "chat",
+      "hours": {
+        "mode": "247"
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://help.chime.com/",
+      "sourceLabel": "Chime Help Center",
+      "issues": [
+        {
+          "issue": "Set up your account and activate your card",
+          "tip": "The Chime Essentials section of the Help Center covers opening an account, adding money and activating your card. Activation happens in the app."
+        },
+        {
+          "issue": "Where's my direct deposit?",
+          "tip": "Check the expected pay date with your employer or benefits provider, and confirm they have your correct account and routing numbers from the app."
+        },
+        {
+          "issue": "Dispute a charge",
+          "tip": "Chime's Help Center explains how to file and track a dispute for an unauthorised or incorrect charge. Note the date, amount and merchant before you start."
+        },
+        {
+          "issue": "Manage money",
+          "tip": "Transfers, check deposits and savings are managed in the app. If a transfer hasn't arrived, check its status there before contacting support."
+        },
+        {
+          "issue": "Account & Security",
+          "tip": "Update your personal details and security settings in the app. If you think someone else has accessed your account, contact Member Services straight away — they're available 24/7."
+        },
+        {
+          "issue": "Login issues and app errors",
+          "tip": "Update the app, restart your phone, and check your connection. Chime's Need Help section has troubleshooting steps for common errors."
+        }
+      ]
+    },
+    {
+      "slug": "klarna",
+      "name": "Klarna",
+      "category": "payments",
+      "aliases": [
+        "klarna customer service",
+        "klarna phone number",
+        "klarna support",
+        "klarna help",
+        "contact klarna"
+      ],
+      "phone": "(888) 518-2771",
+      "phoneNote": "Open 24/7. Klarna's in-app chat is also available 24/7, starting with an AI assistant, with human support when you need it.",
+      "chatUrl": "https://www.klarna.com/us/help/",
+      "chatLabel": "Klarna Customer Service & in-app chat",
+      "chatType": "chat",
+      "hours": {
+        "mode": "247"
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://www.klarna.com/us/help/",
+      "sourceLabel": "Klarna US Customer service page",
+      "scamWarningNote": "Klarna warns that scam emails, texts, phone calls and job offers pretend to be from Klarna, and says it will never contact you to ask for your personal information, login details, passwords, bank or card details or account verification through unfamiliar links.",
+      "issues": [
+        {
+          "issue": "Payments",
+          "tip": "Your upcoming and past payments are listed in the Klarna app, where you can usually pay early or check what's due. Contact Klarna before a due date if you're worried about missing one."
+        },
+        {
+          "issue": "Refunds",
+          "tip": "Refunds normally start with the store. Once the store processes it, the refund should show against your Klarna purchase in the app."
+        },
+        {
+          "issue": "Delivery & returns",
+          "tip": "Track the delivery and report a return in the Klarna app so your payment schedule reflects it. Keep proof of return postage."
+        },
+        {
+          "issue": "Declined purchase",
+          "tip": "Klarna makes a decision each time you buy, so a decline on one purchase doesn't always mean the next will be declined. The Help Center explains common reasons."
+        },
+        {
+          "issue": "Account & settings",
+          "tip": "Update your details and payment methods in the app. Use only the official Klarna app or website to sign in."
+        },
+        {
+          "issue": "Fraud & security",
+          "tip": "If you see a purchase you don't recognise, contact Klarna straight away. Klarna's site has a page for reporting phishing and scams."
+        }
+      ]
+    },
+    {
+      "slug": "afterpay",
+      "name": "Afterpay",
+      "category": "payments",
+      "aliases": [
+        "afterpay customer service",
+        "afterpay phone number",
+        "afterpay support",
+        "afterpay help",
+        "contact afterpay"
+      ],
+      "phone": "(833) 844-8095",
+      "phoneNote": "Daily, 8 AM–9:30 PM Eastern time. Chat in the Afterpay app is available 24/7.",
+      "chatUrl": "https://www.afterpay.com/en-US/help",
+      "chatLabel": "Afterpay Help Center & in-app chat",
+      "chatType": "chat",
+      "hours": {
+        "mode": "detailed",
+        "tz": "America/New_York",
+        "start": "08:00",
+        "end": "21:30",
+        "days": "daily"
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://www.afterpay.com/en-US/help/360000137606-Contact-Afterpay",
+      "sourceLabel": "Afterpay Help Center: Contact Afterpay",
+      "issues": [
+        {
+          "issue": "Payments",
+          "tip": "Your payment schedule and due dates are in the Afterpay app. If you're going to struggle with a payment, contact Afterpay before the due date."
+        },
+        {
+          "issue": "Returns / Refunds",
+          "tip": "Return the item to the store following its policy; once the store processes the refund, Afterpay applies it to your order. Keep your return receipt."
+        },
+        {
+          "issue": "Managing Orders",
+          "tip": "Open the order in the app to see its status and payments. Check with the store first for delivery or order questions."
+        },
+        {
+          "issue": "Log In / Account Access",
+          "tip": "Use the password reset on Afterpay's official login screen. Never share verification codes with anyone who contacts you."
+        },
+        {
+          "issue": "Afterpay In-Store",
+          "tip": "The Help Center explains how to set up and use Afterpay at checkout in stores. Make sure your app is up to date before you shop."
+        },
+        {
+          "issue": "Hardship",
+          "tip": "If you're struggling to make payments, Afterpay's Help Center has a hardship section. Reaching out early gives you the most options."
+        }
+      ]
     }
   ]
 }

@@ -11,6 +11,7 @@ CATEGORY_ICONS = {
     "shipping": '<svg viewBox="0 0 120 120" {attrs}><path d="M60 16 L104 38 V82 L60 104 L16 82 V38 Z"/><path d="M16 38 L60 58 L104 38"/><path d="M60 58 V104"/></svg>',
     "airlines": '<svg viewBox="0 0 120 120" {attrs}><path d="M10 92 L105 55 L10 18 V48 L75 55 L10 62 Z" fill="currentColor" stroke="none"/></svg>',
     "rideshare": '<svg viewBox="0 0 120 120" {attrs}><path d="M22 68 L30 46 Q33 38 42 38 H78 Q87 38 90 46 L98 68" fill="none"/><rect x="14" y="68" width="92" height="22" rx="4"/><circle cx="34" cy="92" r="9" fill="currentColor" stroke="none"/><circle cx="86" cy="92" r="9" fill="currentColor" stroke="none"/></svg>',
+    "payments": '<svg viewBox="0 0 120 120" {attrs}><rect x="14" y="30" width="92" height="62" rx="8"/><path d="M14 48 H106"/><path d="M28 74 H52"/><circle cx="86" cy="74" r="7"/></svg>',
     "insurance": '<svg viewBox="0 0 120 120" {attrs}><path d="M60 14 L98 28 V56 Q98 88 60 106 Q22 88 22 56 V28 Z"/><path d="M42 58 L55 71 L80 44" fill="none"/></svg>',
 }
 for _k in CATEGORY_ICONS:

@@ -53,6 +53,8 @@ def validate_brand(b: dict, categories: dict) -> None:
     for url_key in ("chatUrl", "sourceUrl"):
         if not b[url_key].startswith("https://"):
             raise DataError("{} {} must be an https URL".format(label, url_key))
+    if b.get("supportVia") and b.get("phone"):
+        raise DataError("{} supportVia is only for companies with no phone number".format(label))
     for issue in b["issues"]:
         if not issue.get("issue") or not issue.get("tip"):
             raise DataError("{} has an issue without both 'issue' and 'tip'".format(label))

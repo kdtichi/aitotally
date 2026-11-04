@@ -4,7 +4,6 @@ from common import BASE_URL, CATEGORIES, NAME, SITE, esc
 
 NAV_ITEMS = [("/category/{}/".format(s), c.get("navLabel", c["label"])) for s, c in CATEGORIES.items()] + [
     ("/how-it-works/", "How It Works"),
-    ("/about/", "About"),
 ]
 
 FOOTER_NAV = [("/", "Home")] + [("/category/{}/".format(s), c["label"]) for s, c in CATEGORIES.items()] + [

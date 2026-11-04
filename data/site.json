@@ -24,15 +24,15 @@
       "facebook",
       "tiktok",
       "gmail",
-      "outlook",
       "netflix",
       "t-mobile",
       "delta",
-      "ups"
+      "onepay",
+      "cash-app"
     ]
   },
   "pagesUpdated": {
-    "/": "2026-11-03",
+    "/": "2026-11-04",
     "/about/": "2026-11-03",
     "/contact/": "2026-11-03",
     "/how-it-works/": "2026-11-03",
@@ -42,7 +42,7 @@
     "/trademark-notice/": "2026-11-03",
     "/editorial-policy/": "2026-11-03",
     "/accessibility/": "2026-11-03",
-    "/research/companies-without-phone-support/": "2026-11-03"
+    "/research/companies-without-phone-support/": "2026-11-04"
   },
   "categories": {
     "retail": {
@@ -94,6 +94,12 @@
       "label": "Insurance",
       "description": "Car and home insurers — claims, bills, policy changes and roadside help.",
       "intro": "Insurance calls tend to fall into two buckets: routine admin (a payment, an ID card, a change to your policy) and something that just went wrong (an accident, a break-in, a burst pipe). For routine admin, the insurer's app or website is usually quickest. For a new claim, most insurers run a dedicated claims line, often around the clock — use that rather than the general number, and have your policy number, the date and place of the incident, and any photos ready. If anyone is hurt or in danger, call 911 first. Be wary of calls or texts that \"follow up\" on a claim and ask for payment details; if in doubt, hang up and call back on the number from your insurer's website or your policy documents."
+    },
+    "payments": {
+      "label": "Payments & Money Apps",
+      "navLabel": "Money",
+      "description": "OnePay, Venmo, Cash App, Zelle, Chime and buy-now-pay-later apps — help with payments, cards, disputes and account access.",
+      "intro": "Money apps are where a fast, correct answer matters most — and where fake support is most dangerous. The good news is that most of the apps listed here do publish a real phone number, and several answer around the clock. Before you call, open the transaction in the app: its status often answers the question, and you'll want the date, amount and recipient to hand anyway. Payments sent to the wrong person can be hard to reverse, so contact the app quickly if that happens. Zelle is different from the rest: when you use it inside your bank's app, your bank handles support, so the number on the back of your debit card is the one to call. Above all, no real money app will ask you to share a sign-in code, send a \"test\" payment or move money to \"protect\" it. Anyone who does is a scammer, whatever number they called from."
     }
   }
 }
