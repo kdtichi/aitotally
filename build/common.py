@@ -124,6 +124,19 @@ def schema_phone(phone: str) -> str:
     return phone
 
 
+# North American toll-free area codes (NANP): calls are free to the caller in the US.
+TOLL_FREE_CODES = ("800", "833", "844", "855", "866", "877", "888")
+
+
+def is_toll_free(phone: str | None) -> bool:
+    if not phone:
+        return False
+    digits = "".join(ch for ch in phone if ch.isdigit())
+    if len(digits) == 11 and digits.startswith("1"):
+        digits = digits[1:]
+    return len(digits) == 10 and digits[:3] in TOLL_FREE_CODES
+
+
 def tel_href(phone: str) -> str:
     return "tel:" + "".join(ch for ch in phone if ch.isdigit() or ch == "+")
 

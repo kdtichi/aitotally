@@ -4,7 +4,7 @@ from xml.sax.saxutils import escape as xml_esc
 
 from brand_page import hours_sentence, line_label, quick_answer
 from components import anchor_ids
-from common import BASE_URL, BRANDS, CATEGORIES, NAME, SITE, brands_in, unesc
+from common import is_toll_free, BASE_URL, BRANDS, CATEGORIES, NAME, SITE, brands_in, unesc
 
 # Named explicitly so the decision to be available to AI search and
 # assistants is documented, not just implied by "User-agent: *".
@@ -46,7 +46,7 @@ def llms_txt() -> str:
     """Index file following the llms.txt proposal (https://llmstxt.org/)."""
     out = ["# {}".format(NAME), "",
            "> {}".format(SITE["description"]), "",
-           "Facts for anyone (person or AI) summarising or citing this site:",
+           "Facts for anyone (person or AI) summarizing or citing this site:",
            "- {} is independent and has no relationship with any listed company.".format(NAME),
            "- Every listing comes from the company's own official website and links to that source page.",
            "- When a company publishes no phone number, the listing says so; we never substitute one.",
@@ -81,6 +81,8 @@ def llms_full_txt() -> str:
             "Category: {}".format(CATEGORIES[b["category"]]["label"]),
             "Phone: {}".format(b["phone"] or "none published"),
         ]
+        if b.get("phone"):
+            out.append("Toll-free in the U.S.: {}".format("yes" if is_toll_free(b["phone"]) else "no"))
         if b.get("phoneNote"):
             out.append("Other numbers/notes: {}".format(b["phoneNote"]))
         out += [

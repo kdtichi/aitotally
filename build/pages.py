@@ -27,7 +27,7 @@ SITE_FAQ = [
     ("Do you collect my data?",
      "We don&rsquo;t run ads, tracking cookies or third-party analytics. If you email us, we use your message only to reply and fix the listing. The Privacy Policy has the details."),
     ("I think I contacted a fake support line. What now?",
-     "Stop the call or chat and don&rsquo;t share anything else, especially passwords, one-time codes, gift card numbers or card details. Then contact the company using the channel on its AI Totally page. If you already shared payment details, call your bank or card issuer straight away, and you can report the scam to the FTC at reportfraud.ftc.gov."),
+     "Stop the call or chat and don&rsquo;t share anything else, especially passwords, one-time codes, gift card numbers or card details. Then contact the company using the channel on its AI Totally page. If you already shared payment details, call your bank or card issuer right away, and you can report the scam to the FTC at reportfraud.ftc.gov."),
     ("Can you add a company I can&rsquo;t find?",
      "Yes, ask us. Email the company name through the Contact page and we&rsquo;ll look at adding a verified listing."),
 ]
@@ -191,7 +191,7 @@ def render_category(cat_slug: str) -> str:
            label_lower=esc(cat["label"].lower()), desc=esc(cat["description"]), pills=pills,
            summary=summary, rows=rows, intro=esc(cat["intro"]))
 
-    updated = max([b["verifiedDate"] for b in members] + [SITE["launchDate"]])
+    updated = max([b["verifiedDate"] for b in members] + [SITE.get("copyUpdated", SITE["launchDate"])])
     desc = "Verified customer service contacts for {} companies — phone numbers, chat links and hours, each checked against the company's own site.".format(cat["label"].lower())
     json_ld = script([
         webpage_node(path, "{} customer service".format(cat["label"]), desc, updated, page_type="CollectionPage",

@@ -89,7 +89,8 @@ Field notes:
 
 - **Never invent a phone number, hours or policy.** Every fact must trace to `sourceUrl` on the company's own domain, never a forum, ad or other directory.
 - `verifiedDate` is the day you actually checked the source. Don't bump it to look fresh: it drives the page's "verified" stamp and the sitemap `lastmod`.
-- Static pages' dates live in `pagesUpdated` in `data/site.json`. Change one only when that page's content really changes.
+- Static pages' dates live in `pagesUpdated` in `data/site.json`. Change one only when that page's content really changes. `copyUpdated` is the date the shared company-page and category copy last changed; a company page's `lastmod` is the later of that and its `verifiedDate`.
+- Write in **American English** (the site targets U.S. searchers); `test_copy_uses_american_english` fails the build on common British spellings.
 - No company logos or branding anywhere: listings are identified by name only.
 
 ## Design

@@ -65,7 +65,7 @@ def copy_public() -> None:
 def sitemap_entries() -> list:
     """(path, lastmod) pairs. lastmod is when that page's content really changed:
     the later of its copy date and its contact details' verification date."""
-    launch = SITE["launchDate"]
+    launch = SITE.get("copyUpdated", SITE["launchDate"])
     entries = [(p, page_updated(p)) for p in STATIC_PAGES]
     for slug in CATEGORIES:
         dates = [b["verifiedDate"] for b in brands_in(slug)] + [launch]
@@ -86,7 +86,7 @@ def build() -> int:
     for slug in CATEGORIES:
         write(page_file("/category/{}/".format(slug)), render_category(slug))
     for b in BRANDS:
-        write(page_file("/brand/{}/".format(b["slug"])), render_brand(b, SITE["launchDate"]))
+        write(page_file("/brand/{}/".format(b["slug"])), render_brand(b, SITE.get("copyUpdated", SITE["launchDate"])))
 
     entries = sitemap_entries()
     write("sitemap.xml", sitemap_xml(entries))

@@ -4,7 +4,7 @@ Structure: a quotable quick answer, the verified contact panel, issue tips,
 a key-facts table, and an FAQ — each backed by FAQPage/WebPage/Organization
 schema that states the same facts as the visible page."""
 from common import (BASE_URL, CATEGORIES, NAME, brands_in, esc, human_date, initial_mark,
-                    official_root, schema_phone, tel_href)
+                    official_root, schema_phone, tel_href, is_toll_free)
 from components import qa_details
 from layout import layout
 from schema import breadcrumb_node, crumbs_html, faq_node, script, webpage_node
@@ -56,8 +56,8 @@ def hours_sentence(b: dict) -> str:
 def quick_answer(b: dict) -> str:
     name, domain = esc(b["name"]), esc(site_domain(b["chatUrl"]))
     if b.get("phone"):
-        text = "You can reach {name} by calling <strong>{phone}</strong>, its {label}. ".format(
-            name=name, phone=esc(b["phone"]), label=esc(line_label(b)))
+        text = "You can reach {name} by calling <strong>{phone}</strong>, its {free}{label}. ".format(
+            name=name, phone=esc(b["phone"]), label=esc(line_label(b)), free="toll-free " if is_toll_free(b["phone"]) else "")
         text += hours_sentence(b) + " "
         text += "For help online, go to {chat} on {domain}.".format(chat=esc(b["chatLabel"]), domain=domain)
     else:
@@ -74,6 +74,18 @@ def quick_answer(b: dict) -> str:
 # Fixed anchors for the five brand-page questions, in faq_items() order, so
 # every company page answers at the same links, e.g. /brand/delta/#phone-number.
 BRAND_FAQ_IDS = ["phone-number", "hours", "talk-to-a-person", "what-to-contact-about", "spot-a-fake-number"]
+TOLL_FREE_FAQ_ID = "toll-free"
+TOLL_FREE_ANSWER = ("Yes. {phone} starts with {code}, a U.S. toll-free area code, so the call itself is free "
+                    "from a phone in the United States (your mobile plan&rsquo;s usual minutes may still apply).")
+
+
+def brand_faq_ids(b: dict) -> list:
+    return BRAND_FAQ_IDS + ([TOLL_FREE_FAQ_ID] if is_toll_free(b.get("phone")) else [])
+
+
+def toll_free_code(phone: str) -> str:
+    digits = "".join(ch for ch in phone if ch.isdigit())
+    return digits[1:4] if len(digits) == 11 else digits[:3]
 
 
 def faq_items(b: dict) -> list:
@@ -84,7 +96,7 @@ def faq_items(b: dict) -> list:
             name=name, phone=esc(b["phone"]), label=esc(line_label(b)), note=note)
         person_a = ("Call {phone}. If you reach an automated menu, describe your issue in a few words "
                     "or pick the closest option, and have your account or order details ready so the agent "
-                    "can help straight away.").format(phone=esc(b["phone"]))
+                    "can help right away.").format(phone=esc(b["phone"]))
     else:
         alt = " " + esc(b["phoneAltNote"]) if b.get("phoneAltNote") else ""
         number_a = "No. {name} doesn&rsquo;t publish a public customer service number.{alt} Use the {channel} linked on this page instead.".format(
@@ -108,7 +120,9 @@ def faq_items(b: dict) -> list:
         ("How do I talk to a real person at {}?".format(name), person_a),
         ("What can I contact {} about?".format(name), topics_a),
         ("How can I tell if a {} support number is fake?".format(name), fake_a),
-    ]
+    ] + ([("Is the {} customer service number toll-free?".format(name),
+           TOLL_FREE_ANSWER.format(phone=esc(b["phone"]), code=toll_free_code(b["phone"])))]
+         if is_toll_free(b.get("phone")) else [])
 
 
 def no_phone_verdict(b: dict) -> str:
@@ -124,9 +138,10 @@ def phone_field(b: dict) -> str:
         note = "<p class='stat-sub' style='margin-top:10px;'>{}</p>".format(esc(b["phoneNote"])) if b.get("phoneNote") else ""
         return """<div class="contact-field">
   <label for="phone-link">Phone number {name} publishes</label>
-  <a class="phone-number" id="phone-link" href="{tel}">{display}<span class="tap-hint" aria-hidden="true">Tap to call</span></a>
+  <a class="phone-number" id="phone-link" href="{tel}">{display}<span class="tap-hint" aria-hidden="true">{free}Tap to call</span></a>
   {note}
-</div>""".format(name=name, tel=tel_href(b["phone"]), display=esc(b["phone"]), note=note)
+</div>""".format(name=name, tel=tel_href(b["phone"]), display=esc(b["phone"]), note=note,
+                free="Toll-free &middot; " if is_toll_free(b["phone"]) else "")
     alt = esc(b["phoneAltNote"]) if b.get("phoneAltNote") else ""
     return """<div class="contact-field">
   <label>Phone number {name} publishes</label>
@@ -159,6 +174,7 @@ def key_facts(b: dict) -> str:
             ("Category", esc(CATEGORIES[b["category"]]["label"]))]
     if b.get("phone"):
         rows.append(("Main phone line", '<a href="{}">{}</a> ({})'.format(tel_href(b["phone"]), esc(b["phone"]), esc(line_label(b)))))
+        rows.append(("Toll-free in the U.S.?", "Yes" if is_toll_free(b["phone"]) else "No &mdash; standard call rates may apply"))
         if b.get("phoneNote"):
             rows.append(("Other numbers &amp; notes", esc(b["phoneNote"])))
     else:
@@ -208,6 +224,7 @@ def scam_box(b: dict) -> str:
         <li>The links on this page go to {poss} own website &mdash; you can confirm that in your browser&rsquo;s address bar.</li>
         <li>Seen a different number for {name} in an ad or search result? Assume it&rsquo;s unverified until you find it on {poss} own site.</li>
         <li>{site} never asks for your personal or payment details.</li>
+        <li>Hit by a support scam? Report it to the Federal Trade Commission at <a href="https://reportfraud.ftc.gov/" rel="noopener" target="_blank">ReportFraud.ftc.gov</a>.</li>
       </ul>
     </div>
   </div>""".format(heading=heading, note=note, name=name, poss=possessive(name), site=esc(NAME))
@@ -224,7 +241,7 @@ def title_and_description(b: dict) -> tuple:
     else:
         suffix, chan = "No Phone? How to Get Help", "official help channel (no public phone line)"
     title = "{} Customer Service: {} | {}".format(b["name"], suffix, NAME)
-    desc = "How to contact {name}: the {chan}, checked against {name}'s own website on {date}. Independent guide, not run by {name}.".format(
+    desc = "How to contact {name} in the U.S.: the {chan}, checked against {name}'s own website on {date}. Independent guide, not run by {name}.".format(
         name=b["name"], chan=chan, date=human_date(b["verifiedDate"]))
     return title, desc
 
@@ -235,7 +252,7 @@ def render_brand(b: dict, copy_date: str) -> str:
     name = esc(b["name"])
     faqs = faq_items(b)
     issues = qa_details([(esc(i["issue"]), esc(i["tip"])) for i in b["issues"]], "issue")
-    faq_html = qa_details(faqs, "faq", BRAND_FAQ_IDS)
+    faq_html = qa_details(faqs, "faq", brand_faq_ids(b))
     crumbs = [("Home", "/"), (cat["label"], "/category/{}/".format(cat["slug"])), (b["name"], path)]
     updated = max(b["verifiedDate"], copy_date)
     title, description = title_and_description(b)
@@ -249,6 +266,8 @@ def render_brand(b: dict, copy_date: str) -> str:
     }
     if b.get("phone"):
         contact_point["telephone"] = schema_phone(b["phone"])
+        if is_toll_free(b["phone"]):
+            contact_point["contactOption"] = "https://schema.org/TollFree"
     if b["hours"].get("mode") == "247":
         contact_point["hoursAvailable"] = {
             "@type": "OpeningHoursSpecification",
@@ -262,7 +281,7 @@ def render_brand(b: dict, copy_date: str) -> str:
                   "contactPoint": [contact_point]},
         "mainEntity": {"@id": BASE_URL + path + "#faq"},
     })
-    json_ld = script([page, breadcrumb_node(path, crumbs), faq_node(path, faqs, "faq", BRAND_FAQ_IDS)])
+    json_ld = script([page, breadcrumb_node(path, crumbs), faq_node(path, faqs, "faq", brand_faq_ids(b))])
 
     body = """
 <div class="container">{crumbs}</div>

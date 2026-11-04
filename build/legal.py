@@ -68,7 +68,7 @@ def render_terms() -> str:
 <li>Pretend to be {n} or any company listed here</li>
 <li>Use contact details from the site to harass, defraud or spam anyone</li>
 <li>Copy or republish the site&rsquo;s content in bulk without permission</li>
-<li>Try to disrupt the site or access it without authorisation</li>
+<li>Try to disrupt the site or access it without authorization</li>
 </ul>
 <h2>No warranties</h2>
 <p>The site is provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo;, without warranties of any kind, including accuracy, fitness for a particular purpose or non-infringement.</p>

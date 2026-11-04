@@ -28,6 +28,8 @@ def org_node() -> dict:
             "addressCountry": addr["addressCountry"],
         },
         "publishingPrinciples": BASE_URL + "/editorial-policy/",
+        "areaServed": {"@type": "Country", "name": "United States"},
+        "knowsLanguage": "en-US",
     }
 
 
@@ -40,6 +42,7 @@ def website_node() -> dict:
         "description": SITE["description"],
         "inLanguage": "en-US",
         "publisher": {"@id": ORG_ID},
+        "audience": {"@type": "Audience", "geographicArea": {"@type": "Country", "name": "United States"}},
     }
 
 

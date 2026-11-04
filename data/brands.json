@@ -28,11 +28,11 @@
         },
         {
           "issue": "Cancel an order",
-          "tip": "Move quickly. While an order hasn't shipped, a cancel button usually shows in your order history. Once that disappears, message support straight away and ask whether it can still be stopped."
+          "tip": "Move quickly. While an order hasn't shipped, a cancel button usually shows in your order history. Once that disappears, message support right away and ask whether it can still be stopped."
         },
         {
           "issue": "Return or refund status",
-          "tip": "Look at the order in your account to see whether a return has started and where the refund is up to. Refunds can take a few business days to show on your card after they're issued, so check the date before chasing."
+          "tip": "Look at the order in your account to see whether a return has started and where the refund stands. Refunds can take a few business days to show on your card after they're issued, so check the date before chasing."
         },
         {
           "issue": "Managing my account",
@@ -140,21 +140,21 @@
         "facebook help"
       ],
       "phone": null,
-      "phoneAltNote": "Meta's official Help Centre for Facebook offers only a search box and an AI support assistant.",
+      "phoneAltNote": "Meta's official Help Center for Facebook offers only a search box and an AI support assistant.",
       "chatUrl": "https://www.facebook.com/help/",
-      "chatLabel": "Facebook Help Centre",
+      "chatLabel": "Facebook Help Center",
       "chatType": "chat",
       "hours": {
         "mode": "unspecified",
-        "text": "No support hours are published. The Help Centre and its AI support assistant are self-service and available anytime you visit."
+        "text": "No support hours are published. The Help Center and its AI support assistant are self-service and available anytime you visit."
       },
       "verifiedDate": "2026-09-08",
       "sourceUrl": "https://www.facebook.com/help/",
-      "sourceLabel": "Meta Help Centre for Facebook",
+      "sourceLabel": "Meta Help Center for Facebook",
       "issues": [
         {
           "issue": "Account settings",
-          "tip": "Most settings live in Accounts Center inside Facebook's settings menu, including name, contact info and linked accounts. Searching the Help Centre for the exact setting is usually faster than browsing."
+          "tip": "Most settings live in Accounts Center inside Facebook's settings menu, including name, contact info and linked accounts. Searching the Help Center for the exact setting is usually faster than browsing."
         },
         {
           "issue": "Login and password recovery",
@@ -162,7 +162,7 @@
         },
         {
           "issue": "Privacy and security",
-          "tip": "Run Facebook's privacy and security checkups from settings, turn on two-factor authentication, and review where you're logged in. Remove any sessions you don't recognise."
+          "tip": "Run Facebook's privacy and security checkups from settings, turn on two-factor authentication, and review where you're logged in. Remove any sessions you don't recognize."
         },
         {
           "issue": "Marketplace",
@@ -251,11 +251,11 @@
         },
         {
           "issue": "Compromised account help",
-          "tip": "Reset your password straight away, revoke access for any connected apps you don't recognise, and review recent posts. If you can't get in, use X's form for hacked accounts."
+          "tip": "Reset your password right away, revoke access for any connected apps you don't recognize, and review recent posts. If you can't get in, use X's form for hacked accounts."
         },
         {
           "issue": "Report impersonation or authenticity issues",
-          "tip": "Report the account from its profile, or use X's impersonation report form if you're reporting on behalf of yourself or your organisation."
+          "tip": "Report the account from its profile, or use X's impersonation report form if you're reporting on behalf of yourself or your organization."
         },
         {
           "issue": "Report abusive or harmful content",
@@ -421,7 +421,7 @@
       "issues": [
         {
           "issue": "Track your order",
-          "tip": "Your Walmart account's Purchase history shows tracking for each order. If it says delivered but you can't find it, check around your door and with neighbours, then contact Walmart."
+          "tip": "Your Walmart account's Purchase history shows tracking for each order. If it says delivered but you can't find it, check around your door and with neighbors, then contact Walmart."
         },
         {
           "issue": "Edit or cancel an order",
@@ -433,7 +433,7 @@
         },
         {
           "issue": "Account and payment issues",
-          "tip": "Update cards and addresses in your account settings. If you see a charge you don't recognise, compare it with your order history before contacting Walmart or your bank."
+          "tip": "Update cards and addresses in your account settings. If you see a charge you don't recognize, compare it with your order history before contacting Walmart or your bank."
         },
         {
           "issue": "Pickup and delivery problems",
@@ -477,7 +477,7 @@
         },
         {
           "issue": "Returns and refunds",
-          "tip": "Request a return from your purchase history so the conversation and tracking are on record. Keep proof of postage when you send the item back."
+          "tip": "Request a return from your purchase history so the conversation and tracking are on record. Keep your shipping receipt when you send the item back."
         },
         {
           "issue": "Shipping and tracking",
@@ -513,7 +513,7 @@
         },
         {
           "issue": "Returns and cancellations",
-          "tip": "Find the order in your account to start a return or check whether it can still be cancelled. For in-store purchases, bring the receipt or the card you paid with."
+          "tip": "Find the order in your account to start a return or check whether it can still be canceled. For in-store purchases, bring the receipt or the card you paid with."
         },
         {
           "issue": "Target Circle and Target Circle Card",
@@ -597,11 +597,11 @@
       "issues": [
         {
           "issue": "Tracking and delivery",
-          "tip": "Open the order in your SHEIN account to see the latest tracking. International parcels can sit at one stage for a while, so give it a few days before contacting support."
+          "tip": "Open the order in your SHEIN account to see the latest tracking. International packages can sit at one stage for a while, so give it a few days before contacting support."
         },
         {
           "issue": "Return and refund status",
-          "tip": "Your order page shows where a return is up to. Keep the proof of postage until the refund arrives."
+          "tip": "Your order page shows where a return stands. Keep your shipping receipt until the refund arrives."
         },
         {
           "issue": "Order processing",
@@ -1266,7 +1266,7 @@
         },
         {
           "issue": "Missing or delayed delivery",
-          "tip": "Check the tracking details, look around your property, and ask neighbours. If you bought the item online, the seller can usually open an investigation with UPS for you."
+          "tip": "Check the tracking details, look around your property, and ask neighbors. If you bought the item online, the seller can usually open an investigation with UPS for you."
         },
         {
           "issue": "Filing a claim",
@@ -1407,7 +1407,7 @@
       "issues": [
         {
           "issue": "Flight changes or cancellations",
-          "tip": "Check the Fly Delta app first — it often offers rebooking options without waiting on the phone. If your flight is cancelled, look at the app and the main line at the same time."
+          "tip": "Check the Fly Delta app first — it often offers rebooking options without waiting on the phone. If your flight is canceled, look at the app and the main line at the same time."
         },
         {
           "issue": "Seats and upgrades",
@@ -1906,7 +1906,7 @@
         },
         {
           "issue": "Credit Card",
-          "tip": "Card balances, statements and payments are managed in the app. For a lost card or a charge you don't recognise, contact support straight away — the phone line is open 24/7."
+          "tip": "Card balances, statements and payments are managed in the app. For a lost card or a charge you don't recognize, contact support right away — the phone line is open 24/7."
         },
         {
           "issue": "Privacy",
@@ -1951,7 +1951,7 @@
         },
         {
           "issue": "Disputes",
-          "tip": "Venmo's Help Center explains how to open a dispute for an unauthorised charge or a purchase problem. Gather dates, amounts and any receipts before you start."
+          "tip": "Venmo's Help Center explains how to open a dispute for an unauthorized charge or a purchase problem. Gather dates, amounts and any receipts before you start."
         },
         {
           "issue": "Security & Privacy",
@@ -2006,7 +2006,7 @@
         },
         {
           "issue": "Cash App Card",
-          "tip": "You can lock your card from the app straight away if it's lost or stolen, then contact support. Card settings and transactions are on the Card tab."
+          "tip": "You can lock your card from the app right away if it's lost or stolen, then contact support. Card settings and transactions are on the Card tab."
         },
         {
           "issue": "Direct Deposit",
@@ -2104,7 +2104,7 @@
         },
         {
           "issue": "Dispute a charge",
-          "tip": "Chime's Help Center explains how to file and track a dispute for an unauthorised or incorrect charge. Note the date, amount and merchant before you start."
+          "tip": "Chime's Help Center explains how to file and track a dispute for an unauthorized or incorrect charge. Note the date, amount and merchant before you start."
         },
         {
           "issue": "Manage money",
@@ -2112,7 +2112,7 @@
         },
         {
           "issue": "Account & Security",
-          "tip": "Update your personal details and security settings in the app. If you think someone else has accessed your account, contact Member Services straight away — they're available 24/7."
+          "tip": "Update your personal details and security settings in the app. If you think someone else has accessed your account, contact Member Services right away — they're available 24/7."
         },
         {
           "issue": "Login issues and app errors",
@@ -2154,7 +2154,7 @@
         },
         {
           "issue": "Delivery & returns",
-          "tip": "Track the delivery and report a return in the Klarna app so your payment schedule reflects it. Keep proof of return postage."
+          "tip": "Track the delivery and report a return in the Klarna app so your payment schedule reflects it. Keep your return shipping receipt."
         },
         {
           "issue": "Declined purchase",
@@ -2166,7 +2166,7 @@
         },
         {
           "issue": "Fraud & security",
-          "tip": "If you see a purchase you don't recognise, contact Klarna straight away. Klarna's site has a page for reporting phishing and scams."
+          "tip": "If you see a purchase you don't recognize, contact Klarna right away. Klarna's site has a page for reporting phishing and scams."
         }
       ]
     },

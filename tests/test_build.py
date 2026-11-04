@@ -194,6 +194,22 @@ class IndexNowTests(unittest.TestCase):
         submit.assert_not_called()
 
 
+class UsTargetingTests(unittest.TestCase):
+    def test_toll_free_detection(self):
+        for n in ("1-800-937-8997", "(855) 830-6200", "800-221-1212", "1 (800) 726-6033", "(833) 844-8095"):
+            self.assertTrue(common.is_toll_free(n), n)
+        for n in ("(212) 555-0100", "+1-314-925-6925", None, ""):
+            self.assertFalse(common.is_toll_free(n), n)
+
+    def test_toll_free_faq_only_for_toll_free_numbers(self):
+        delta = common.brand_by_slug("delta")
+        self.assertIn("toll-free", brand_page.brand_faq_ids(delta))
+        self.assertEqual(len(brand_page.faq_items(delta)), len(brand_page.brand_faq_ids(delta)))
+        zelle = common.brand_by_slug("zelle")
+        self.assertNotIn("toll-free", brand_page.brand_faq_ids(zelle))
+        self.assertEqual(len(brand_page.faq_items(zelle)), len(brand_page.brand_faq_ids(zelle)))
+
+
 class CategorySummaryTests(unittest.TestCase):
     def test_all_with_phone(self):
         import pages
@@ -265,6 +281,26 @@ class BuiltSiteTests(unittest.TestCase):
     def test_indexnow_key_file_is_served(self):
         import indexnow
         self.assertEqual(read_dist(indexnow.key_file_name()), indexnow.key())
+
+    def test_copy_uses_american_english(self):
+        british = re.compile(r"\b(recognis\w*|authoris\w*|organis\w*|summaris\w*|personalis\w*|centre|colour\w*|"
+                             r"behaviour\w*|favourite|neighbour\w*|cancell(ed|ing)|straight away|parcels?|"
+                             r"postage|queue[sd]?|licence|whilst)\b", re.I)
+        hits = []
+        for root, _, files in os.walk(common.DIST):
+            for name in files:
+                if name.endswith((".html", ".txt")):
+                    with open(os.path.join(root, name), encoding="utf-8") as f:
+                        text = re.sub(r"<[^>]+>", " ", f.read())
+                    hits += ["{}: {}".format(name, m.group(0)) for m in british.finditer(text)]
+        self.assertEqual(hits, [])
+
+    def test_toll_free_marked_in_schema_and_page(self):
+        html = read_dist("brand/delta/index.html")
+        page = next(n for n in json_ld(html)["@graph"] if n["@type"] == "WebPage")
+        self.assertEqual(page["about"]["contactPoint"][0]["contactOption"], "https://schema.org/TollFree")
+        self.assertIn('id="toll-free"', html)
+        self.assertIn("ReportFraud.ftc.gov", html)
 
     def test_only_one_faqpage_per_page(self):
         for rel in ("faq/index.html", "index.html", "brand/amazon/index.html"):

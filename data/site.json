@@ -14,6 +14,7 @@
       "countryName": "India"
     },
     "launchDate": "2026-11-03",
+    "copyUpdated": "2026-11-04",
     "googleSiteVerification": "FCzKFtNRqjXWCDdrp49JRVIPvd9jHsInA5ZkijaEOHQ",
     "indexNowKey": "38d8120a9f9d0857eec819ee6d9c414f",
     "featuredBrands": [
@@ -36,9 +37,9 @@
     "/about/": "2026-11-03",
     "/contact/": "2026-11-03",
     "/how-it-works/": "2026-11-03",
-    "/faq/": "2026-11-03",
+    "/faq/": "2026-11-04",
     "/privacy/": "2026-11-03",
-    "/terms/": "2026-11-03",
+    "/terms/": "2026-11-04",
     "/trademark-notice/": "2026-11-03",
     "/editorial-policy/": "2026-11-03",
     "/accessibility/": "2026-11-03",
@@ -48,7 +49,7 @@
     "retail": {
       "label": "Shopping",
       "description": "Online stores and marketplaces — who to contact when an order is late, wrong, or needs to go back.",
-      "intro": "Almost every shopping problem is one of four things: an order that hasn't shown up, an order that showed up wrong, a return you want to start, or a charge you don't recognise. The good news is that most of these can be sorted from your order history before you ever talk to anyone — that's where cancel, return and tracking buttons live, and they move faster than an agent can. When you do need a person, the order number is the single most useful thing to have in front of you. Big retailers increasingly hide their phone line behind a sign-in so they can see your order before they connect you; that's normal, not a sign something is off. What is a red flag is any \"support\" number that only appears in an ad or a random website, so stick to the channel listed for each store below."
+      "intro": "Almost every shopping problem is one of four things: an order that hasn't shown up, an order that showed up wrong, a return you want to start, or a charge you don't recognize. The good news is that most of these can be sorted from your order history before you ever talk to anyone — that's where cancel, return and tracking buttons live, and they move faster than an agent can. When you do need a person, the order number is the single most useful thing to have in front of you. Big retailers increasingly hide their phone line behind a sign-in so they can see your order before they connect you; that's normal, not a sign something is off. What is a red flag is any \"support\" number that only appears in an ad or a random website, so stick to the channel listed for each store below."
     },
     "social": {
       "label": "Social Media",
@@ -65,7 +66,7 @@
     "streaming": {
       "label": "Streaming",
       "description": "Video and music subscriptions — billing, playback trouble, and how to change or cancel a plan.",
-      "intro": "Streaming support mostly comes down to two things: money and playback. On the money side — a failed payment, a price change, a plan you want to cancel — your account page usually has the answer, and cancelling there takes effect without needing to talk to anyone. On the playback side, the old advice still works best: sign out and back in, restart the app and the device, and check whether the problem happens on a second device too. If it only happens on one, the device is the likely culprit; if it happens everywhere, it's worth contacting the service. Several streaming companies have moved to chat-only or callback support that starts from inside your account, so the listings below point you straight to that entry point."
+      "intro": "Streaming support mostly comes down to two things: money and playback. On the money side — a failed payment, a price change, a plan you want to cancel — your account page usually has the answer, and canceling there takes effect without needing to talk to anyone. On the playback side, the old advice still works best: sign out and back in, restart the app and the device, and check whether the problem happens on a second device too. If it only happens on one, the device is the likely culprit; if it happens everywhere, it's worth contacting the service. Several streaming companies have moved to chat-only or callback support that starts from inside your account, so the listings below point you straight to that entry point."
     },
     "telecom": {
       "label": "Phone & Internet",
@@ -76,19 +77,19 @@
     "shipping": {
       "label": "Shipping Carriers",
       "navLabel": "Shipping",
-      "description": "UPS, FedEx and USPS — tracking, late or missing parcels, and filing a claim.",
+      "description": "UPS, FedEx and USPS — tracking, late or missing packages, and filing a claim.",
       "intro": "Here is something that trips a lot of people up: if you bought something online, the carrier usually isn't the one who can refund you. For a missing or damaged purchase, the seller is normally your first stop, because they're the carrier's actual customer and can open a claim or send a replacement. Contact the carrier directly when you're the one who shipped the package, when you need to change a delivery, or when tracking has stalled for several days. Have the full tracking number handy for any call or chat. Fake delivery texts — \"your package is held, pay a small fee\" — are extremely common, so only follow tracking links you get from the seller or that you type into the carrier's real website yourself."
     },
     "airlines": {
       "label": "Airlines",
       "description": "US airlines — rebooking, delays and cancellations, bags, refunds and loyalty accounts.",
-      "intro": "Airline support feels very different depending on the day. On a calm day, most questions — seats, bags, miles — can be handled in the app in a few minutes. On a bad weather day, phone queues can stretch for hours, and the quickest route is usually the airline's app or website, which often offer rebooking options without an agent. If your flight is cancelled, check the app before joining the queue, and if you're at the airport, it can help to try the app, the phone line and the service desk at the same time. Airlines also run separate lines for baggage, refunds and loyalty programs, and calling the right one saves real time — the listings below include those extra numbers wherever the airline publishes them."
+      "intro": "Airline support feels very different depending on the day. On a calm day, most questions — seats, bags, miles — can be handled in the app in a few minutes. On a bad weather day, phone hold times can stretch for hours, and the quickest route is usually the airline's app or website, which often offer rebooking options without an agent. If your flight is canceled, check the app before waiting on hold, and if you're at the airport, it can help to try the app, the phone line and the service desk at the same time. Airlines also run separate lines for baggage, refunds and loyalty programs, and calling the right one saves real time — the listings below include those extra numbers wherever the airline publishes them."
     },
     "rideshare": {
       "label": "Rides & Delivery",
       "navLabel": "Rides",
       "description": "Uber, Lyft, Instacart and others — trip problems, lost items, fare questions and safety.",
-      "intro": "Ride-hailing and delivery apps handle almost all of their support inside the app, tied to a specific trip or order. That's actually a good thing for you: starting from the trip itself means the support team can already see the route, the driver and the charge, so you don't have to explain everything from scratch. For a lost item, the app usually lets you contact the driver directly for a short window after the trip. Phone numbers for these companies are rare and often limited to safety emergencies during an active trip, which makes them a favourite target for fake support lines online. If something feels like an emergency, call 911 first and report to the app afterwards."
+      "intro": "Ride-hailing and delivery apps handle almost all of their support inside the app, tied to a specific trip or order. That's actually a good thing for you: starting from the trip itself means the support team can already see the route, the driver and the charge, so you don't have to explain everything from scratch. For a lost item, the app usually lets you contact the driver directly for a short window after the trip. Phone numbers for these companies are rare and often limited to safety emergencies during an active trip, which makes them a favorite target for fake support lines online. If something feels like an emergency, call 911 first and report to the app afterwards."
     },
     "insurance": {
       "label": "Insurance",
