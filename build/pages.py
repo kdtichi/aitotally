@@ -221,7 +221,6 @@ def info_page(*, path: str, eyebrow: str, h1: str, title: str, description: str,
 
 
 def render_about() -> str:
-    a = SITE["address"]
     prose = """
 <p>Search for almost any company&rsquo;s support number and you&rsquo;ll find pages that look official but aren&rsquo;t &mdash; some send you to a paid call line, others to someone pretending to be the company. {name} is the simple alternative: the contact details each company actually publishes, with a link to prove it.</p>
 <h2>What you get here</h2>
@@ -231,9 +230,8 @@ def render_about() -> str:
 <h2>Keeping things accurate</h2>
 <p>Each company page shows when we last checked it and which official page we used. Companies change numbers and hours without warning, so if something looks off, <a href="/contact/">tell us</a> and we&rsquo;ll check it again. The full standard is in our <a href="/editorial-policy/">editorial policy</a>.</p>
 <h2>Who&rsquo;s behind it</h2>
-<p>{name} is run from {street}, {city} {postal}, {country}. You can email us at <a href="mailto:{email}">{email}</a>.</p>
-""".format(name=esc(NAME), street=esc(a["streetAddress"]), city=esc(a["addressLocality"]), postal=esc(a["postalCode"]),
-           country=esc(a["countryName"]), email=esc(SITE["contactEmail"]))
+<p>{name} is an independent, online-only project &mdash; there&rsquo;s no call center or office to visit. The best way to reach us is by email at <a href="mailto:{email}">{email}</a>.</p>
+""".format(name=esc(NAME), email=esc(SITE["contactEmail"]))
     return info_page(path="/about/", eyebrow="About", h1="Real contact details, nothing in between.",
                      title="About {} | Independent Customer Service Finder".format(NAME),
                      description="Why {} exists, what it does and doesn't do, and how its customer service listings stay accurate.".format(NAME),
@@ -241,7 +239,7 @@ def render_about() -> str:
 
 
 def render_contact() -> str:
-    a, email = SITE["address"], esc(SITE["contactEmail"])
+    email = esc(SITE["contactEmail"])
     prose = """
 <div class="contact-card"><h2>Spotted a wrong number or link?</h2>
   <p>Tell us the company and what&rsquo;s changed. We&rsquo;ll recheck it on the company&rsquo;s own website and update the page.</p>
@@ -250,10 +248,7 @@ def render_contact() -> str:
   <p>Send us the name and we&rsquo;ll look at adding a verified listing.</p>
   <a href="mailto:{email}">{email}</a></div>
 <p style="margin-top:24px;">Please don&rsquo;t send us account numbers, passwords or card details. We&rsquo;re independent, so we can&rsquo;t look up or change anything with the companies we list &mdash; for that, use the official contact option on the company&rsquo;s page.</p>
-<div class="contact-card"><h2>Postal address</h2>
-  <p style="margin:0;">{name}<br>{street}<br>{city} {postal}<br>{country}</p></div>
-""".format(email=email, name=esc(NAME), street=esc(a["streetAddress"]), city=esc(a["addressLocality"]),
-           postal=esc(a["postalCode"]), country=esc(a["countryName"]))
+""".format(email=email)
     return info_page(path="/contact/", eyebrow="Contact", h1="Talk to us", page_type="ContactPage",
                      title="Contact {}".format(NAME),
                      description="Report an out-of-date listing, ask us to add a company, or get in touch with {}.".format(NAME),

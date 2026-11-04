@@ -847,8 +847,8 @@
         "apple id help",
         "apple account help"
       ],
-      "phone": "1-800-692-7753",
-      "phoneNote": "This is Apple's general support line (1-800-MY-APPLE) — Apple routes iCloud and Apple Account issues through a personalized flow rather than a dedicated iCloud number.",
+      "phone": "1-800-275-2273",
+      "phoneNote": "Apple's U.S. support line, listed on Apple's Contact Apple Support page. Apple routes iCloud and Apple Account issues through this support flow rather than a dedicated iCloud number. (1-800-MY-APPLE is Apple's sales and online-store line, not support.)",
       "chatUrl": "https://support.apple.com/en-us/icloud",
       "chatLabel": "Apple Support — iCloud",
       "chatType": "form",
@@ -856,9 +856,9 @@
         "mode": "unspecified",
         "text": "Not stated specifically for iCloud support."
       },
-      "verifiedDate": "2026-09-08",
-      "sourceUrl": "https://www.apple.com/contact/",
-      "sourceLabel": "Apple — Contact Apple",
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://support.apple.com/en-us/106932",
+      "sourceLabel": "Contact Apple Support (United States)",
       "issues": [
         {
           "issue": "Reset your Apple Account password",
@@ -2220,6 +2220,367 @@
         {
           "issue": "Hardship",
           "tip": "If you're struggling to make payments, Afterpay's Help Center has a hardship section. Reaching out early gives you the most options."
+        }
+      ]
+    },
+    {
+      "slug": "xfinity",
+      "name": "Xfinity",
+      "category": "telecom",
+      "aliases": [
+        "xfinity customer service",
+        "comcast customer service",
+        "xfinity phone number",
+        "comcast phone number",
+        "1-800-xfinity",
+        "xfinity support",
+        "comcast xfinity"
+      ],
+      "phone": "1-800-934-6489",
+      "phoneNote": "Also written as 1-800-XFINITY. Xfinity's Contact Us page says its support team is available 24/7 through the Xfinity Assistant chat.",
+      "chatUrl": "https://www.xfinity.com/support/contact-us",
+      "chatLabel": "Xfinity Contact Us & Xfinity Assistant",
+      "chatType": "chat",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Hours for the phone line aren't stated. Xfinity's Contact Us page says support is available 24/7 through the Xfinity Assistant chat."
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://www.xfinity.com/support/articles/protecting-from-fraud",
+      "sourceLabel": "Xfinity Support: Protecting yourself from fraud",
+      "scamWarningNote": "Xfinity's own advice: if an email, text or call claiming to be from Comcast or Xfinity seems suspicious — especially if it asks for payment or personal information — call 1-800-XFINITY (1-800-934-6489) to confirm it's real. Never share a verification code with anyone.",
+      "issues": [
+        {
+          "issue": "Troubleshoot internet issues",
+          "tip": "Restart your modem or gateway by unplugging it for a minute, then check the Xfinity app's troubleshooting tools before calling. Note any error lights or messages."
+        },
+        {
+          "issue": "Check or report outages",
+          "tip": "Check Xfinity's outage information in the app or on its website first — if there's a known outage in your area, an agent can't fix it faster. Sign up for outage alerts so you know when it's resolved."
+        },
+        {
+          "issue": "Equipment and technical support",
+          "tip": "Have your equipment's model and the exact problem ready. The Xfinity app can often run a remote check on your gateway or TV box."
+        },
+        {
+          "issue": "Pay bills and view statements",
+          "tip": "Your billing statements and payment options are in your Xfinity account. Compare the current bill with the last one to spot what changed before you call."
+        },
+        {
+          "issue": "Manage account settings and passwords",
+          "tip": "Update contact information and reset a forgotten password in your Xfinity account online. Turn on two-step verification to keep the account secure."
+        },
+        {
+          "issue": "Access Comcast email",
+          "tip": "Xfinity's Contact Us page links to sign-in steps for existing comcast.net email accounts. Use only the official Xfinity sign-in page."
+        }
+      ]
+    },
+    {
+      "slug": "home-depot",
+      "name": "The Home Depot",
+      "category": "retail",
+      "aliases": [
+        "home depot customer service",
+        "home depot phone number",
+        "1-800-home-depot",
+        "homedepot customer service",
+        "home depot help",
+        "contact home depot"
+      ],
+      "phone": "1-800-466-3337",
+      "phoneNote": "Also written as 1-800-HOME-DEPOT. For screen reader problems with the website, The Home Depot lists 1-800-430-3376.",
+      "chatUrl": "https://www.homedepot.com/c/customer-service",
+      "chatLabel": "The Home Depot Customer Service Center",
+      "chatType": "chat",
+      "hours": {
+        "mode": "unspecified",
+        "text": "No hours are published for this line on The Home Depot's official contact page."
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://corporate.homedepot.com/page/contact-us",
+      "sourceLabel": "The Home Depot corporate Contact Us page",
+      "issues": [
+        {
+          "issue": "Check order status",
+          "tip": "Sign in and open the order in your account for the latest status and tracking. Have the order number ready if you need to call."
+        },
+        {
+          "issue": "Pickup, shipping and delivery",
+          "tip": "Your order confirmation and account show the pickup or delivery window. Bring your order number and ID when collecting an in-store pickup."
+        },
+        {
+          "issue": "Order cancellation",
+          "tip": "Check whether the order can still be canceled from your account — the sooner you ask, the better. Contact customer service if the option isn't there."
+        },
+        {
+          "issue": "Returns and refunds",
+          "tip": "Review The Home Depot's return and refund policies on its Customer Service Center, and keep your receipt or order number. Refund timing depends on how you paid."
+        },
+        {
+          "issue": "Pay your credit card",
+          "tip": "Payments for a Home Depot credit card are handled through the card's own account page, linked from the Customer Service Center."
+        },
+        {
+          "issue": "Product recalls",
+          "tip": "The Customer Service Center lists product recalls. If you own a recalled item, follow the instructions in the recall notice."
+        }
+      ]
+    },
+    {
+      "slug": "costco",
+      "name": "Costco",
+      "category": "retail",
+      "aliases": [
+        "costco customer service",
+        "costco phone number",
+        "costco membership phone number",
+        "costco.com customer service",
+        "costco help",
+        "contact costco"
+      ],
+      "phone": "1-800-774-2678",
+      "phoneLineLabel": "membership and warehouse customer service line",
+      "phoneNote": "Costco.com online orders: 1-800-955-2292 (Mon–Fri 5am–8pm PT, Sat–Sun 5am–7pm PT). Costco Travel: 1-877-849-2730. Technical & warranty support: 1-866-861-0450. Costco lists separate lines for its pharmacy, business center and installed home-improvement products.",
+      "chatUrl": "https://customerservice.costco.com/",
+      "chatLabel": "Costco Customer Service",
+      "chatType": "chat",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Membership and warehouse line: Mon–Fri 6am–6pm PT, Sat–Sun 8am–5pm PT. Chat: Mon–Fri 6:30am–5:30pm PT, Sat–Sun 8am–5pm PT."
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://customerservice.costco.com/app/answers/answer_view/a_id/8162",
+      "sourceLabel": "Costco Customer Service: Contact Us",
+      "issues": [
+        {
+          "issue": "Membership",
+          "tip": "Have your membership number (on your card or in the Costco app) ready. Renewals and many membership details can be handled in your account online."
+        },
+        {
+          "issue": "Costco.com orders",
+          "tip": "Online orders have their own line, 1-800-955-2292. Check the order in your Costco.com account first for tracking and delivery updates."
+        },
+        {
+          "issue": "Returns and exchanges",
+          "tip": "Most returns can be started at a warehouse or from your Costco.com order. Bring your membership card, and the receipt if you have it."
+        },
+        {
+          "issue": "Payment and tax info",
+          "tip": "Check the payment method on the order and your receipt for tax details before contacting Costco."
+        },
+        {
+          "issue": "Technical help and warranties",
+          "tip": "Costco lists a separate technical and warranty support line, 1-866-861-0450. Have the product's model number and purchase date ready."
+        },
+        {
+          "issue": "Warehouse questions",
+          "tip": "Warehouse hours and services vary by location, so check your local warehouse's page on Costco.com first."
+        }
+      ]
+    },
+    {
+      "slug": "apple",
+      "name": "Apple",
+      "category": "tech",
+      "aliases": [
+        "apple customer service",
+        "apple support phone number",
+        "apple care number",
+        "apple support",
+        "contact apple support",
+        "iphone support number"
+      ],
+      "phone": "1-800-275-2273",
+      "phoneNote": "Apple's U.S. support number, listed on Apple's Contact Apple Support page. Apple Cash and person-to-person payments: 1-877-233-8552. Education customers: 1-800-800-2775. You can also chat with Apple Support in the Apple Support app.",
+      "chatUrl": "https://support.apple.com/contact",
+      "chatLabel": "Apple Support: Contact",
+      "chatType": "chat",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Hours aren't listed on Apple's U.S. Contact Apple Support page."
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://support.apple.com/en-us/106932",
+      "sourceLabel": "Contact Apple Support (United States)",
+      "issues": [
+        {
+          "issue": "Update or restore iOS",
+          "tip": "Back up your device first. Apple's support site has step-by-step guides for updating and restoring; if an update fails, try again over a stable Wi-Fi connection with the device charging."
+        },
+        {
+          "issue": "Billing and subscriptions",
+          "tip": "You can view and cancel subscriptions in your Apple Account settings on your device. Check your purchase history before reporting a charge you don't recognize."
+        },
+        {
+          "issue": "Forgot passcode",
+          "tip": "Apple's support site explains the official steps for a forgotten passcode. Never pay a third party to \"unlock\" a device."
+        },
+        {
+          "issue": "Apple Account",
+          "tip": "Use Apple's official account recovery if you can't sign in. Recovery can take time on purpose, as a security measure."
+        },
+        {
+          "issue": "Lost or stolen device",
+          "tip": "Use Find My to locate, lock or erase a lost iPhone, iPad or Mac, and contact your carrier if it's an iPhone with cellular service."
+        },
+        {
+          "issue": "Repairs and service",
+          "tip": "You can start a repair in the Apple Support app or on Apple's website. Have the serial number ready and back up your data first."
+        }
+      ]
+    },
+    {
+      "slug": "chase",
+      "name": "Chase",
+      "category": "payments",
+      "aliases": [
+        "chase customer service",
+        "chase bank phone number",
+        "chase phone number",
+        "chase credit card customer service",
+        "jpmorgan chase customer service",
+        "contact chase"
+      ],
+      "phone": "1-800-935-9935",
+      "phoneNote": "Chase Customer Service for personal banking (checking, savings and debit cards). Credit cards: 1-800-432-3117. Auto loans: 1-800-336-6675. Home lending: 1-800-848-9136. J.P. Morgan Wealth Management: 1-800-392-5749. Military services: 1-877-469-0110.",
+      "chatUrl": "https://www.chase.com/digital/customer-service",
+      "chatLabel": "Chase Customer Service",
+      "chatType": "none",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Hours aren't listed on Chase's official customer service page."
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://www.chase.com/digital/customer-service",
+      "sourceLabel": "Chase Customer Service page",
+      "issues": [
+        {
+          "issue": "Credit cards",
+          "tip": "Chase lists a separate credit card line, 1-800-432-3117. Have your card handy — card questions are often fastest in the Chase app."
+        },
+        {
+          "issue": "Checking, savings and debit cards",
+          "tip": "For checking, savings and debit cards, call 1-800-935-9935. If a debit card is lost or stolen, lock it in the Chase app first."
+        },
+        {
+          "issue": "Auto loans and leases",
+          "tip": "Chase lists a dedicated auto line, 1-800-336-6675. Have your account number and vehicle details ready."
+        },
+        {
+          "issue": "Mortgages and home equity",
+          "tip": "Home lending questions go to 1-800-848-9136. Have your loan number in front of you."
+        },
+        {
+          "issue": "Investing and retirement",
+          "tip": "J.P. Morgan Wealth Management customer service is 1-800-392-5749."
+        },
+        {
+          "issue": "Online and mobile banking",
+          "tip": "Chase's customer service page covers support for online and mobile banking. Update the app and make sure you're using Chase's official site before signing in."
+        }
+      ]
+    },
+    {
+      "slug": "bank-of-america",
+      "name": "Bank of America",
+      "category": "payments",
+      "aliases": [
+        "bank of america customer service",
+        "bank of america phone number",
+        "bofa customer service",
+        "bofa phone number",
+        "boa customer service",
+        "contact bank of america"
+      ],
+      "phone": "800.432.1000",
+      "phoneNote": "For general account information, reporting a lost or stolen ATM or debit card, and opening an account. Spanish: 800.688.6086. From outside the U.S.: 1.315.724.4022 (international collect). Bank of America says your card or account number will be required.",
+      "chatUrl": "https://www.bankofamerica.com/customer-service/contact-us/",
+      "chatLabel": "Bank of America Customer Service",
+      "chatType": "none",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Mon–Fri 8 a.m.–11 p.m. ET, Sat–Sun 8 a.m.–8 p.m. ET (checking and savings line)."
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://www.bankofamerica.com/customer-service/contact-us/checking-savings/",
+      "sourceLabel": "Bank of America Checking & Savings Customer Service page",
+      "scamWarningNote": "Bank of America says neither it nor its affiliates will ever ask for your Social Security number, account information, passwords or PINs via Facebook, Instagram or X. If someone does, it isn't Bank of America.",
+      "issues": [
+        {
+          "issue": "Checking and savings",
+          "tip": "Call 800.432.1000 with your card or account number ready. Many account details are also available in Online Banking or the mobile app."
+        },
+        {
+          "issue": "Credit cards",
+          "tip": "Bank of America has a separate credit card contact page, linked from its Customer Service page. The number on the back of your card is the quickest route."
+        },
+        {
+          "issue": "Login issues",
+          "tip": "Use the official password reset in Online Banking or the app. Bank of America's Customer Service page has a dedicated login-issues topic."
+        },
+        {
+          "issue": "Disputing a transaction",
+          "tip": "You can start a dispute for a debit or credit card transaction digitally from the Customer Service page. Note the date, amount and merchant first."
+        },
+        {
+          "issue": "Transfers and Zelle",
+          "tip": "Bank of America's Customer Service page lets you manage or cancel transfers. Zelle payments usually can't be canceled once the recipient is enrolled, so double-check before sending."
+        },
+        {
+          "issue": "Mortgage and home equity",
+          "tip": "Mortgage and home equity questions have their own contact topic on the Customer Service page. Have your loan number ready."
+        }
+      ]
+    },
+    {
+      "slug": "capital-one",
+      "name": "Capital One",
+      "category": "payments",
+      "aliases": [
+        "capital one customer service",
+        "capital one phone number",
+        "1-800-capital",
+        "capital one credit card customer service",
+        "capital one bank phone number",
+        "contact capital one"
+      ],
+      "phone": "1-877-383-4802",
+      "phoneNote": "Capital One's general line, which directs your call to the right team. Existing credit card accounts: 1-800-CAPITAL (1-800-227-4825). Credit card online account support: 1-866-750-0873. For Discover card accounts, use the number on the back of your card.",
+      "chatUrl": "https://www.capitalone.com/help-center/contact-us/",
+      "chatLabel": "Capital One Help Center: Contact us",
+      "chatType": "chat",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Hours aren't listed on Capital One's official contact page."
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://www.capitalone.com/help-center/contact-us/",
+      "sourceLabel": "Capital One Help Center: Contact us",
+      "issues": [
+        {
+          "issue": "Credit cards",
+          "tip": "For an existing Capital One credit card, call 1-800-CAPITAL (1-800-227-4825), or use the number on the back of your card."
+        },
+        {
+          "issue": "Bank accounts",
+          "tip": "Have your account number ready, or start in the Capital One app, where many account questions can be handled directly."
+        },
+        {
+          "issue": "Auto financing",
+          "tip": "Capital One's contact page has a separate auto financing section. Have your loan details in front of you."
+        },
+        {
+          "issue": "Online account support",
+          "tip": "For trouble with your credit card online account, Capital One lists 1-866-750-0873. Update the app and try the official sign-in page first."
+        },
+        {
+          "issue": "Chat with Eno",
+          "tip": "Capital One's digital assistant, Eno, answers messages in the app or by text — handy for quick account questions."
+        },
+        {
+          "issue": "Using your card outside the U.S.",
+          "tip": "From outside the U.S., Capital One's contact page lists 1-804-934-2001 for credit cards (call collect)."
         }
       ]
     }

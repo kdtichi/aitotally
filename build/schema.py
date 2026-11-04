@@ -10,7 +10,6 @@ WEBSITE_ID = BASE_URL + "/#website"
 
 
 def org_node() -> dict:
-    addr = SITE["address"]
     return {
         "@type": "Organization",
         "@id": ORG_ID,
@@ -20,13 +19,8 @@ def org_node() -> dict:
         "logo": {"@type": "ImageObject", "url": BASE_URL + "/logo.png", "width": 512, "height": 512},
         "description": SITE["description"],
         "email": SITE["contactEmail"],
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": addr["streetAddress"],
-            "addressLocality": addr["addressLocality"],
-            "postalCode": addr["postalCode"],
-            "addressCountry": addr["addressCountry"],
-        },
+        "contactPoint": {"@type": "ContactPoint", "contactType": "editorial corrections",
+                         "email": SITE["contactEmail"], "areaServed": "US", "availableLanguage": "English"},
         "publishingPrinciples": BASE_URL + "/editorial-policy/",
         "areaServed": {"@type": "Country", "name": "United States"},
         "knowsLanguage": "en-US",

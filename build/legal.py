@@ -11,7 +11,6 @@ def _mail() -> str:
 
 
 def render_privacy() -> str:
-    a = SITE["address"]
     prose = """
 <p><strong>Effective November 3, 2026</strong></p>
 <p>{n} is an independent directory of customer service contact details that companies publish themselves. We collect very little, and this page explains exactly what and why.</p>
@@ -32,11 +31,10 @@ def render_privacy() -> str:
 <h2>Your rights</h2>
 <p>Depending on where you live, laws such as the CCPA or the EU/UK GDPR may give you the right to see, correct or delete information we hold about you. Email {mail} to ask.</p>
 <h2>Who runs this site</h2>
-<p>{n} is operated from {street}, {city} {postal}, {country}. Use that address for any formal privacy request.</p>
+<p>{n} is an independent, online-only project. Send any privacy request, including formal requests under the laws above, to {mail}.</p>
 <h2>Changes</h2>
 <p>If this policy changes, we&rsquo;ll update this page and its effective date.</p>
-""".format(n=N, mail=_mail(), street=esc(a["streetAddress"]), city=esc(a["addressLocality"]),
-           postal=esc(a["postalCode"]), country=esc(a["countryName"]))
+""".format(n=N, mail=_mail())
     return info_page(path="/privacy/", eyebrow="Legal", h1="Privacy Policy", prose=prose,
                      title="Privacy Policy | {}".format(NAME),
                      description="What {} collects (very little), how it's used, and what we never collect.".format(NAME))

@@ -282,6 +282,15 @@ class BuiltSiteTests(unittest.TestCase):
         import indexnow
         self.assertEqual(read_dist(indexnow.key_file_name()), indexnow.key())
 
+    def test_no_postal_address_anywhere(self):
+        for root, _, files in os.walk(common.DIST):
+            for name in files:
+                if name.endswith((".html", ".txt", ".xml")):
+                    with open(os.path.join(root, name), encoding="utf-8") as f:
+                        text = f.read()
+                    for needle in ("New Delhi", "Batla", "Okhla", "110025", "PostalAddress"):
+                        self.assertNotIn(needle, text, name)
+
     def test_copy_uses_american_english(self):
         british = re.compile(r"\b(recognis\w*|authoris\w*|organis\w*|summaris\w*|personalis\w*|centre|colour\w*|"
                              r"behaviour\w*|favourite|neighbour\w*|cancell(ed|ing)|straight away|parcels?|"

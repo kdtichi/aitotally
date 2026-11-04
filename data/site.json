@@ -6,13 +6,6 @@
     "tagline": "The real way to reach customer service.",
     "description": "AI Totally is an independent customer service finder. Look up a company and get the phone number, chat link and support hours it actually publishes, each checked against its own website.",
     "contactEmail": "help@aitotally.com",
-    "address": {
-      "streetAddress": "P-139, Batla House, Okhla",
-      "addressLocality": "New Delhi",
-      "postalCode": "110025",
-      "addressCountry": "IN",
-      "countryName": "India"
-    },
     "launchDate": "2026-11-03",
     "copyUpdated": "2026-11-04",
     "googleSiteVerification": "FCzKFtNRqjXWCDdrp49JRVIPvd9jHsInA5ZkijaEOHQ",
@@ -34,11 +27,11 @@
   },
   "pagesUpdated": {
     "/": "2026-11-04",
-    "/about/": "2026-11-03",
-    "/contact/": "2026-11-03",
+    "/about/": "2026-11-04",
+    "/contact/": "2026-11-04",
     "/how-it-works/": "2026-11-03",
     "/faq/": "2026-11-04",
-    "/privacy/": "2026-11-03",
+    "/privacy/": "2026-11-04",
     "/terms/": "2026-11-04",
     "/trademark-notice/": "2026-11-03",
     "/editorial-policy/": "2026-11-03",
@@ -97,10 +90,16 @@
       "intro": "Insurance calls tend to fall into two buckets: routine admin (a payment, an ID card, a change to your policy) and something that just went wrong (an accident, a break-in, a burst pipe). For routine admin, the insurer's app or website is usually quickest. For a new claim, most insurers run a dedicated claims line, often around the clock — use that rather than the general number, and have your policy number, the date and place of the incident, and any photos ready. If anyone is hurt or in danger, call 911 first. Be wary of calls or texts that \"follow up\" on a claim and ask for payment details; if in doubt, hang up and call back on the number from your insurer's website or your policy documents."
     },
     "payments": {
-      "label": "Payments & Money Apps",
+      "label": "Banks & Money Apps",
       "navLabel": "Money",
-      "description": "OnePay, Venmo, Cash App, Zelle, Chime and buy-now-pay-later apps — help with payments, cards, disputes and account access.",
-      "intro": "Money apps are where a fast, correct answer matters most — and where fake support is most dangerous. The good news is that most of the apps listed here do publish a real phone number, and several answer around the clock. Before you call, open the transaction in the app: its status often answers the question, and you'll want the date, amount and recipient to hand anyway. Payments sent to the wrong person can be hard to reverse, so contact the app quickly if that happens. Zelle is different from the rest: when you use it inside your bank's app, your bank handles support, so the number on the back of your debit card is the one to call. Above all, no real money app will ask you to share a sign-in code, send a \"test\" payment or move money to \"protect\" it. Anyone who does is a scammer, whatever number they called from."
+      "description": "Chase, Bank of America, Capital One, OnePay, Venmo, Cash App, Zelle and buy-now-pay-later apps — help with payments, cards, disputes and account access.",
+      "intro": "Banks and money apps are where a fast, correct answer matters most — and where fake support is most dangerous. Big banks publish several numbers, one per product: checking and savings, credit cards, auto loans and mortgages each have their own line, and calling the right one saves real time. Before you call, open the transaction in the app: its status often answers the question, and you'll want the date, amount and recipient to hand anyway. Payments sent to the wrong person can be hard to reverse, so contact the bank or app quickly if that happens. Zelle is different from the rest: when you use it inside your bank's app, your bank handles support, so the number on the back of your debit card is the one to call. Above all, no real bank or money app will ask you to share a sign-in code, send a \"test\" payment or move money to \"protect\" it. Anyone who does is a scammer, whatever number they called from."
+    },
+    "tech": {
+      "label": "Tech & Devices",
+      "navLabel": "Tech",
+      "description": "Phones, computers and device makers — help with repairs, accounts, subscriptions and lost devices.",
+      "intro": "Device support usually splits into three kinds of problems: something isn't working (an update failed, the screen is cracked, the battery drains), something about your account (a forgotten passcode, a subscription charge you don't recognize), or something lost or stolen. For the first, the maker's support app or website can usually run a diagnostic or book a repair, and backing up your device before any repair is the single best habit. For account problems, use only the company's official recovery steps — recovery can take time on purpose, and anyone offering to \"unlock\" a device or account for a fee is a scammer. For lost devices, location and remote-lock tools work best if they were turned on before the device went missing, so it's worth checking those settings today. Tech-support scams often start with a pop-up or call claiming your device is infected: real companies don't call you out of the blue to fix your computer."
     }
   }
 }

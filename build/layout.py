@@ -2,9 +2,8 @@
 footer, metadata and the Google Fonts loader."""
 from common import BASE_URL, CATEGORIES, NAME, SITE, esc
 
-NAV_ITEMS = [("/category/{}/".format(s), c.get("navLabel", c["label"])) for s, c in CATEGORIES.items()] + [
-    ("/how-it-works/", "How It Works"),
-]
+# Header shows categories only; How It Works, About and the rest live in the footer.
+NAV_ITEMS = [("/category/{}/".format(s), c.get("navLabel", c["label"])) for s, c in CATEGORIES.items()]
 
 FOOTER_NAV = [("/", "Home")] + [("/category/{}/".format(s), c["label"]) for s, c in CATEGORIES.items()] + [
     ("/research/companies-without-phone-support/", "Research: who has no phone line?"),
