@@ -2583,6 +2583,309 @@
           "tip": "From outside the U.S., Capital One's contact page lists 1-804-934-2001 for credit cards (call collect)."
         }
       ]
+    },
+    {
+      "slug": "wells-fargo",
+      "name": "Wells Fargo",
+      "category": "payments",
+      "aliases": [
+        "wells fargo customer service",
+        "wells fargo phone number",
+        "wells fargo bank phone number",
+        "wells fargo credit card customer service",
+        "contact wells fargo"
+      ],
+      "phone": "1-800-869-3557",
+      "phoneNote": "General banking and debit cards, 24 hours a day, 7 days a week. Credit card account management: 1-800-642-4720 (24/7). Wells Fargo Online: 1-800-956-4442 (24/7). Home mortgage: 1-866-234-8271. Auto loans: 1-800-289-8004. Wells Fargo accepts all relay calls, including 711.",
+      "chatUrl": "https://www.wellsfargo.com/help/contact-us/",
+      "chatLabel": "Wells Fargo Customer Service: Contact Us",
+      "chatType": "none",
+      "hours": {
+        "mode": "247"
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://www.wellsfargo.com/help/contact-us/",
+      "sourceLabel": "Wells Fargo Customer Service Contact Us page",
+      "issues": [
+        {
+          "issue": "General banking",
+          "tip": "Call 1-800-869-3557 any time, day or night. Many balances and transactions are also in the Wells Fargo app."
+        },
+        {
+          "issue": "Lost or stolen debit card",
+          "tip": "Report it right away on the general banking line, 1-800-869-3557, which also handles replacement debit cards. You can usually turn the card off in the app while you wait."
+        },
+        {
+          "issue": "Credit cards",
+          "tip": "Credit card account management is 1-800-642-4720, open 24/7. For fraud questions, Wells Fargo says to call the number on the back of your card."
+        },
+        {
+          "issue": "Online and mobile banking",
+          "tip": "Wells Fargo Online support is 1-800-956-4442, open 24/7. Update the app and use only the official Wells Fargo site before signing in."
+        },
+        {
+          "issue": "Mortgages and home equity",
+          "tip": "Home mortgage customer service is 1-866-234-8271. Have your loan number ready."
+        },
+        {
+          "issue": "Report fraud",
+          "tip": "If you suspect fraud on your account, Wells Fargo says to contact it immediately. Don't share one-time codes with anyone who calls you."
+        }
+      ]
+    },
+    {
+      "slug": "citi",
+      "name": "Citi",
+      "category": "payments",
+      "aliases": [
+        "citi customer service",
+        "citibank customer service",
+        "citi credit card phone number",
+        "citibank phone number",
+        "citi card customer service",
+        "contact citi"
+      ],
+      "phone": "1-800-950-5114",
+      "phoneLineLabel": "credit card customer service line",
+      "phoneNote": "Listed on Citi's own site for Citi cardmembers, including reporting a lost or stolen credit card. Citi accepts 711 and other relay services.",
+      "chatUrl": "https://online.citi.com/US/nga/contactus",
+      "chatLabel": "Citi Contact Us",
+      "chatType": "none",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Hours aren't stated on the Citi page we checked."
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://www.citi.com/credit-cards/understanding-credit-cards/what-to-do-when-you-lose-your-credit-card",
+      "sourceLabel": "Citi: What to Do When You Lose Your Credit Card",
+      "issues": [
+        {
+          "issue": "Lost or stolen card",
+          "tip": "Call 1-800-950-5114 to report it, and lock the card in the Citi app if you can. Then update any automatic payments that used the old card."
+        },
+        {
+          "issue": "Billing and payments",
+          "tip": "Your statements and payment options are in your Citi online account. Check the due date and minimum payment before calling."
+        },
+        {
+          "issue": "Disputing a charge",
+          "tip": "Note the date, amount and merchant, and try the merchant first for simple errors. If that doesn't resolve it, contact Citi about a dispute."
+        },
+        {
+          "issue": "Card activation",
+          "tip": "New cards can usually be activated online or in the app. Use the activation instructions that came with the card."
+        },
+        {
+          "issue": "Account access",
+          "tip": "Use the official Citi sign-in page or app to reset your password. Never share a one-time code with anyone who contacts you."
+        },
+        {
+          "issue": "Rewards and card benefits",
+          "tip": "Rewards balances and card benefits are shown in your online account. For benefit claims, follow the instructions in your card's benefit guide."
+        }
+      ]
+    },
+    {
+      "slug": "american-express",
+      "name": "American Express",
+      "category": "payments",
+      "aliases": [
+        "american express customer service",
+        "amex customer service",
+        "amex phone number",
+        "american express phone number",
+        "amex card customer service",
+        "contact american express"
+      ],
+      "phone": "1-800-528-4800",
+      "phoneNote": "Personal Card customer service, 24/7 (TTY: dial 711 and 1-800-528-4800). Pay by phone: 1-800-472-9297 (24/7). Small Business Cards: 1-800-492-3344 (24/7). American Express Savings: 1-800-446-6307. Rewards Checking: 1-877-221-2639.",
+      "chatUrl": "https://www.americanexpress.com/en-us/support/contacts/",
+      "chatLabel": "American Express Contacts page",
+      "chatType": "none",
+      "hours": {
+        "mode": "247"
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://www.americanexpress.com/en-us/support/contacts/",
+      "sourceLabel": "Contact American Express: Phone Numbers and Addresses",
+      "issues": [
+        {
+          "issue": "Existing Card account",
+          "tip": "Personal Card members can call 1-800-528-4800 any time. Have your card in front of you."
+        },
+        {
+          "issue": "Make a payment",
+          "tip": "Pay online, in the app, or by phone at 1-800-472-9297, open 24/7. Check the payment date before your due date."
+        },
+        {
+          "issue": "Application status",
+          "tip": "American Express lists 1-877-239-3491 for checking a new application's status (Mon–Fri 8 am–12 am, Sat 10 am–6:30 pm EST)."
+        },
+        {
+          "issue": "Small Business Cards",
+          "tip": "Small Business Card customer service is 1-800-492-3344, open 24/7."
+        },
+        {
+          "issue": "Savings and checking accounts",
+          "tip": "American Express Savings is 1-800-446-6307 and Rewards Checking is 1-877-221-2639. Many tasks can be done online."
+        },
+        {
+          "issue": "Disputing a charge",
+          "tip": "Note the date, amount and merchant. Many disputes can be started from your online account; call the Card line if you need help."
+        }
+      ]
+    },
+    {
+      "slug": "progressive",
+      "name": "Progressive",
+      "category": "insurance",
+      "aliases": [
+        "progressive customer service",
+        "progressive insurance phone number",
+        "progressive claims number",
+        "progressive phone number",
+        "contact progressive"
+      ],
+      "phone": "1-888-671-4405",
+      "phoneNote": "General customer service, open 24/7 — for reporting an accident, filing a claim, policy changes, billing, quotes and roadside assistance. Spanish: 1-833-951-4271. Fraud or identity theft: 1-888-288-0770 (daily 7 AM–10 PM ET). Commercial customer service: 1-888-240-9839.",
+      "chatUrl": "https://www.progressive.com/contact-us/",
+      "chatLabel": "Progressive Contact Us & chat",
+      "chatType": "chat",
+      "hours": {
+        "mode": "247"
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://www.progressive.com/contact-us/",
+      "sourceLabel": "Progressive Contact Us page",
+      "issues": [
+        {
+          "issue": "Report an accident or file a claim",
+          "tip": "Make sure everyone is safe and call 911 if needed. Then call 1-888-671-4405 or start a claim in the Progressive app, with photos and the other driver's details."
+        },
+        {
+          "issue": "Make a change to your policy",
+          "tip": "Many policy changes can be made online or in the app. Call the 24/7 line if you can't find the option you need."
+        },
+        {
+          "issue": "Check your bill or make a payment",
+          "tip": "Your bill and payment options are in your Progressive account. Contact Progressive before the due date if you can't pay on time."
+        },
+        {
+          "issue": "Cancel a policy",
+          "tip": "Have your policy number and the date you want coverage to end. Make sure new coverage starts before the old policy ends, so you're never uninsured."
+        },
+        {
+          "issue": "Roadside assistance",
+          "tip": "If you have roadside coverage, request help through the app or the 24/7 line. Get to a safe place first."
+        },
+        {
+          "issue": "Get a quote",
+          "tip": "Have your vehicle details and driving history ready. You can get a quote online, in the app or by phone."
+        }
+      ]
+    },
+    {
+      "slug": "jetblue",
+      "name": "JetBlue",
+      "category": "airlines",
+      "aliases": [
+        "jetblue customer service",
+        "jetblue phone number",
+        "1-800-jetblue",
+        "jetblue airlines phone number",
+        "contact jetblue"
+      ],
+      "phone": "1-800-538-2583",
+      "phoneNote": "Also written as 1-800-JETBLUE; listed on JetBlue's Contact Us page for calls in the United States.",
+      "chatUrl": "https://www.jetblue.com/contact-us",
+      "chatLabel": "JetBlue Contact Us",
+      "chatType": "none",
+      "hours": {
+        "mode": "unspecified",
+        "text": "Hours aren't stated next to the number on JetBlue's Contact Us page."
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://www.jetblue.com/contact-us",
+      "sourceLabel": "JetBlue Contact Us page",
+      "issues": [
+        {
+          "issue": "Flight changes and cancellations",
+          "tip": "Check the JetBlue app or website first — they often show rebooking options without waiting on hold. Have your confirmation code ready if you call."
+        },
+        {
+          "issue": "JetBlue Travel Credits",
+          "tip": "Your travel credits and their expiration dates are in your JetBlue account. JetBlue's help center has a section on using them."
+        },
+        {
+          "issue": "Bags",
+          "tip": "Check JetBlue's baggage rules before you fly. For a delayed or damaged bag, report it at the airport before you leave and keep your bag tag receipt."
+        },
+        {
+          "issue": "Request a receipt",
+          "tip": "JetBlue's help center has a quick link to request a receipt. Have your confirmation code handy."
+        },
+        {
+          "issue": "Traveling with pets",
+          "tip": "Pet travel has its own rules and fees, so read JetBlue's pet policy and add your pet to the booking ahead of time."
+        },
+        {
+          "issue": "Unaccompanied minors",
+          "tip": "Check JetBlue's unaccompanied minor policy and book the service in advance. Have contact details ready for the adults at both airports."
+        }
+      ]
+    },
+    {
+      "slug": "directv",
+      "name": "DIRECTV",
+      "category": "telecom",
+      "aliases": [
+        "directv customer service",
+        "directv phone number",
+        "direct tv customer service",
+        "directv stream customer service",
+        "contact directv"
+      ],
+      "phone": "800.531.5000",
+      "phoneNote": "Business hours: Mon–Sun, 8:00 AM to 9:00 PM Central time. DIRECTV also offers chat from its Customer Service page.",
+      "chatUrl": "https://www.directv.com/customer-service",
+      "chatLabel": "DIRECTV Customer Service & chat",
+      "chatType": "chat",
+      "hours": {
+        "mode": "detailed",
+        "tz": "America/Chicago",
+        "start": "08:00",
+        "end": "21:00",
+        "days": "daily"
+      },
+      "verifiedDate": "2026-11-04",
+      "sourceUrl": "https://www.directv.com/customer-service",
+      "sourceLabel": "DIRECTV Customer Service page",
+      "issues": [
+        {
+          "issue": "Billing and payments",
+          "tip": "Your bill and payment options are in your DIRECTV account. Compare it with last month's bill to spot what changed before you call."
+        },
+        {
+          "issue": "Equipment and signal problems",
+          "tip": "Restart your receiver or streaming device and check the cables. For satellite service, bad weather can briefly interrupt the signal."
+        },
+        {
+          "issue": "Streaming app sign-in",
+          "tip": "Update the app and sign in with the same account email you used to subscribe. Signing out and back in fixes many app issues."
+        },
+        {
+          "issue": "Changing your package",
+          "tip": "Compare packages in your DIRECTV account before calling, and check whether a change affects any promotional pricing."
+        },
+        {
+          "issue": "Moving your service",
+          "tip": "DIRECTV has a moving page on its website. Contact them a few weeks before your move so service is ready at the new address."
+        },
+        {
+          "issue": "Canceling or pausing service",
+          "tip": "DIRECTV has an official cancel-help page on its website. Check any contract or equipment-return requirements before you cancel."
+        }
+      ]
     }
   ]
 }
